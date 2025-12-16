@@ -1215,8 +1215,6 @@ body {
     color: #0000008f;
 }
 
-
-
 /* Swiper Pagination & Navigation (Restored) */
 .doctor-pagination-wrapper {
     position: relative;
@@ -1251,7 +1249,6 @@ body {
     cursor: default;
 }
 
-/* Custom Numbered Pagination - Matching Standard Pagination */
 .custom-swiper-pagination {
     display: flex;
     justify-content: center;
@@ -1268,16 +1265,12 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    /* Match .page-link */
     border: none;
     background-color: var(--white);
     color: var(--primary-color);
     font-weight: 600;
     font-size: 16px;
-    /* Keep font-size from swiper logic or match page-link inherited? page-link size ? */
-    /* page-link inherits font size but usually is 1rem. I'll keep 16px explicit to be safe or remove if needed. */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    /* Match .page-link */
     transition: all 0.3s;
     margin: 0 !important;
     opacity: 1;
@@ -1285,7 +1278,6 @@ body {
 
 .swiper-pagination-bullet:hover {
     background-color: #f0f0f0;
-    /* Match .page-link:hover */
     color: var(--primary-color);
     transform: translateY(-2px);
 }
@@ -1295,7 +1287,6 @@ body {
     background-color: var(--primary-color);
     color: var(--white);
     box-shadow: 0 4px 10px rgba(228, 171, 99, 0.4);
-    /* Match .page-link.active */
     opacity: 1;
 }
 
