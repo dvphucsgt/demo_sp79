@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SP79 - Phòng Khám Đa Khoa Quốc Tế</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="row align-items-center gx-2">
+                    <!-- Logo (Center on Mobile, Left on Desktop) -->
+                    <div class="col-12 col-lg-auto text-center text-lg-start">
+                        <a href="#" class="d-inline-block">
+                            <img src="images/logo.jpg" alt="SP79 Logo" class="logo-img mx-auto mx-lg-0">
+                        </a>
+                    </div>
+
+                    <!-- Contact Info and CTA Button (Hidden on Mobile) -->
+                    <div class="col-12 col-lg d-none d-lg-block">
+                        <div class="top-bar-right d-flex justify-content-end align-items-center gap-4">
+                            <!-- Hotline Box -->
+                            <div class="contact-box d-flex align-items-center gap-3">
+                                <div class="contact-icon-circle">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <div class="contact-label">HOTLINE</div>
+                                    <div class="contact-value">089 918 7979</div>
+                                </div>
+                            </div>
+
+                            <!-- Working Hours Box -->
+                            <div class="contact-box d-flex align-items-center gap-3">
+                                <div class="contact-icon-circle">
+                                    <i class="fas fa-stethoscope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <div class="contact-label">THỜI GIAN LÀM VIỆC</div>
+                                    <div class="contact-value">8:00 - 20:00</div>
+                                </div>
+                            </div>
+
+                            <!-- Appointment Button (Desktop) -->
+                            <a href="#appointment" class="btn-appointment">ĐẶT LỊCH NGAY</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container flex-wrap justify-content-between align-items-center">
+                <!-- Mobile Appointment Button (Left) -->
+                <a href="#appointment" class="btn-appointment d-lg-none">ĐẶT LỊCH NGAY</a>
+
+                <!-- Toggler (Right) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu Items -->
+                <div class="collapse navbar-collapse w-100 mt-2 mt-lg-0" id="mainNavbar">
+                    <ul class="navbar-nav w-100">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="#home">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">GIỚI THIỆU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#guide">HƯỚNG DẪN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#specialties">CHUYÊN KHOA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">DỊCH VỤ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#news">TIN TỨC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">LIÊN HỆ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pharmacy">NHÀ THUỐC ONLINE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content (Placeholder) -->
+    <main>
+        <!-- Banner Section -->
+        <section class="banner-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Text Content -->
+                    <div class="col-12 col-lg-6">
+                        <div class="banner-content">
+                            <h1 class="banner-title">Giới Thiệu <br> Đội Ngũ Bác Sĩ</h1>
+                            <p class="banner-desc">
+                                SP79 tự hào hội tụ đội ngũ bác sĩ có trên 10 năm kinh nghiệm thực hành lâm sàng tại các
+                                bệnh viện tuyến đầu.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Image -->
+                    <div class="col-12 col-lg-6 text-center text-lg-end">
+                        <div class="banner-image-wrapper">
+                            <img src="images/banner_img.png" alt="Doctor SP79" class="img-fluid banner-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Doctor List Section -->
+        <section class="doctor-section" id="doctors">
+            <div class="container">
+                <div class="doctor-filter mb-5">
+                    <div class="d-flex flex-wrap align-items-center justify-content-between w-100 gap-3">
+                        <!-- Left: Filters -->
+                        <div class="filter-left d-flex flex-wrap align-items-center gap-2">
+                            <span class="text-secondary small me-2">Sort by</span>
+                            <button class="btn btn-filter active" data-filter="all">Tất cả</button>
+                            <button class="btn btn-filter" data-filter="noikhoa">Khoa Nội</button>
+                            <button class="btn btn-filter" data-filter="ngoaikhoa">Khoa Ngoại</button>
+                            <button class="btn btn-filter" data-filter="phusan">Phụ Sản</button>
+                            <button class="btn btn-filter" data-filter="dalieu">Da Liễu</button>
+                            <button class="btn btn-filter" data-filter="ranghammat">Răng Hàm Mặt</button>
+                        </div>
+
+                        <!-- Right: Info & View Toggle (Hidden on mobile if needed or adapted) -->
+                        <div class="filter-right d-none d-lg-flex align-items-center gap-3">
+                            <span class="text-secondary small">Tất cả 12 bác sĩ</span>
+                            <div class="view-toggle">
+                                <i class="fas fa-th-large text-warning"></i>
+                                <i class="fas fa-list text-muted ms-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor Grid -->
+                <div class="row g-4" id="doctor-grid">
+                    <!-- Khoa Nội: 1, 2, 3 -->
+                    <div class="col-12 col-md-6 col-lg-4 doctor-item" data-category="noikhoa">
+                        <div class="doctor-card text-center p-3">
+                            <div class="doctor-img-wrapper mb-3 position-relative">
+                                <img src="images/doctor_1.png" alt="BS. Nguyễn Thị Mai" class="img-fluid doctor-img">
+                                <div class="doctor-badge">Khoa Nội</div>
+                            </div>
+                            <h3 class="doctor-name">BS. Nguyễn Thị Mai</h3>
+                            <p class="doctor-dept text-secondary small text-uppercase">Khoa Nội</p>
+                            <p class="doctor-bio text-muted">Chuyên gia nội tổng hợp với 10 năm kinh nghiệm.</p>
+                            <div class="doctor-social d-flex justify-content-center gap-2 mt-3">
+                                <a href="#" class="btn-social"><i class="fas fa-mobile-alt"></i></a>
+                                <a href="#" class="btn-social"><i class="fas fa-comment-dots"></i></a>
+                                <a href="#" class="btn-social"><i class="fas fa-clipboard-list"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 doctor-item" data-category="noikhoa">
+                        <div class="doctor-card text-center p-3">
+                            <div class="doctor-img-wrapper mb-3 position-relative">
+                                <img src="images/doctor_2.png" alt="BS. Trần Văn Hùng" class="img-fluid doctor-img">
+                                <div class="doctor-badge">Khoa Nội</div>
+                            </div>
+                            <h3 class="doctor-name">BS. Trần Văn Hùng</h3>
+                            <p class="doctor-dept text-secondary small text-uppercase">Khoa Nội</p>
+                            <p class="doctor-bio text-muted">Bác sĩ chuyên khoa tiêu hóa và gan mật.</p>
+                            <div class="doctor-social d-flex justify-content-center gap-2 mt-3">
+                                <a href="#" class="btn-social"><i class="fas fa-mobile-alt"></i></a>
+                                <a href="#" class="btn-social"><i class="fas fa-comment-dots"></i></a>
+                                <a href="#" class="btn-social"><i class="fas fa-clipboard-list"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 doctor-item" data-category="noikhoa">
+                        <div class="doctor-card text-center p-3">
+                            <div class="doctor-img-wrapper mb-3 position-relative">
+                                <img src="images/doctor_3.png" alt="BS. Lê Thu Hà" class="img-fluid doctor-img">
+                                <div class="doctor-badge">Khoa Nội</div>
+                            </div>
+                            <h3 class="doctor-name">BS. Lê Thu Hà</h3>
+                            <p class="doctor-dept text-secondary small text-uppercase">Khoa Nội</p>
+                            <p class="doctor-bio text-muted">Chuyên điều trị các bệnh lý tim mạch và huyết áp.</p>
+                            <div class="doctor-social d-flex justify-content-center gap-2 mt-3">
+                                <a href="#" class="btn-social"><i class="fas fa-mobile-alt"></i></a>
+                                <a href="#" class="btn-social"><i class="fas fa-comment-dots"></i></a>
+                                <a href="#" class="btn-social"><i class="fas fa-clipboard-list"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Khoa Ngoại: 4, 5, 6 -->
+                    <div class="col-12 col-md-6 col-lg-4 doctor-item" data-category="ngoaikhoa">
+                        <div class="doctor-card text-center p-3">
+                            <div class="doctor-img-wrapper mb-3 position-relative">
+                                <img src="images/doctor_4.png" alt="BS. Phạm Minh Tuấn" class="img-fluid doctor-img">
+                                <div class="doctor-badge">Khoa Ngoại</div>
+                            </div>
+                            <h3 class="doctor-name">BS. Phạm Minh Tuấn</h3>
+                            <p class="doctor-dept text-secondary small text-uppercase">Khoa Ngoại</p>
+                            <p class="doctor-bio text-muted">Phẫu thuật viên chấn thương chỉnh hình hàng đầu.</p>
+                            <div class="doctor-social d-flex justify-content-center gap-2 mt-3">
+                                <a href="#" class="btn-social"><i class="fas fa-mobile-alt"></i></a>
+                                <a href="#" class="btn-social"><i class="fas fa-comment-dots"></i></a>
+                                <a href="#" class="btn-social"><i class="fas fa-clipboard-list"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 doctor-item" data-category="ngoaikhoa">
+                        <div class="doctor-card text-center p-3">
+                            <div class="doctor-img-wrapper mb-3 position-relative">
+                                <img src="images/doctor_5.png" alt="BS. Hoàng Quốc Bảo" class="img-fluid doctor-img">
+                                <div class="doctor-badge">Khoa Ngoại</div>
+                            </div>
+                            <h3 class="doctor-name">BS. Hoàng Quốc Bảo</h3>
+                            <p class="doctor-dept text-secondary small text-uppercase">Khoa Ngoại</p>
+                            <p class="doctor-bio text-muted">Chuyên khoa ngoại tổng quát và phẫu thuật nội soi.</p>
+                            <div class="doctor-social d-flex justify-content-center gap-2 mt-3">
+                                <a href="#" class="btn-social"><i class="fas fa-mobile-alt"></i></a>
+                                <a href="#" class="btn-social"><i class="fas fa-comment-dots"></i></a>
+                                <a href="#" class="btn-social"><i class="fas fa-clipboard-list"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 doctor-item" data-category="ngoaikhoa">
+                        <div class="doctor-card text-center p-3">
+                            <div class="doctor-img-wrapper mb-3 position-relative">
+                                <img src="images/doctor_6.png" alt="BS. Đặng Thanh Sơn" class="img-fluid doctor-img">
+                                <div class="doctor-badge">Khoa Ngoại</div>
+                            </div>
+                            <h3 class="doctor-name">BS. Đặng Thanh Sơn</h3>
+                            <p class="doctor-dept text-secondary small text-uppercase">Khoa Ngoại</p>
+                            <p class="doctor-bio text-muted">Bác sĩ chuyên khoa ngoại thần kinh.</p>
+                            <div class="doctor-social d-flex justify-content-center gap-2 mt-3">
+                                <a href="#" class="btn-social"><i class="fas fa-mobile-alt"></i></a>
+                                <a href="#" class="btn-social"><i class="fas fa-comment-dots"></i></a>
+                                <a href="#" class="btn-social"><i class="fas fa-clipboard-list"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phụ Sản: 7, 8 -->
+                    <div class="col-12 col-md-6 col-lg-4 doctor-item" data-category="phusan">
+                        <div class="doctor-card text-center p-3">
+                            <div class="doctor-img-wrapper mb-3 position-relative">
+                                <img src="images/doctor_7.png" alt="BS. Nguyễn Thị Lan" class="img-fluid doctor-img">
+                                <div class="doctor-badge">Phụ Sản</div>
+                            </div>
+                            <h3 class="doctor-name">BS. Nguyễn Thị Lan</h3>
+                            <p class="doctor-dept text-secondary small text-uppercase">Phụ Sản</p>
+                            <p class="doctor-bio text-muted">Chăm sóc sức khỏe sinh sản toàn diện.</p>
+                            <div class="doctor-social d-flex justify-content-center gap-2 mt-3">
+                                <a href="#" class="btn-social"><i class="fas fa-mobile-alt"></i></a>
+                                <a href="#" class="btn-social"><i class="fas fa-comment-dots"></i></a>
+                                <a href="#" class="btn-social"><i class="fas fa-clipboard-list"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 doctor-item" data-category="phusan">
+                        <div class="doctor-card text-center p-3">
+                            <div class="doctor-img-wrapper mb-3 position-relative">
+                                <img src="images/doctor_8.png" alt="BS. Trần Ngọc Bích" class="img-fluid doctor-img">
+                                <div class="doctor-badge">Phụ Sản</div>
+                            </div>
+                            <h3 class="doctor-name">BS. Trần Ngọc Bích</h3>
+                            <p class="doctor-dept text-secondary small text-uppercase">Phụ Sản</p>
+                            <p class="doctor-bio text-muted">Đỡ đẻ và phẫu thuật phụ khoa chuyên nghiệp.</p>
+                            <div class="doctor-social d-flex justify-content-center gap-2 mt-3">
+                                <a href="#" class="btn-social"><i class="fas fa-mobile-alt"></i></a>
+                                <a href="#" class="btn-social"><i class="fas fa-comment-dots"></i></a>
+                                <a href="#" class="btn-social"><i class="fas fa-clipboard-list"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Da Liễu: 9, 10 -->
+                    <div class="col-12 col-md-6 col-lg-4 doctor-item" data-category="dalieu">
+                        <div class="doctor-card text-center p-3">
+                            <div class="doctor-img-wrapper mb-3 position-relative">
+                                <img src="images/doctor_9.png" alt="BS. Lê Văn Nam" class="img-fluid doctor-img">
+                                <div class="doctor-badge">Da Liễu</div>
+                            </div>
+                            <h3 class="doctor-name">BS. Lê Văn Nam</h3>
+                            <p class="doctor-dept text-secondary small text-uppercase">Da Liễu</p>
+                            <p class="doctor-bio text-muted">Điều trị các vấn đề về da liễu và thẩm mỹ da.</p>
+                            <div class="doctor-social d-flex justify-content-center gap-2 mt-3">
+                                <a href="#" class="btn-social"><i class="fas fa-mobile-alt"></i></a>
+                                <a href="#" class="btn-social"><i class="fas fa-comment-dots"></i></a>
+                                <a href="#" class="btn-social"><i class="fas fa-clipboard-list"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 doctor-item" data-category="dalieu">
+                        <div class="doctor-card text-center p-3">
+                            <div class="doctor-img-wrapper mb-3 position-relative">
+                                <img src="images/doctor_10.png" alt="BS. Phạm Thị Hương" class="img-fluid doctor-img">
+                                <div class="doctor-badge">Da Liễu</div>
+                            </div>
+                            <h3 class="doctor-name">BS. Phạm Thị Hương</h3>
+                            <p class="doctor-dept text-secondary small text-uppercase">Da Liễu</p>
+                            <p class="doctor-bio text-muted">Chuyên gia điều trị mụn và trẻ hóa da.</p>
+                            <div class="doctor-social d-flex justify-content-center gap-2 mt-3">
+                                <a href="#" class="btn-social"><i class="fas fa-mobile-alt"></i></a>
+                                <a href="#" class="btn-social"><i class="fas fa-comment-dots"></i></a>
+                                <a href="#" class="btn-social"><i class="fas fa-clipboard-list"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Răng Hàm Mặt: 11, 12 -->
+                    <div class="col-12 col-md-6 col-lg-4 doctor-item" data-category="ranghammat">
+                        <div class="doctor-card text-center p-3">
+                            <div class="doctor-img-wrapper mb-3 position-relative">
+                                <img src="images/doctor_11.png" alt="BS. Trương Minh Hiếu" class="img-fluid doctor-img">
+                                <div class="doctor-badge">Răng Hàm Mặt</div>
+                            </div>
+                            <h3 class="doctor-name">BS. Trương Minh Hiếu</h3>
+                            <p class="doctor-dept text-secondary small text-uppercase">Răng Hàm Mặt</p>
+                            <p class="doctor-bio text-muted">Nha khoa thẩm mỹ và phục hình răng sứ.</p>
+                            <div class="doctor-social d-flex justify-content-center gap-2 mt-3">
+                                <a href="#" class="btn-social"><i class="fas fa-mobile-alt"></i></a>
+                                <a href="#" class="btn-social"><i class="fas fa-comment-dots"></i></a>
+                                <a href="#" class="btn-social"><i class="fas fa-clipboard-list"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 doctor-item" data-category="ranghammat">
+                        <div class="doctor-card text-center p-3">
+                            <div class="doctor-img-wrapper mb-3 position-relative">
+                                <img src="images/doctor_12.png" alt="BS. Vũ Thu Phương" class="img-fluid doctor-img">
+                                <div class="doctor-badge">Răng Hàm Mặt</div>
+                            </div>
+                            <h3 class="doctor-name">BS. Vũ Thu Phương</h3>
+                            <p class="doctor-dept text-secondary small text-uppercase">Răng Hàm Mặt</p>
+                            <p class="doctor-bio text-muted">Chỉnh nha và điều trị các bệnh lý răng miệng trẻ em.</p>
+                            <div class="doctor-social d-flex justify-content-center gap-2 mt-3">
+                                <a href="#" class="btn-social"><i class="fas fa-mobile-alt"></i></a>
+                                <a href="#" class="btn-social"><i class="fas fa-comment-dots"></i></a>
+                                <a href="#" class="btn-social"><i class="fas fa-clipboard-list"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination-wrapper mt-5 text-center">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-center align-items-center gap-2">
+                            <li class="page-item">
+                                <a class="page-link prev-next" href="#" aria-label="Previous">
+                                    <i class="fas fa-arrow-left"></i>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><span class="page-link dots">...</span></li>
+                            <li class="page-item"><a class="page-link" href="#">8</a></li>
+                            <li class="page-item">
+                                <a class="page-link prev-next" href="#" aria-label="Next">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Logo & Contact -->
+                <div class="col-12 col-lg-4">
+                    <a href="#" class="logo-footer">
+                        <img src="images/logo-phong-kham-sp79-trang.png" alt="" class="logo">
+                    </a>
+
+                    <div class="footer-contact">
+                        <div class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>69 Phan Đình Phùng, P. Cầu Kiểu, TP.HCM</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@sp79.vn">info@sp79.vn</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="tel:0899187979">089 918 7979</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="col-12 col-lg-4 footer-links">
+                    <div class="footer-links-column">
+                        <ul>
+                            <li><a href="#">Khoa Nội</a></li>
+                            <li><a href="#">Khoa Ngoại</a></li>
+                            <li><a href="#">Sản Phụ khoa</a></li>
+                            <li><a href="#">Da liễu</a></li>
+                            <li><a href="#">Phẫu thuật thẩm mỹ</a></li>
+                            <li><a href="#">Tai mũi họng</a></li>
+                            <li><a href="#">Răng hàm mặt</a></li>
+                            <li><a href="#">Mắt</a></li>
+                            <li><a href="#">Chuẩn đoán hình ảnh</a></li>
+                            <li><a href="#">Xét nghiệm</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links-column">
+                        <ul>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Đội ngũ bác sĩ</a></li>
+                            <li><a href="#">Chuyên khoa</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="#">Đặt lịch hẹn</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-12 col-lg-4 footer-newsletter mt-5">
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link" title="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+
+                    <div class="newsletter-text text-end">
+                        Đăng ký ngay để nhận thông tin và ưu đãi
+                    </div>
+
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" class="newsletter-input fst-italic"
+                            placeholder="Nhập email của bạn vào đây..." required>
+                        <button type="submit" class="newsletter-btn">Gửi</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

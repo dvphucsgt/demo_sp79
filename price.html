@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SP79 - Phòng Khám Đa Khoa Quốc Tế</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="row align-items-center gx-2">
+                    <!-- Logo (Center on Mobile, Left on Desktop) -->
+                    <div class="col-12 col-lg-auto text-center text-lg-start">
+                        <a href="#" class="d-inline-block">
+                            <img src="images/logo.jpg" alt="SP79 Logo" class="logo-img mx-auto mx-lg-0">
+                        </a>
+                    </div>
+
+                    <!-- Contact Info and CTA Button (Hidden on Mobile) -->
+                    <div class="col-12 col-lg d-none d-lg-block">
+                        <div class="top-bar-right d-flex justify-content-end align-items-center gap-4">
+                            <!-- Hotline Box -->
+                            <div class="contact-box d-flex align-items-center gap-3">
+                                <div class="contact-icon-circle">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <div class="contact-label">HOTLINE</div>
+                                    <div class="contact-value">089 918 7979</div>
+                                </div>
+                            </div>
+
+                            <!-- Working Hours Box -->
+                            <div class="contact-box d-flex align-items-center gap-3">
+                                <div class="contact-icon-circle">
+                                    <i class="fas fa-stethoscope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <div class="contact-label">THỜI GIAN LÀM VIỆC</div>
+                                    <div class="contact-value">8:00 - 20:00</div>
+                                </div>
+                            </div>
+
+                            <!-- Appointment Button (Desktop) -->
+                            <a href="#appointment" class="btn-appointment">ĐẶT LỊCH NGAY</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container flex-wrap justify-content-between align-items-center">
+                <!-- Mobile Appointment Button (Left) -->
+                <a href="#appointment" class="btn-appointment d-lg-none">ĐẶT LỊCH NGAY</a>
+
+                <!-- Toggler (Right) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu Items -->
+                <div class="collapse navbar-collapse w-100 mt-2 mt-lg-0" id="mainNavbar">
+                    <ul class="navbar-nav w-100">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="#home">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">GIỚI THIỆU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#guide">HƯỚNG DẪN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#specialties">CHUYÊN KHOA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">DỊCH VỤ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#news">TIN TỨC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">LIÊN HỆ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pharmacy">NHÀ THUỐC ONLINE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content (Placeholder) -->
+    <main>
+        <!-- Banner Section -->
+        <section class="banner-section price-banner my-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Left: Image -->
+                    <div class="col-12 col-lg-6 position-relative mb-4 mb-lg-0">
+                        <div class="banner-image-wrapper position-relative text-center">
+                            <img src="images/banner_img_price.png" alt="Doctor Recommendation"
+                                class="img-fluid banner-img" />
+                        </div>
+                    </div>
+
+                    <!-- Right: Content -->
+                    <div class="col-12 col-lg-6 ps-lg-5">
+                        <div class="banner-content position-relative">
+                            <!-- Decorative Circle -->
+                            <div class="decorative-circles position-absolute"></div>
+
+                            <h1 class="banner-title mb-3">
+                                Gợi Ý Gói Khám <br>
+                                Phù Hợp Cho Bạn
+                            </h1>
+                            <p class="banner-desc text-secondary mb-4 fs-5 fw-medium">
+                                Tìm Hiểu Các Gói Khám Và Dịch Vụ Tại SP79
+                            </p>
+                            <a href="#" class="btn btn-consult px-4 py-2 rounded-pill">
+                                Tư Vấn Ngay <i class="fas fa-arrow-right ms-2 small"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Grid Section -->
+        <section class="pricing-section mb-5">
+            <div class="container">
+                <div class="row g-5">
+                    <!-- Row 1 -->
+                    <!-- Gói Cá Nhân -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="pricing-card h-100">
+                            <div class="pricing-header">
+                                <h3 class="pricing-title">Gói Cá Nhân</h3>
+                                <p class="pricing-desc small">Dành cho cá nhân với các dịch vụ chăm sóc sức khỏe cơ
+                                    bản
+                                    và chuyên sâu.</p>
+                                <div class="price">5.500.000 VNĐ<span class="fs-6 fw-normal">/lần</span></div>
+                            </div>
+                            <div class="pricing-body">
+                                <ul class="pricing-features list-unstyled">
+                                    <li><i class="far fa-check-square me-2"></i> Khám tổng quát toàn diện</li>
+                                    <li><i class="far fa-check-square me-2"></i> Giảm giá tiêm chủng</li>
+                                    <li><i class="far fa-check-square me-2"></i> Tư vấn y tế 24/7</li>
+                                </ul>
+                                <a href="#" class="btn btn-pricing w-100 rounded-pill mt-4">Tư Vấn Ngay <i
+                                        class="fas fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gói Doanh Nghiệp (Popular) -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="pricing-card h-100 position-relative">
+                            <div class="popular-tag">Phổ biến</div>
+                            <div class="pricing-header">
+                                <h3 class="pricing-title">Gói Doanh Nghiệp</h3>
+                                <p class="pricing-desc small">Giải pháp chăm sóc sức khỏe toàn diện cho nhân viên
+                                    của
+                                    bạn.</p>
+                                <div class="price">2.200.000 VNĐ<span class="fs-6 fw-normal">/người</span></div>
+                            </div>
+                            <div class="pricing-body">
+                                <ul class="pricing-features list-unstyled">
+                                    <li><i class="far fa-check-square me-2"></i> Khám sức khỏe định kỳ</li>
+                                    <li><i class="far fa-check-square me-2"></i> Ưu đãi dịch vụ điều trị</li>
+                                    <li><i class="far fa-check-square me-2"></i> Hội thảo sức khỏe hàng năm</li>
+                                    <li><i class="far fa-check-square me-2"></i> Ưu tiên đặt lịch</li>
+                                    <li><i class="far fa-check-square me-2"></i> Workshop sức khỏe</li>
+                                </ul>
+                                <a href="#" class="btn btn-pricing w-100 rounded-pill mt-4">Tư Vấn Ngay <i
+                                        class="fas fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gói Gia Đình -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="pricing-card h-100">
+                            <div class="pricing-header">
+                                <h3 class="pricing-title">Gói Gia Đình</h3>
+                                <p class="pricing-desc small">Chăm sóc sức khỏe cho cả gia đình, từ trẻ nhỏ đến
+                                    người
+                                    cao tuổi.</p>
+                                <div class="price">3.300.000 VNĐ<span class="fs-6 fw-normal">/năm</span></div>
+                            </div>
+                            <div class="pricing-body">
+                                <ul class="pricing-features list-unstyled">
+                                    <li><i class="far fa-check-square me-2"></i> Chăm sóc người cao tuổi</li>
+                                    <li><i class="far fa-check-square me-2"></i> Đánh giá sức khỏe định kỳ</li>
+                                    <li><i class="far fa-check-square me-2"></i> Chương trình phòng chống té ngã
+                                    </li>
+                                    <li><i class="far fa-check-square me-2"></i> Giảm giá thuốc</li>
+                                </ul>
+                                <a href="#" class="btn btn-pricing w-100 rounded-pill mt-4">Tư Vấn Ngay <i
+                                        class="fas fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <!-- Gói Khám Cho Nam -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="pricing-card h-100">
+                            <div class="pricing-header">
+                                <h3 class="pricing-title">Gói Khám Cho Nam</h3>
+                                <p class="pricing-desc small">Tự tin với nụ cười rạng rỡ. Bao gồm kiểm tra và ưu đãi
+                                    nha
+                                    khoa.</p>
+                                <div class="price">1.800.000 VNĐ<span class="fs-6 fw-normal">/lần</span></div>
+                            </div>
+                            <div class="pricing-body">
+                                <ul class="pricing-features list-unstyled">
+                                    <li><i class="far fa-check-square me-2"></i> Kiểm tra sức khỏe nam giới</li>
+                                    <li><i class="far fa-check-square me-2"></i> Ưu đãi các thủ thuật</li>
+                                    <li><i class="far fa-check-square me-2"></i> Bảo hiểm cấp cứu</li>
+                                    <li><i class="far fa-check-square me-2"></i> Tư vấn sức khỏe răng miệng</li>
+                                </ul>
+                                <a href="#" class="btn btn-pricing w-100 rounded-pill mt-4">Tư Vấn Ngay <i
+                                        class="fas fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gói Khám Cho Nữ -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="pricing-card h-100">
+                            <div class="pricing-header">
+                                <h3 class="pricing-title">Gói Khám Cho Nữ</h3>
+                                <p class="pricing-desc small">Dịch vụ sức khỏe toàn diện cho phụ nữ. Chăm sóc thai
+                                    kỳ và
+                                    hơn thế nữa.</p>
+                                <div class="price">3.800.000 VNĐ<span class="fs-6 fw-normal">/lần</span></div>
+                            </div>
+                            <div class="pricing-body">
+                                <ul class="pricing-features list-unstyled">
+                                    <li><i class="far fa-check-square me-2"></i> Dịch vụ sức khỏe phụ nữ</li>
+                                    <li><i class="far fa-check-square me-2"></i> Chăm sóc phụ khoa</li>
+                                    <li><i class="far fa-check-square me-2"></i> Kế hoạch hóa gia đình</li>
+                                    <li><i class="far fa-check-square me-2"></i> Hỗ trợ trước & sau sinh</li>
+                                </ul>
+                                <a href="#" class="btn btn-pricing w-100 rounded-pill mt-4">Tư Vấn Ngay <i
+                                        class="fas fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dịch Vụ Chuyên Môn -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="pricing-card h-100">
+                            <div class="pricing-header">
+                                <h3 class="pricing-title">Dịch Vụ Chuyên Môn</h3>
+                                <p class="pricing-desc small">Tối ưu cho vận động viên. Đánh giá chấn thương và vật
+                                    lý
+                                    trị liệu.</p>
+                                <div class="price">2.600.000 VNĐ<span class="fs-6 fw-normal">/lần</span></div>
+                            </div>
+                            <div class="pricing-body">
+                                <ul class="pricing-features list-unstyled">
+                                    <li><i class="far fa-check-square me-2"></i> Đánh giá chấn thương thể thao</li>
+                                    <li><i class="far fa-check-square me-2"></i> Các buổi vật lý trị liệu</li>
+                                    <li><i class="far fa-check-square me-2"></i> Chuyên gia y học thể thao</li>
+                                    <li><i class="far fa-check-square me-2"></i> Hỗ trợ tập luyện</li>
+                                </ul>
+                                <a href="#" class="btn btn-pricing w-100 rounded-pill mt-4">Tư Vấn Ngay <i
+                                        class="fas fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section pt-5 mb-5">
+            <div class="container">
+                <div class="text-center my-5">
+                    <h2 class="faq-title">Câu Hỏi Thường Gặp</h2>
+                </div>
+
+                <div class="row align-items-stretch">
+                    <!-- Left: Accordion -->
+                    <div class="col-12 col-lg-8 mb-4 mb-lg-0">
+                        <div class="accordion custom-accordion h-100" id="faqAccordion">
+                            <!-- Item 1 -->
+                            <div class="accordion-item mb-3 border-0 rounded-3 overflow-hidden shadow-sm">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed fw-medium" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                                        aria-controls="collapseOne">
+                                        Phòng khám cung cấp những dịch vụ gì?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-secondary small">
+                                        Chúng tôi cung cấp đa dạng các dịch vụ y tế bao gồm khám tổng quát, chuyên
+                                        khoa
+                                        (Nội, Ngoại, Sản, Nhi...), xét nghiệm, chuẩn đoán hình ảnh và các gói khám
+                                        sức
+                                        khỏe định kỳ cho cá nhân và doanh nghiệp.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item 2 -->
+                            <div class="accordion-item mb-3 border-0 rounded-3 overflow-hidden shadow-sm">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed fw-medium" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        Làm thế nào để đặt lịch hẹn với bác sĩ?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-secondary small">
+                                        Bạn có thể đặt lịch hẹn dễ dàng thông qua website của chúng tôi, gọi điện
+                                        đến
+                                        hotline 089 918 7979 hoặc đến trực tiếp phòng khám để được hỗ trợ.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item 3 (Active initially for demo) -->
+                            <div class="accordion-item mb-3 border-0 rounded-3 overflow-hidden shadow-sm">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button fw-medium" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="true"
+                                        aria-controls="collapseThree">
+                                        Phòng khám có chấp nhận bảo hiểm y tế không?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-secondary small">
+                                        Có, chúng tôi chấp nhận bảo hiểm y tế nhà nước và nhiều loại bảo hiểm tư
+                                        nhân
+                                        khác. Vui lòng liên hệ quầy lễ tân hoặc hotline để biết thêm chi tiết về
+                                        danh
+                                        sách bảo hiểm được bảo lãnh.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item 4 -->
+                            <div class="accordion-item mb-3 border-0 rounded-3 overflow-hidden shadow-sm">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed fw-medium" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        Tôi cần mang theo giấy tờ gì khi đi khám?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-secondary small">
+                                        Khi đi khám, vui lòng mang theo CMND/CCCD, thẻ bảo hiểm y tế (nếu có) và các
+                                        hồ
+                                        sơ y tế cũ (kết quả xét nghiệm, đơn thuốc...) để bác sĩ tiện theo dõi.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item 5 -->
+                            <div class="accordion-item mb-3 border-0 rounded-3 overflow-hidden shadow-sm">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed fw-medium" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                        Tôi có thể đặt lịch hẹn online không?
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-secondary small">
+                                        Vâng, chúng tôi có hệ thống đặt lịch hẹn online thông qua website của chúng tôi,
+                                        gọi điện
+                                        đến hotline 089 918 7979 hoặc đến trực tiếp phòng khám để được hỗ trợ.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Images -->
+                    <div class="col-12 col-lg-4 ps-lg-5">
+                        <div class="faq-collage position-relative text-center h-100">
+                            <!-- Badge/Mini Image -->
+                            <div class="quality-badge position-absolute z-3 d-none d-lg-block">
+                                <img src="images/about_mini.svg" class="img-fluid" alt="Badge" width="140">
+                                <img src="images/tick.svg" alt="Right" class="cs_right_icon">
+                            </div>
+
+                            <div class="position-relative h-100">
+                                <img src="images/faq_img.jpeg" class="img-fluid rounded-4 shadow w-100 h-100"
+                                    style="object-fit: cover;" alt="FAQ Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section mt-5">
+            <div class="container">
+                <div class="cta-card bg-white rounded-5 shadow-lg p-4 p-lg-5 overflow-hidden position-relative">
+                    <div class="row align-items-center">
+                        <!-- Left: Doctor Image -->
+                        <div class="col-12 col-md-5 position-relative">
+                            <div class="cta-image-wrapper">
+                                <img src="images/doctor_choose.png" alt="Doctor" class="img-fluid cta-doctor-img" />
+                            </div>
+                        </div>
+
+                        <!-- Right: Text Content -->
+                        <div class="col-12 col-md-7 ps-md-5 mt-4 mt-md-0 text-center text-md-start">
+                            <h2 class="cta-title">
+                                Choose Your Plan <br>
+                                and Invest in Your <br>
+                                Health Today!
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Logo & Contact -->
+                <div class="col-12 col-lg-4">
+                    <a href="#" class="logo-footer">
+                        <img src="images/logo-phong-kham-sp79-trang.png" alt="" class="logo">
+                    </a>
+
+                    <div class="footer-contact">
+                        <div class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>89 Phan Đình Phùng, P. Cầu Kiểu, TP.HCM</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@sp79.vn">info@sp79.vn</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="tel:0899187979">089 918 7979</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="col-12 col-lg-4 footer-links">
+                    <div class="footer-links-column">
+                        <ul>
+                            <li><a href="#">Khoa Nội</a></li>
+                            <li><a href="#">Khoa Ngoại</a></li>
+                            <li><a href="#">Sản Phụ khoa</a></li>
+                            <li><a href="#">Da liễu</a></li>
+                            <li><a href="#">Phẫu thuật thẩm mỹ</a></li>
+                            <li><a href="#">Tai mũi họng</a></li>
+                            <li><a href="#">Răng hàm mặt</a></li>
+                            <li><a href="#">Mắt</a></li>
+                            <li><a href="#">Chuẩn đoán hình ảnh</a></li>
+                            <li><a href="#">Xét nghiệm</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links-column">
+                        <ul>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Đội ngũ bác sĩ</a></li>
+                            <li><a href="#">Chuyên khoa</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="#">Đặt lịch hẹn</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-12 col-lg-4 footer-newsletter mt-5">
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link" title="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+
+                    <div class="newsletter-text text-end">
+                        Đăng ký ngay để nhận thông tin và ưu đãi
+                    </div>
+
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" class="newsletter-input fst-italic"
+                            placeholder="Nhập email của bạn vào đây..." required>
+                        <button type="submit" class="newsletter-btn">Gửi</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
