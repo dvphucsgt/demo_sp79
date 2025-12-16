@@ -43,7 +43,6 @@ body {
 /* Logo */
 .logo-img {
     height: 55px;
-    /* Larger logo */
     width: auto;
     display: block;
 }
@@ -62,7 +61,6 @@ body {
     width: 40px;
     height: 40px;
     background-color: var(--primary-color);
-    /* #e4ab63 */
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -83,7 +81,6 @@ body {
     font-size: 11px;
     font-weight: 700;
     color: #444;
-    /* Darker color for label */
     text-transform: uppercase;
     line-height: 1.1;
     letter-spacing: 0.5px;
@@ -93,7 +90,6 @@ body {
     font-size: 15px;
     font-weight: 700;
     color: var(--primary-color);
-    /* Golden/Brown color for value */
     line-height: 1.1;
 }
 
@@ -134,14 +130,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* Distribute items evenly to match container width */
     width: 100%;
-    /* Force full width */
     background-color: var(--white);
     border: 1px solid #E8D5B8;
-    /* Light golden border */
     border-radius: 50px;
-    /* Adjusted padding */
     margin: 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
 }
@@ -150,9 +142,7 @@ body {
     margin: 0;
     padding: 0;
     flex-grow: 1;
-    /* Allow items to grow/distribute if needed, but space-between mainly handles it */
     text-align: center;
-    /* Center text within the item area */
     display: flex;
     justify-content: center;
 }
@@ -162,14 +152,13 @@ body {
     font-weight: 600;
     font-size: 13px;
     padding: 15px 15px !important;
-    /* Reduced padding slightly to fit all items */
     transition: all 0.3s ease;
     position: relative;
     text-transform: uppercase;
     border-radius: 30px;
     white-space: nowrap;
     width: 100%;
-    /* Make link fill the item area? No, keep it auto width for pill shape */
+    /* other*/
     display: inline-block;
 }
 
@@ -364,13 +353,11 @@ body {
     background: white;
     color: var(--primary-color);
     border: none;
-    /* border-left: 1px solid #e0e0e0; Removed to use pseudo-element */
     cursor: pointer;
     font-weight: 700;
     font-size: 14px;
     transition: all 0.3s;
     position: relative;
-    /* For pseudo-element positioning */
 }
 
 /* Separator line */
@@ -381,7 +368,6 @@ body {
     top: 50%;
     transform: translateY(-50%);
     height: 60%;
-    /* Partial height */
     width: 1px;
     background-color: var(--primary-color);
 }
@@ -392,68 +378,20 @@ body {
 }
 
 
-/* Mobile Styles */
-@media (max-width: 991px) {
-    .navbar {
-        position: relative;
-        bottom: auto;
-        width: auto;
-        padding: 0;
-        background-color: var(--white);
-    }
 
-    .top-bar {
-        padding: 15px 0;
-        background-color: var(--white);
-    }
-
-    .logo-img {
-        height: 45px;
-        margin: 0 auto;
-    }
-
-    .contact-box {
-        display: none;
-        /* Hide contacts on tablet/mobile as per usual practice, or stack them */
-    }
-
-    .navbar-nav {
-        flex-direction: column;
-        background-color: var(--white);
-        border-radius: 15px;
-        padding: 15px;
-        width: 100%;
-        align-items: flex-start;
-        border: 1px solid #eee;
-    }
-
-    .nav-link {
-        width: 100%;
-        border-radius: 8px;
-        padding: 10px 15px !important;
-    }
-
-    .btn-appointment {
-        padding: 10px 20px;
-        font-size: 12px;
-    }
-}
 
 /* ========================================
    Banner Section Styles
 ======================================== */
 .banner-section {
     background-color: var(--white);
-    /* Light gray background matching header often, or standard section bg */
     padding: 60px 0 0 0;
-    /* No bottom padding as image might sit on bottom */
     position: relative;
     overflow: hidden;
 }
 
 .banner-content {
     padding-bottom: 60px;
-    /* Space on mobile or if image is side by side */
 }
 
 .banner-title {
@@ -478,38 +416,12 @@ body {
 
 .banner-img {
     max-height: 500px;
-    /* Adjust based on image aspect ratio to fit well */
     width: auto;
     display: block;
     margin-left: auto;
-    /* Align right */
 }
 
-/* Mobile Banner Adjustments */
-@media (max-width: 991px) {
-    .banner-section {
-        padding-top: 40px;
-    }
 
-    .banner-title {
-        font-size: 36px;
-        text-align: center;
-    }
-
-    .banner-desc {
-        text-align: center;
-        margin: 0 auto 30px auto;
-    }
-
-    .banner-img {
-        margin: 0 auto;
-        max-height: 350px;
-    }
-
-    .banner-content {
-        text-align: center;
-    }
-}
 
 /* ========================================
    Doctor List Section Styles
@@ -558,7 +470,6 @@ body {
 .doctor-img-wrapper {
     background-color: #F8F9FA;
     border-radius: 12px;
-    /* overflow: hidden; Removed to allow badge to protrude */
     overflow: visible;
     padding-top: 20px;
     position: relative;
@@ -637,23 +548,7 @@ body {
 }
 
 /* Animations */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translate3d(0, 40px, 0);
-    }
 
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-.fade-in-up {
-    animation-name: fadeInUp;
-    animation-duration: 0.5s;
-    animation-fill-mode: both;
-}
 
 /* Pagination Styles */
 .pagination-wrapper {
@@ -667,7 +562,6 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    /* Rounded square/squircle */
     border: none;
     color: var(--primary-color);
     font-weight: 600;
@@ -691,7 +585,7 @@ body {
 
 .pagination .page-link.active:hover {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--white);
 }
 
 .pagination .page-link.dots {
@@ -702,18 +596,18 @@ body {
 }
 
 .pagination .page-link.prev-next {
-    color: #4A90E2;
-    /* Blueish arrow color from image */
-    background: white;
+    color: var(--primary-color);
+    background: var(--white);
 }
 
 .pagination .page-link.prev-next:hover {
-    color: #357ABD;
-    background: white;
+    color: var(--primary-color);
+    background: var(--white);
 }
 
-/* Price Page Banner Specifics */
-/* Reuse .banner-section, .banner-title, etc from main styles */
+/* ========================================
+   Price Style
+======================================== */
 
 .price-banner.banner-section {
     padding: 80px 0;
@@ -721,13 +615,12 @@ body {
 
 .price-banner .banner-title {
     color: #D4A056;
-    /* Gold color override */
 }
 
 /* Button & Badge Specifics */
 .btn-consult {
     background-color: #D4A056;
-    color: white;
+    color: var(--white);
     font-weight: 600;
     transition: all 0.3s;
     box-shadow: 0 4px 15px rgba(212, 160, 86, 0.4);
@@ -735,7 +628,7 @@ body {
 
 .btn-consult:hover {
     background-color: #c08d45;
-    color: white;
+    color: var(--white);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(212, 160, 86, 0.6);
 }
@@ -744,20 +637,11 @@ body {
 .patients-badge {
     bottom: 20px;
     right: 20px;
-    /* Adjust based on image fitting */
     z-index: 10;
     animation: bounceIn 1s;
 }
 
-@media (max-width: 991.98px) {
-    .patients-badge {
-        bottom: 0;
-        right: 50%;
-        transform: translateX(50%);
-        width: 90%;
-        justify-content: center;
-    }
-}
+
 
 .badge-avatars {
     margin-left: 10px;
@@ -767,7 +651,7 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2px solid var(--white);
     overflow: hidden;
     margin-left: -10px;
 }
@@ -786,28 +670,885 @@ body {
 .decorative-circles {
     top: 0;
     right: 20px;
-    /* Moved closer to text edge */
     width: 60px;
-    /* Increased size */
     height: 60px;
     background-color: rgba(74, 144, 226, 0.2);
-    /* Increased opacity */
     border-radius: 50%;
     z-index: 0;
-    /* Brought forward but behind text if needed, relying on stacking context */
 }
 
 .decorative-circles::after {
     content: '';
     position: absolute;
     top: 25px;
-    /* Offset for overlap */
     left: 25px;
     width: 40px;
     height: 40px;
     background-color: rgba(74, 144, 226, 0.4);
-    /* Darker/More visible */
     border-radius: 50%;
+}
+
+
+
+/* Pricing Grid Styles */
+.pricing-section {
+    padding-bottom: 80px;
+}
+
+/* Card Updates */
+.pricing-card {
+    border-radius: 24px;
+    overflow: hidden;
+    background: var(--white);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #efefef;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(228, 171, 99, 0.15);
+}
+
+/* Header Updates */
+.pricing-header {
+    background: linear-gradient(135deg, #E4AB63 0%, #D4A056 100%);
+    padding: 30px;
+    color: var(--white);
+    position: relative;
+}
+
+.pricing-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.25);
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 18px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+}
+
+.pricing-desc {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    opacity: 0.9;
+    min-height: 48px;
+    font-weight: 400;
+}
+
+.price {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.price span {
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+/* Body Updates */
+.pricing-body {
+    padding: 30px;
+    background-color: var(--white);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pricing-features {
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.pricing-features li {
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.pricing-features li i {
+    color: #E4AB63;
+    min-width: 24px;
+    margin-top: 4px;
+}
+
+/* Button Updates */
+.btn-pricing {
+    background-color: #E4AB63;
+    color: var(--white);
+    font-weight: 600;
+    transition: all 0.3s;
+    border: none;
+    padding: 14px 20px;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.btn-pricing:hover {
+    background-color: #c08d45;
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(228, 171, 99, 0.3);
+}
+
+/* Popular Tag Refined */
+.popular-tag {
+    position: absolute;
+    top: 28px;
+    right: 20px;
+    background-color: #FFF8E1;
+    color: #D4A056;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    z-index: 2;
+}
+
+/* FAQ Section Styles */
+.faq-section {
+    background-color: #F8F6F2;
+    padding-bottom: 120px;
+}
+
+.faq-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #E4AB63;
+    margin-bottom: 40px;
+}
+
+/* Accordion Styling */
+.custom-accordion {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-accordion .accordion-item {
+    background-color: transparent;
+    border: 1px solid #E8DCC6 !important;
+    border-radius: 15px !important;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.custom-accordion .accordion-button {
+    background-color: #F8F6F2;
+    color: #555;
+    padding: 20px 25px;
+    border-radius: 15px !important;
+    font-weight: 500;
+    font-size: 1.05rem;
+    box-shadow: none !important;
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+    background-color: #E4AB63;
+    color: var(--white);
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.custom-accordion .accordion-button:not(.collapsed)::after {
+    filter: brightness(0) invert(1);
+    transform: rotate(-180deg);
+}
+
+.custom-accordion .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23E4AB63'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-size: 1.25rem;
+    transition: transform 0.3s;
+}
+
+.custom-accordion .accordion-body {
+    background-color: #F8F6F2;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 25px 25px;
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    border-top: none;
+}
+
+/* Image Styling */
+.faq-collage .quality-badge {
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 140px;
+    height: 140px;
+    display: block !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.faq-collage .quality-badge img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.faq-collage .cs_right_icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.faq-collage img {
+    object-fit: cover;
+}
+
+/* CTA Section Styles */
+.cta-section {
+    background-color: transparent;
+    padding: 80px 0;
+}
+
+.cta-card {
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.08);
+}
+
+.cta-doctor-img {
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.cta-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #DBA858;
+}
+
+/* Floating Badge */
+.cta-image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.cta-section .floating-badge {
+    bottom: 40px;
+    left: -20px;
+    z-index: 2;
+    animation: float 3s ease-in-out infinite;
+}
+
+
+
+
+
+
+
+/* ========================================
+   About Doctors Title & Overrides
+======================================== */
+.dortors-title h5 {
+    letter-spacing: 1px;
+    font-size: 24px;
+    color: #0000008f;
+}
+
+.dortors-title h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    color: var(--primary-color);
+}
+
+/* About Page Specific Overrides */
+.about-doctors .doctor-img-wrapper {
+    padding-top: 0;
+}
+
+.about-doctors .doctor-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+/* ========================================
+   Hero Section Styles
+======================================== */
+.hero-section {
+    padding: 100px 0 80px 0;
+    background-color: var(--white);
+    position: relative;
+    z-index: 1;
+}
+
+.hero-image-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-subtitle {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.hero-title {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero-desc {
+    font-size: 16px;
+    color: #888;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* ========================================
+   Specialties Section Styles
+======================================== */
+.specialties-section {
+    background-color: #F8F9FA;
+}
+
+.specialties-intro h5 {
+    letter-spacing: 1px;
+    font-size: 28px;
+    color: #0000008f;
+}
+
+.specialties-intro h2 {
+    font-size: 60px;
+    line-height: 1.2;
+    color: var(--primary-color);
+}
+
+.specialty-card {
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 30px 30px 50px 30px;
+    height: 100%;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.specialty-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(228, 171, 99, 0.15);
+    border-color: rgba(228, 171, 99, 0.3);
+}
+
+.card-icon {
+    font-size: 50px;
+    color: var(--primary-color);
+    line-height: 1;
+    flex-shrink: 0;
+    width: 60px;
+    padding-top: 5px;
+}
+
+.card-content {
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.card-arrow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 20px;
+}
+
+.card-arrow:hover {
+    background-color: #d69a52;
+    color: var(--white);
+    width: 70px;
+}
+
+/* ========================================
+   About Section Styles
+======================================== */
+.about-section {
+    background-color: var(--white);
+}
+
+.about-content h5 {
+    letter-spacing: 1px;
+    font-size: 24px;
+    color: #0000008f;
+}
+
+.about-content h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    color: var(--primary-color);
+}
+
+.feature-icon {
+    padding-top: 3px;
+    margin-bottom: 15px;
+    width: 45px;
+    height: 45px;
+    background-color: #444;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.about-content .feature-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.feature-desc {
+    font-size: 14px;
+    color: #888;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.about-image-wrapper img {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 20px !important;
+}
+
+/* ========================================
+   Stats Section Styles
+======================================== */
+.stats-container {
+    background: linear-gradient(90deg, #F0C27B 0%, #d69a52 100%);
+    color: var(--white);
+    box-shadow: 0 10px 30px rgba(214, 154, 82, 0.3);
+}
+
+.stat-number {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 5px;
+    color: var(--white);
+}
+
+.stat-desc {
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.9;
+    margin: 0;
+    line-height: 1.4;
+    padding: 0 10px;
+    color: #0000008f;
+}
+
+/* ========================================
+   Facilities Section Styles
+======================================== */
+.facilities-section {
+    background-color: var(--white);
+}
+
+.facilities-header {
+    margin-bottom: 80px;
+    margin-left: 30px;
+}
+
+.facilities-header h5 {
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #0000008f;
+}
+
+.facilities-header h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    color: var(--primary-color);
+}
+
+.facility-item {
+    height: 240px !important;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 20px !important;
+    -webkit-mask-image: -webkit-radial-gradient(var(--white), black);
+    mask-image: radial-gradient(var(--white), black);
+    transform: translateZ(0);
+}
+
+.facility-img {
+    transition: all 0.5s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    border-radius: 20px;
+}
+
+.facility-item:hover .facility-img {
+    transform: scale(1.1);
+}
+
+/* ========================================
+   Testimonials Section Styles
+======================================== */
+.testimonials-section {
+    background-color: var(--white);
+}
+
+.testimonials-header h5 {
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #0000008f;
+}
+
+.testimonials-header h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    color: var(--primary-color);
+}
+
+.testimonial-img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 0 auto;
+    transition: all 0.5s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-swiper {
+    padding-bottom: 50px !important;
+    padding-top: 50px !important;
+}
+
+.testimonial-swiper .swiper-slide {
+    opacity: 0.4;
+    transition: all 0.5s ease;
+    transform: scale(0.85);
+    filter: blur(2px);
+}
+
+.testimonial-swiper .swiper-slide-active {
+    opacity: 1;
+    transform: scale(1.1);
+    z-index: 2;
+    filter: blur(0);
+}
+
+.testimonial-content {
+    max-width: 80%;
+    margin: 30px auto 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateY(20px);
+}
+
+.testimonial-swiper .swiper-slide-active .testimonial-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.testimonial-nav-prev {
+    position: absolute !important;
+    left: 20px !important;
+}
+
+.testimonial-nav-next {
+    position: absolute !important;
+    right: 20px !important;
+}
+
+/* ========================================
+   Responsive Styles
+======================================== */
+
+/* Desktop Styles (min-width: 992px) */
+@media (min-width: 992px) {
+
+    .facility-item .facility-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .facility-item {
+        min-height: 240px;
+    }
+
+    .facility-right-column .facility-item {
+        height: 50% !important;
+    }
+
+    .wide-item {
+        height: 350px;
+    }
+
+    .tall-item {
+        height: 100%;
+        min-height: 680px;
+    }
+
+    .testimonial-nav-prev {
+        left: 5% !important;
+    }
+
+    .testimonial-nav-next {
+        right: 5% !important;
+    }
+}
+
+/* Tablet/Mobile Styles (max-width: 991px) */
+@media (max-width: 991px) {
+
+    .navbar {
+        position: relative;
+        bottom: auto;
+        width: auto;
+        padding: 0;
+        background-color: var(--white);
+    }
+
+    .top-bar {
+        padding: 15px 0;
+        background-color: var(--white);
+    }
+
+    .logo-img {
+        height: 45px;
+        margin: 0 auto;
+    }
+
+    .contact-box {
+        display: none;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        background-color: var(--white);
+        border-radius: 15px;
+        padding: 15px;
+        width: 100%;
+        align-items: flex-start;
+        border: 1px solid #eee;
+    }
+
+    .nav-link {
+        width: 100%;
+        border-radius: 8px;
+        padding: 10px 15px !important;
+    }
+
+    .btn-appointment {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .hero-section {
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .hero-image-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .hero-content.text-md-start {
+        text-align: center !important;
+    }
+
+    .specialties-intro h2 {
+        font-size: 36px;
+    }
+
+    .banner-section {
+        padding-top: 40px;
+    }
+
+    .banner-title {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .banner-desc {
+        text-align: center;
+        margin: 0 auto 30px auto;
+    }
+
+    .banner-img {
+        margin: 0 auto;
+        max-height: 350px;
+    }
+
+    .banner-content {
+        text-align: center;
+    }
+
+    /* Patients Badge */
+    .patients-badge {
+        bottom: 0;
+        right: 50%;
+        transform: translateX(50%);
+        width: 90%;
+        justify-content: center;
+    }
+}
+
+/* Mobile Styles (max-width: 768px) */
+@media (max-width: 768px) {
+    .stat-item {
+        margin-bottom: 20px;
+    }
+
+    .cta-title {
+        font-size: 2rem;
+    }
+
+    .cta-section .floating-badge {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 10px;
+    }
+
+    .price-banner.banner-section {
+        padding: 40px 20px;
+    }
+
+    .pricing-section {
+        padding-bottom: 40px;
+    }
+
+    .faq-section {
+        padding-bottom: 60px;
+    }
+
+    .cta-section {
+        padding: 40px 0;
+    }
+
+    section {
+        margin-bottom: 2rem !important;
+    }
+
+    .banner-content {
+        padding-bottom: 0;
+    }
+
+    .banner-section,
+    .price-banner {
+        margin-bottom: 2rem !important;
+    }
+}
+
+/* Small Mobile Styles (max-width: 576px) */
+@media (max-width: 576px) {
+    .banner-title {
+        font-size: 30px;
+    }
+}
+
+/* ========================================
+   Animations
+======================================== */
+.fade-in-up {
+    animation-name: fadeInUp;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 40px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 @keyframes bounceIn {
@@ -831,308 +1572,6 @@ body {
     }
 }
 
-/* Pricing Grid Styles */
-.pricing-section {
-    padding-bottom: 80px;
-}
-
-/* Card Updates */
-.pricing-card {
-    border-radius: 24px;
-    overflow: hidden;
-    background: white;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #efefef;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.pricing-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(228, 171, 99, 0.15);
-}
-
-/* Header Updates */
-.pricing-header {
-    background: linear-gradient(135deg, #E4AB63 0%, #D4A056 100%);
-    padding: 30px;
-    color: white;
-    position: relative;
-}
-
-.pricing-title {
-    font-size: 1.25rem;
-    font-weight: 500;
-    margin-bottom: 15px;
-    background-color: rgba(255, 255, 255, 0.25);
-    display: inline-flex;
-    align-items: center;
-    padding: 6px 18px;
-    border-radius: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(5px);
-}
-
-.pricing-desc {
-    font-size: 0.9rem;
-    /* Back to 0.9rem */
-    line-height: 1.6;
-    margin-bottom: 25px;
-    opacity: 0.9;
-    min-height: 48px;
-    font-weight: 400;
-    /* Regular weight */
-}
-
-.price {
-    font-size: 2.2rem;
-    font-weight: 700;
-    /* Reduced from 800 */
-    letter-spacing: -0.5px;
-    display: flex;
-    align-items: baseline;
-    gap: 5px;
-}
-
-.price span {
-    font-size: 1rem;
-    font-weight: 400;
-    /* Light weight for unit */
-    opacity: 0.9;
-}
-
-/* Body Updates */
-.pricing-body {
-    padding: 30px;
-    background-color: white;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.pricing-features {
-    padding: 0;
-    margin-bottom: 25px;
-}
-
-.pricing-features li {
-    margin-bottom: 15px;
-    color: #666;
-    /* Softer gray */
-    font-size: 0.95rem;
-    font-weight: 400;
-    /* Reduced from 500 */
-    line-height: 1.5;
-}
-
-.pricing-features li i {
-    color: #E4AB63;
-    min-width: 24px;
-    margin-top: 4px;
-}
-
-/* Button Updates */
-.btn-pricing {
-    background-color: #E4AB63;
-    color: white;
-    font-weight: 600;
-    transition: all 0.3s;
-    border: none;
-    padding: 14px 20px;
-    font-size: 1rem;
-    letter-spacing: 0.5px;
-}
-
-.btn-pricing:hover {
-    background-color: #c08d45;
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(228, 171, 99, 0.3);
-}
-
-/* Popular Tag Refined */
-.popular-tag {
-    position: absolute;
-    top: 28px;
-    right: 20px;
-    background-color: #FFF8E1;
-    color: #D4A056;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    /* Reduced from 700 */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    z-index: 2;
-}
-
-/* FAQ Section Styles */
-.faq-section {
-    background-color: #F8F6F2;
-    padding-bottom: 120px;
-    /* Very light beige/gray from image */
-}
-
-.faq-title {
-    font-size: 2.5rem;
-    /* Larger */
-    font-weight: 700;
-    color: #E4AB63;
-    margin-bottom: 40px;
-}
-
-/* Accordion Styling */
-.custom-accordion {
-    gap: 15px;
-    /* Spacing between items */
-    display: flex;
-    flex-direction: column;
-}
-
-.custom-accordion .accordion-item {
-    background-color: transparent;
-    border: 1px solid #E8DCC6 !important;
-    /* Light gold/beige border */
-    border-radius: 15px !important;
-    margin-bottom: 0;
-    overflow: hidden;
-    /* Ensure radius clips content */
-}
-
-.custom-accordion .accordion-button {
-    background-color: #F8F6F2;
-    /* Match section bg or slightly distinct? Image looks like same/transparent or very light */
-    color: #555;
-    padding: 20px 25px;
-    border-radius: 15px !important;
-    /* Radius for the button itself if collapsed */
-    font-weight: 500;
-    font-size: 1.05rem;
-    box-shadow: none !important;
-}
-
-.custom-accordion .accordion-button:not(.collapsed) {
-    background-color: #E4AB63;
-    /* Solid gold active */
-    color: white;
-    border-bottom-left-radius: 0 !important;
-    /* Flat bottom when open */
-    border-bottom-right-radius: 0 !important;
-}
-
-.custom-accordion .accordion-button:not(.collapsed)::after {
-    filter: brightness(0) invert(1);
-    /* White arrow */
-    transform: rotate(-180deg);
-}
-
-.custom-accordion .accordion-button::after {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23E4AB63'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-    background-size: 1.25rem;
-    transition: transform 0.3s;
-}
-
-.custom-accordion .accordion-body {
-    background-color: #F8F6F2;
-    /* Keep same as inactive button or slightly lighter? Image shows text on light bg */
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    padding: 25px 25px;
-    color: #666;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    border-top: none;
-    /* No top border between header and body if same bg, but header is gold? */
-    /* If header is gold, body is light. So border top is effectively the header. */
-}
-
-/* Image Styling */
-.faq-collage .quality-badge {
-    left: 50% !important;
-    /* Center Horizontally */
-    top: 50% !important;
-    /* Center Vertically */
-    transform: translate(-50%, -50%) !important;
-    /* True pairing with top/left 50% */
-    width: 140px;
-    /* Size adjustment */
-    height: 140px;
-    /* Preserve aspect ratio if handled by img, but container needs size? */
-    /* Actually structure is container > img. User set width="100" in HTML. I should override or let HTML handle.
-       HTML has width="100". Badge visible? */
-    display: block !important;
-    /* Force show */
-    padding: 0 !important;
-    /* Reset padding if needed */
-    background: transparent !important;
-    /* If the svg has its own bg? SVGs usually transparent. */
-    box-shadow: none !important;
-    /* Remove box shadow from container if SVG has it, or add if not. */
-}
-
-.faq-collage .quality-badge img {
-    /* Ensure image fills container if we set size */
-    border: 0;
-    max-width: 100%;
-    height: auto;
-}
-
-.faq-collage .cs_right_icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.faq-collage img {
-    object-fit: cover;
-}
-
-/* CTA Section Styles */
-.cta-section {
-    background-color: transparent;
-    padding: 80px 0;
-    /* Or match section bg if needed */
-}
-
-.cta-card {
-    /* box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05); */
-    /* Subtle shadow as per image */
-    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.08);
-}
-
-.cta-doctor-img {
-    max-height: 400px;
-    object-fit: contain;
-    /* Adjust based on actual image ratio */
-}
-
-.cta-title {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.3;
-    color: #DBA858;
-    /* Gold color matching design */
-}
-
-/* Floating Badge */
-.cta-image-wrapper {
-    position: relative;
-    display: inline-block;
-    /* Or block, depending on layout preference */
-}
-
-.cta-section .floating-badge {
-    bottom: 40px;
-    left: -20px;
-    z-index: 2;
-    animation: float 3s ease-in-out infinite;
-}
-
 @keyframes float {
     0% {
         transform: translateY(0px);
@@ -1144,56 +1583,5 @@ body {
 
     100% {
         transform: translateY(0px);
-    }
-}
-
-@media (max-width: 768px) {
-    .cta-title {
-        font-size: 2rem;
-    }
-
-    .cta-section .floating-badge {
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 10px;
-    }
-
-    /* Responsive Padding Adjustments */
-    .price-banner.banner-section {
-        padding: 40px 20px;
-    }
-
-    .pricing-section {
-        padding-bottom: 40px;
-    }
-
-    .faq-section {
-        padding-bottom: 60px;
-    }
-
-    .cta-section {
-        padding: 40px 0;
-    }
-
-    /* Global Section Spacing Mobile Override */
-    section {
-        margin-bottom: 2rem !important;
-        /* Override mb-5 on mobile */
-    }
-
-    .banner-content {
-        padding-bottom: 0;
-    }
-
-    /* Restore margin for specific cases if needed, but generally smaller is better on mobile */
-    .banner-section,
-    .price-banner {
-        margin-bottom: 2rem !important;
-    }
-}
-
-@media (max-width: 576px) {
-    .banner-title {
-        font-size: 30px;
     }
 }
