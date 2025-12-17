@@ -93,4 +93,128 @@ $(document).ready(function () {
             }
         });
     });
+    
+    // Facilities Swiper
+    const facilitiesSwiper = new Swiper('.facilitiesSwiper', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        centeredSlides: true,
+        loop: true,
+        speed: 800,
+        navigation: {
+            nextEl: '.facilities-next',
+            prevEl: '.facilities-prev',
+        },
+        breakpoints: {
+            576: {
+                slidesPerView: 2,
+                centeredSlides: true, // Keep centered
+            },
+            992: {
+                slidesPerView: 3,
+                centeredSlides: true, // Keep centered
+            }
+        }
+    });
+
+    // Initialize Specialty Swiper
+    const specialtySwiper = new Swiper('.specialtySwiper', {
+        slidesPerView: 1,
+        spaceBetween: 15,
+        loop: true,
+        speed: 800,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            992: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+        }
+    });
+
+    // Initialize Testimonials Swiper
+    const testimonialsSwiper = new Swiper('.testimonialsSwiper', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        speed: 800,
+        navigation: {
+            nextEl: '.testimonials-next',
+            prevEl: '.testimonials-prev',
+        },
+        breakpoints: {
+            576: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            }
+        }
+    });
+
+    // Initialize Doctors Swiper
+    const doctorsSwiper = new Swiper('.doctorsSwiper', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        speed: 800,
+        navigation: {
+            nextEl: '.doctors-next',
+            prevEl: '.doctors-prev',
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            }
+        }
+    });
+
+    // Specialty card click
+    $('.specialty-card').on('click', function () {
+        $('.specialty-card').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    // Scroll indicator click
+    $('.scroll-indicator').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $(this).closest('.hero-slider').outerHeight()
+        }, 800);
+    });
+
+    // Button actions
+    $('.btn-primary-custom').on('click', function (e) {
+        e.preventDefault();
+        console.log('View more clicked');
+    });
+
+    $('.btn-outline-custom').on('click', function (e) {
+        // Allow phone call to proceed
+        console.log('Calling:', $(this).attr('href'));
+    });
+
+    // Initialize News Vertical Swiper
+    const newsSwiper = new Swiper('.newsSwiper', {
+        direction: 'vertical',
+        slidesPerView: 2,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.news-next',
+            prevEl: '.news-prev',
+        },
+    });
 });

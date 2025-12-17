@@ -12,6 +12,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- Google Fonts: Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -110,8 +113,502 @@
         </nav>
     </header>
 
-    <!-- Main Content (Placeholder) -->
+    <!-- Main Content -->
     <main>
+        <section class="hero-slider" id="home">
+            <div class="container">
+                <!-- Static Hero Content -->
+                <div class="slide-content-grid">
+                    <!-- Left Column: Doctor Image -->
+                    <div class="col-left-doctor">
+                        <div class="doctor-image-wrapper">
+                            <img src="images/bac-si-hoang-thanh-hong-dao-removebg-preview.png"
+                                alt="Bác sĩ SP79" class="doctor-image">
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Text & Golden Box -->
+                    <div class="col-right-info">
+                        <div class="text-content">
+                            <div class="section-label">PHÒNG KHÁM</div>
+                            <h1 class="section-title">ĐA KHOA SP79</h1>
+                            <p class="section-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.
+                            </p>
+                            <div class="action-buttons">
+                                <a href="#" class="btn-outline-custom">XEM THÊM</a>
+                                <a href="tel:0899187979" class="btn-outline-custom">
+                                    <i class="fas fa-phone-alt"></i>
+                                    089 918 7979
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Golden Box Container -->
+                        <div class="golden-box-container">
+                            <div class="golden-box">
+                                <div class="stats-row">
+                                    <div class="stat-item">
+                                        <div class="stat-icon-circle">
+                                            <i class="fas fa-user-md"></i>
+                                        </div>
+                                        <div class="stat-value">1000+</div>
+                                        <div class="stat-desc">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-icon-circle">
+                                            <i class="fas fa-heartbeat"></i>
+                                        </div>
+                                        <div class="stat-value">1000+</div>
+                                        <div class="stat-desc">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Specialty Cards Slider -->
+                <div class="specialty-cards-container">
+                    <div class="swiper specialtySwiper">
+                        <div class="swiper-wrapper">
+                            <!-- Card 1 -->
+                            <div class="swiper-slide">
+                                <div class="specialty-card">
+                                    <div class="specialty-icon">
+                                        <i class="fas fa-tooth"></i>
+                                    </div>
+                                    <div class="specialty-title">KHOA<br>RĂNG HÀM MẶT</div>
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="swiper-slide">
+                                <div class="specialty-card">
+                                    <div class="specialty-icon">
+                                        <i class="fas fa-tooth"></i>
+                                    </div>
+                                    <div class="specialty-title">KHOA<br>RĂNG HÀM MẶT</div>
+                                </div>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="swiper-slide">
+                                <div class="specialty-card active">
+                                    <div class="specialty-icon">
+                                        <i class="fas fa-tooth"></i>
+                                    </div>
+                                    <div class="specialty-title">KHOA<br>RĂNG HÀM MẶT</div>
+                                </div>
+                            </div>
+                            <!-- Card 4 -->
+                            <div class="swiper-slide">
+                                <div class="specialty-card">
+                                    <div class="specialty-icon">
+                                        <i class="fas fa-tooth"></i>
+                                    </div>
+                                    <div class="specialty-title">KHOA<br>RĂNG HÀM MẶT</div>
+                                </div>
+                            </div>
+                            <!-- Card 5 (Extra for sliding demo) -->
+                            <div class="swiper-slide">
+                                <div class="specialty-card">
+                                    <div class="specialty-icon">
+                                        <i class="fas fa-tooth"></i>
+                                    </div>
+                                    <div class="specialty-title">KHOA<br>RĂNG HÀM MẶT</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Navigation -->
+                    <div class="swiper-button-next custom-nav-btn"></div>
+                    <div class="swiper-button-prev custom-nav-btn"></div>
+                </div>
+
+                <!-- Bottom Intro -->
+                <div class="bottom-intro">
+                    <div class="bottom-intro-title">Phòng khám Đa khoa SP79 có</div>
+                    <div class="bottom-intro-highlight">10+ CHUYÊN KHOA TIÊN TIẾN</div>
+                    <p class="bottom-intro-desc">
+                        SP79 ra đời với sứ mệnh hiện đại hóa Y tế từ cấp cơ sở với mô hình "Y tế gần
+                        dân" với triết lý "Gần" bao gồm là gần gũi về địa lý, gần gũi về như người thân
+                        và gần gũi về tình cảm thông qua sự thấu cảm.
+                    </p>
+                    <a href="#" class="scroll-down-btn text-decoration-none">
+                        <i class="fa-solid fa-right-long"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <hr class="footer-divider">
+
+        <!-- Facilities Section -->
+        <section class="facilities-section">
+            <div class="container">
+                <div class="text-center mb-0 mb-lg-5">
+                    <div class="section-subtitle">SP79 được trang bị</div>
+                    <h2 class="section-title-large">CƠ SỞ VẬT CHẤT HIỆN ĐẠI</h2>
+                </div>
+
+                <div class="facilities-slider-wrapper" style="position: relative;">
+                    <div class="swiper facilitiesSwiper">
+                        <div class="swiper-wrapper">
+                            <!-- Slide 1 -->
+                            <div class="swiper-slide">
+                                <div class="facility-card">
+                                    <div class="facility-image">
+                                        <img src="images/bg-g-4.jpg" alt="Facility 1">
+                                    </div>
+                                    <div class="facility-content">
+                                        <h3 class="facility-headline">HEADLINE</h3>
+                                        <p class="facility-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <div class="facility-arrow">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="swiper-slide">
+                                <div class="facility-card">
+                                    <div class="facility-image">
+                                        <img src="images/bg-g-5.jpg" alt="Facility 2">
+                                    </div>
+                                    <div class="facility-content">
+                                        <h3 class="facility-headline">HEADLINE</h3>
+                                        <p class="facility-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <div class="facility-arrow">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="swiper-slide">
+                                <div class="facility-card">
+                                    <div class="facility-image">
+                                        <img src="images/bg-g-7.jpg" alt="Facility 3">
+                                    </div>
+                                    <div class="facility-content">
+                                        <h3 class="facility-headline">HEADLINE</h3>
+                                        <p class="facility-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <div class="facility-arrow">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide 4 -->
+                            <div class="swiper-slide">
+                                <div class="facility-card">
+                                    <div class="facility-image">
+                                        <img src="images/bg-g-5.jpg" alt="Facility 4">
+                                    </div>
+                                    <div class="facility-content">
+                                        <h3 class="facility-headline">HEADLINE</h3>
+                                        <p class="facility-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <div class="facility-arrow">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Navigation -->
+                    <div class="swiper-button-next custom-nav-btn facilities-next"></div>
+                    <div class="swiper-button-prev custom-nav-btn facilities-prev"></div>
+                </div>
+        </section>
+        <hr class="footer-divider">
+
+        <!-- Doctors Section -->
+        <section class="doctors-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <div class="section-subtitle">SP79 được tạo nên từ</div>
+                    <h2 class="section-title-large" style="color: #E8A864;">ĐỘI NGŨ BÁC SĨ CHUYÊN MÔN CAO</h2>
+                </div>
+
+                <div class="doctors-slider-wrapper" style="position: relative;">
+                    <div class="swiper doctorsSwiper">
+                        <div class="swiper-wrapper">
+                            <!-- Doctor 1 -->
+                            <div class="swiper-slide">
+                                <div class="doctor-card">
+                                    <i class="fa-regular fa-heart doctor-favorite-icon"></i>
+                                    <div class="doctor-info">
+                                        <div class="doctor-specialty">Khoa Răng Hàm Mặt</div>
+                                        <h3 class="doctor-name">BS. Nguyễn Văn A</h3>
+                                        <p class="doctor-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed
+                                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <a href="#" class="btn-doctor-book">ĐẶT LỊCH</a>
+                                    </div>
+                                    <div class="doctors-card-image-wrapper">
+                                        <img src="./images/bac-si-nguyen-tuan-anh.png" alt="Doctor 1">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Doctor 2 -->
+                            <div class="swiper-slide">
+                                <div class="doctor-card">
+                                    <i class="fa-regular fa-heart doctor-favorite-icon"></i>
+                                    <div class="doctor-info">
+                                        <div class="doctor-specialty">Khoa Răng Hàm Mặt</div>
+                                        <h3 class="doctor-name">BS. Nguyễn Văn A</h3>
+                                        <p class="doctor-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed
+                                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <a href="#" class="btn-doctor-book">ĐẶT LỊCH</a>
+                                    </div>
+                                    <div class="doctors-card-image-wrapper">
+                                        <img src="./images/bac-si-nguyen-tuan-anh.png" alt="Doctor 1">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Doctor 3 -->
+                            <div class="swiper-slide">
+                                <div class="doctor-card">
+                                    <i class="fa-regular fa-heart doctor-favorite-icon"></i>
+                                    <div class="doctor-info">
+                                        <div class="doctor-specialty">Khoa Răng Hàm Mặt</div>
+                                        <h3 class="doctor-name">BS. Nguyễn Văn A</h3>
+                                        <p class="doctor-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed
+                                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <a href="#" class="btn-doctor-book">ĐẶT LỊCH</a>
+                                    </div>
+                                    <div class="doctors-card-image-wrapper">
+                                        <img src="./images/bac-si-nguyen-tuan-anh.png" alt="Doctor 1">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Doctor 4 -->
+                            <div class="swiper-slide">
+                                <div class="doctor-card">
+                                    <i class="fa-regular fa-heart doctor-favorite-icon"></i>
+                                    <div class="doctor-info">
+                                        <div class="doctor-specialty">Khoa Răng Hàm Mặt</div>
+                                        <h3 class="doctor-name">BS. Nguyễn Văn A</h3>
+                                        <p class="doctor-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed
+                                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <a href="#" class="btn-doctor-book">ĐẶT LỊCH</a>
+                                    </div>
+                                    <div class="doctors-card-image-wrapper">
+                                        <img src="./images/bac-si-nguyen-tuan-anh.png" alt="Doctor 1">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Navigation -->
+                    <div class="swiper-button-next custom-nav-btn doctors-next"></div>
+                    <div class="swiper-button-prev custom-nav-btn doctors-prev"></div>
+                </div>
+            </div>
+        </section>
+        <hr class="footer-divider">
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <div class="section-subtitle">Cùng lắng nghe</div>
+                    <h2 class="section-title-large" style="color: #E8A864;">KHÁCH HÀNG SP79 NÓI</h2>
+                </div>
+
+                <div class="testimonials-slider-wrapper" style="position: relative;">
+                    <div class="swiper testimonialsSwiper">
+                        <div class="swiper-wrapper">
+                            <!-- Slide 1 -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-image">
+                                        <img src="./images/bac-si-nguyen-tuan-anh.png" alt="Customer 1">
+                                    </div>
+                                    <div class="testimonial-content">
+                                        <p class="testimonial-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-image">
+                                        <img src="./images/bac-si-hoang-thanh-hong-dao.png" alt="Customer 2">
+                                    </div>
+                                    <div class="testimonial-content">
+                                        <p class="testimonial-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-image">
+                                        <img src="./images/bac-si-nguyen-tuan-anh.png" alt="Customer 3">
+                                    </div>
+                                    <div class="testimonial-content">
+                                        <p class="testimonial-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide 4 -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-image">
+                                        <img src="./images/bac-si-nguyen-tuan-anh.png" alt="Customer 4">
+                                    </div>
+                                    <div class="testimonial-content">
+                                        <p class="testimonial-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Navigation -->
+                    <div class="swiper-button-next custom-nav-btn testimonials-next"></div>
+                    <div class="swiper-button-prev custom-nav-btn testimonials-prev"></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="footer-divider">
+        <!-- News Section -->
+        <section id="news" class="news-section">
+            <div class="container">
+                <div class="text-center mb-0 mb-lg-5">
+                    <div class="section-subtitle">Cùng xem</div>
+                    <h2 class="section-title-large">TIN TỨC VỀ SỨC KHỎE</h2>
+                </div>
+
+                <div class="news-content-wrapper">
+                    <!-- Left: Doctor Image -->
+                    <div class="news-left-col">
+                        <div class="doctor-highlight-wrapper">
+                            <div class="doctor-highlight-bg"></div>
+                            <img src="./images/bac-si-nguyen-tuan-anh.png" alt="Doctor Highlight"
+                                class="doctor-highlight-img">
+                        </div>
+                    </div>
+
+                    <!-- Right: Vertical Slider -->
+                    <div class="news-right-col">
+                        <div class="swiper newsSwiper">
+                            <div class="swiper-wrapper">
+                                <!-- Slide 1 -->
+                                <div class="swiper-slide">
+                                    <div class="news-card">
+                                        <div class="news-card-image">
+                                            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=300&fit=crop"
+                                                alt="News 1">
+                                        </div>
+                                        <div class="news-card-content">
+                                            <h3 class="news-card-title">dahdabdhs</h3>
+                                            <p class="news-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Slide 2 -->
+                                <div class="swiper-slide">
+                                    <div class="news-card">
+                                        <div class="news-card-image">
+                                            <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=400&h=300&fit=crop"
+                                                alt="News 2">
+                                        </div>
+                                        <div class="news-card-content">
+                                            <h3 class="news-card-title">dahdabdhs</h3>
+                                            <p class="news-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Slide 3 -->
+                                <div class="swiper-slide">
+                                    <div class="news-card">
+                                        <div class="news-card-image">
+                                            <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=400&h=300&fit=crop"
+                                                alt="News 3">
+                                        </div>
+                                        <div class="news-card-content">
+                                            <h3 class="news-card-title">dahdabdhs</h3>
+                                            <p class="news-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Slide 4 -->
+                                <div class="swiper-slide">
+                                    <div class="news-card">
+                                        <div class="news-card-image">
+                                            <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=400&h=300&fit=crop"
+                                                alt="News 4">
+                                        </div>
+                                        <div class="news-card-content">
+                                            <h3 class="news-card-title">dahdabdhs</h3>
+                                            <p class="news-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Custom Nav -->
+                        <div class="news-nav-btn news-next">
+                            <i class="fas fa-chevron-up"></i>
+                        </div>
+                        <div class="news-nav-btn news-prev">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brands Row -->
+                <div class="brands-row">
+                    <img src="./images/obagi_logo_approved_2023_360x.avif" alt="Obagi" class="brand-logo"
+                        style="height: 30px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/L%27Or%C3%A9al_logo.svg" alt="Loreal"
+                        class="brand-logo" style="height: 25px;">
+                    <img src="./images/obagi_logo_approved_2023_360x.avif" alt="Obagi" class="brand-logo"
+                        style="height: 30px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/L%27Or%C3%A9al_logo.svg" alt="Loreal"
+                        class="brand-logo" style="height: 25px;">
+                    <img src="./images/obagi_logo_approved_2023_360x.avif" alt="Obagi" class="brand-logo"
+                        style="height: 30px;">
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -205,7 +702,10 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 
     <!-- Custom JS -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js"></script>  
+    
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
 
 </body>
 
