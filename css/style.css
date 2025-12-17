@@ -2206,7 +2206,7 @@ body {
 
 /* Specialty Cards Slider */
 .specialtySwiper {
-    padding: 20px 30px 0px; /* Add padding for shadow/hover effects */
+    padding: 20px 30px 40px; /* Add padding for shadow/hover effects */
 }
 
 .specialty-cards {
@@ -2230,7 +2230,7 @@ body {
     min-height: 180px;
 }
 
-.specialty-card:hover {
+.specialtySwiper .specialty-card:hover {
     background: linear-gradient(135deg, #ffd29d, #C89557);
     transform: scale(1.2);
     box-shadow: 0px 5px 15px rgb(156 107 47);
