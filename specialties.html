@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyên Khoa - SP79 Phòng Khám Đa Khoa Quốc Tế</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="row align-items-center gx-2">
+                    <!-- Logo (Center on Mobile, Left on Desktop) -->
+                    <div class="col-12 col-lg-auto text-center text-lg-start">
+                        <a href="#" class="d-inline-block">
+                            <img src="images/logo.jpg" alt="SP79 Logo" class="logo-img mx-auto mx-lg-0">
+                        </a>
+                    </div>
+
+                    <!-- Contact Info and CTA Button (Hidden on Mobile) -->
+                    <div class="col-12 col-lg d-none d-lg-block">
+                        <div class="top-bar-right d-flex justify-content-end align-items-center gap-4">
+                            <!-- Hotline Box -->
+                            <div class="contact-box d-flex align-items-center gap-3">
+                                <div class="contact-icon-circle">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <div class="contact-label">HOTLINE</div>
+                                    <div class="contact-value">089 918 7979</div>
+                                </div>
+                            </div>
+
+                            <!-- Working Hours Box -->
+                            <div class="contact-box d-flex align-items-center gap-3">
+                                <div class="contact-icon-circle">
+                                    <i class="fas fa-stethoscope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <div class="contact-label">THỜI GIAN LÀM VIỆC</div>
+                                    <div class="contact-value">8:00 - 20:00</div>
+                                </div>
+                            </div>
+
+                            <!-- Appointment Button (Desktop) -->
+                            <a href="#appointment" class="btn-appointment">ĐẶT LỊCH NGAY</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container flex-wrap justify-content-between align-items-center">
+                <!-- Mobile Appointment Button (Left) -->
+                <a href="#appointment" class="btn-appointment d-lg-none">ĐẶT LỊCH NGAY</a>
+
+                <!-- Toggler (Right) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu Items -->
+                <div class="collapse navbar-collapse w-100 mt-2 mt-lg-0" id="mainNavbar">
+                    <ul class="navbar-nav w-100">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">GIỚI THIỆU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="specialties.html">CHUYÊN KHOA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="doctor.html">BÁC SĨ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="price.html">DỊCH VỤ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">TIN TỨC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">LIÊN HỆ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Intro Section -->
+        <section class="specialty-intro-section pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 mt-5 pt-5">
+                        <h1 class="specialty-title">Tham Khảo <br> 11 Chuyên Khoa</h1>
+                        <p class="specialty-desc">
+                            Tại SP79, chúng tôi đồng hành cùng bạn trong hành trình chăm sóc sức khỏe bằng các gói điều
+                            trị hỗ
+                            trợ
+                            cá nhân hóa - an toàn, khoa học
+                        </p>
+                    </div>
+                    <!-- Doctor Image -->
+                    <div class="col-12 col-md-6 text-center mb-4 mb-md-0">
+                        <!-- Empty space or maybe re-add doctor image if needed, but per design image is right side floating -->
+                        <div class="specialty-doctor-img-container d-none d-lg-block">
+                            <img src="images/physicianpatient-privilege-confidentialite-medicale-femme-asiatique-medecin-montrant-silence-bouche-zip-gest-e1709628505800__1_-removebg-preview.png"
+                                alt="Doctor" class="specialty-doctor-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specialties Grid Section -->
+        <section class="specialty-grid-section position-relative pb-5">
+            <div class="container px-5">
+                <div class="row g-4 justify-content-center">
+                    <!-- Cards -->
+                    <!-- Khoa Nội (Highlighted) -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="specialty-card highlight">
+                            <div class="card-icon">
+                                <i class="fas fa-lungs-virus"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Khoa Nội</h3>
+                                <p class="card-text">Khoa Nội tổng quát - Nội thần kinh - Tiểu đường và Nội tiết</p>
+                            </div>
+                            <a href="#" class="card-arrow"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Khoa Ngoại -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="specialty-card">
+                            <div class="card-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Khoa Ngoại</h3>
+                                <p class="card-text">Bệnh lý ngoại khoa - Chăm sóc ngoại khoa - Tiểu phẫu tại phòng
+                                    khám.</p>
+                            </div>
+                            <a href="#" class="card-arrow"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Khoa Phụ Sản -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="specialty-card">
+                            <div class="card-icon">
+                                <i class="fas fa-female"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Khoa Phụ Sản</h3>
+                                <p class="card-text">Tư vấn sinh sản - Tầm soát ung thư - Khám và điều trị phụ khoa</p>
+                            </div>
+                            <a href="#" class="card-arrow"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Da Liễu -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="specialty-card">
+                            <div class="card-icon">
+                                <i class="fas fa-allergies"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Da Liễu</h3>
+                                <p class="card-text">This department provides immediate medical care to patients with
+                                    acute illnesses or injuries that require immediate attention.</p>
+                            </div>
+                            <a href="#" class="card-arrow"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Phẫu Thuật Thẩm Mỹ -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="specialty-card">
+                            <div class="card-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Phẫu Thuật Thẩm Mỹ</h3>
+                                <p class="card-text">This department provides immediate medical care to patients with
+                                    acute illnesses or injuries.</p>
+                            </div>
+                            <a href="#" class="card-arrow"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Tai Mũi Họng -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="specialty-card">
+                            <div class="card-icon">
+                                <i class="fas fa-head-side-cough"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Tai Mũi Họng</h3>
+                                <p class="card-text">This department provides immediate medical care to patients with
+                                    acute illnesses or injuries.</p>
+                            </div>
+                            <a href="#" class="card-arrow"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Răng Hàm Mặt -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="specialty-card">
+                            <div class="card-icon">
+                                <i class="fas fa-tooth"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Răng Hàm Mặt</h3>
+                                <p class="card-text">This department provides immediate medical care to patients.</p>
+                            </div>
+                            <a href="#" class="card-arrow"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Khoa Mắt -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="specialty-card">
+                            <div class="card-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Khoa Mắt</h3>
+                                <p class="card-text">This department provides immediate medical care.</p>
+                            </div>
+                            <a href="#" class="card-arrow"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Chấn Đoán Hình Ảnh -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="specialty-card">
+                            <div class="card-icon">
+                                <i class="fas fa-x-ray"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Chấn Đoán Hình Ảnh</h3>
+                                <p class="card-text">This department provides immediate medical care.</p>
+                            </div>
+                            <a href="#" class="card-arrow"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Xét Nghiệm -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="specialty-card">
+                            <div class="card-icon">
+                                <i class="fas fa-vial"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Xét Nghiệm</h3>
+                                <p class="card-text">This department provides immediate medical care.</p>
+                            </div>
+                            <a href="#" class="card-arrow"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Cơ Xương Khớp -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="specialty-card">
+                            <div class="card-icon">
+                                <i class="fas fa-bone"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Cơ Xương Khớp</h3>
+                                <p class="card-text">This department provides immediate medical care.</p>
+                            </div>
+                            <a href="#" class="card-arrow"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CTA Section (Match design bottom) -->
+        <section class="cta-section-specialty mt-5 py-5 position-relative">
+            <!-- Using Image as background or structure? Design shows a large section with doctor and text -->
+            <div class="container">
+                <div class="row align-items-center bg-light rounded-4 position-relative"
+                    style="background-color: #F8F8F8; height: 300px; overflow: visible;">
+                    <div class="col-12 col-lg-5 p-0 text-center h-100 d-flex align-items-end justify-content-center"
+                        style="overflow: visible;">
+                        <!-- Image -->
+                        <img src="images/bac-si-hoang-thanh-hong-dao.png" alt="Doctor" class="specialty-img">
+                    </div>
+                    <div class="col-12 col-lg-7 p-5">
+                        <h2 class="cta-title">Bảo Vệ Sức Khỏe <br> Dài Hạn</h2>
+                        <p class="cta-text my-3">Đặt lịch thăm khám cùng các đội ngũ chuyên gia tại SP79 ngay hôm nay!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Logo & Contact -->
+                <div class="col-12 col-lg-4">
+                    <a href="#" class="logo-footer">
+                        <img src="images/logo-phong-kham-sp79-trang.png" alt="" class="logo">
+                    </a>
+
+                    <div class="footer-contact">
+                        <div class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>89 Phan Đình Phùng, P. Cầu Kiểu, TP.HCM</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@sp79.vn">info@sp79.vn</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="tel:0899187979">089 918 7979</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="col-12 col-lg-4 footer-links">
+                    <div class="footer-links-column">
+                        <ul>
+                            <li><a href="#">Khoa Nội</a></li>
+                            <li><a href="#">Khoa Ngoại</a></li>
+                            <li><a href="#">Sản Phụ khoa</a></li>
+                            <li><a href="#">Da liễu</a></li>
+                            <li><a href="#">Phẫu thuật thẩm mỹ</a></li>
+                            <li><a href="#">Tai mũi họng</a></li>
+                            <li><a href="#">Răng hàm mặt</a></li>
+                            <li><a href="#">Mắt</a></li>
+                            <li><a href="#">Chuẩn đoán hình ảnh</a></li>
+                            <li><a href="#">Xét nghiệm</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links-column">
+                        <ul>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Đội ngũ bác sĩ</a></li>
+                            <li><a href="#">Chuyên khoa</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="#">Đặt lịch hẹn</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-12 col-lg-4 footer-newsletter mt-5">
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link" title="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+
+                    <div class="newsletter-text text-end">
+                        Đăng ký ngay để nhận thông tin và ưu đãi
+                    </div>
+
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" class="newsletter-input fst-italic"
+                            placeholder="Nhập email của bạn vào đây..." required>
+                        <button type="submit" class="newsletter-btn">Gửi</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
