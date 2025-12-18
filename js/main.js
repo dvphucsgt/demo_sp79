@@ -93,7 +93,7 @@ $(document).ready(function () {
             }
         });
     });
-    
+
     // Facilities Swiper
     const facilitiesSwiper = new Swiper('.facilitiesSwiper', {
         slidesPerView: 1,
@@ -101,6 +101,10 @@ $(document).ready(function () {
         centeredSlides: true,
         loop: true,
         speed: 800,
+        pagination: {
+            el: '.facilities-pagination',
+            clickable: true,
+        },
         navigation: {
             nextEl: '.facilities-next',
             prevEl: '.facilities-prev',
@@ -123,6 +127,10 @@ $(document).ready(function () {
         spaceBetween: 15,
         loop: true,
         speed: 800,
+        pagination: {
+            el: '.specialty-pagination',
+            clickable: true,
+        },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -146,6 +154,10 @@ $(document).ready(function () {
         centeredSlides: true,
         loop: true,
         speed: 800,
+        pagination: {
+            el: '.testimonials-pagination',
+            clickable: true,
+        },
         navigation: {
             nextEl: '.testimonials-next',
             prevEl: '.testimonials-prev',
@@ -166,6 +178,10 @@ $(document).ready(function () {
         spaceBetween: 20,
         loop: true,
         speed: 800,
+        pagination: {
+            el: '.doctors-pagination',
+            clickable: true,
+        },
         navigation: {
             nextEl: '.doctors-next',
             prevEl: '.doctors-prev',
@@ -211,6 +227,10 @@ $(document).ready(function () {
         autoplay: {
             delay: 6000,
             disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.news-pagination',
+            clickable: true,
         },
         navigation: {
             nextEl: '.news-next',

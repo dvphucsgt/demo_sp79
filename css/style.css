@@ -3194,3 +3194,36 @@ body {
         left: 0;
     }
 }
+
+/* ========================================
+   Swiper Pagination Styles
+======================================== */
+/* Hide pagination dots on larger screens (desktop/tablet) */
+.swiper-pagination {
+    display: none !important;
+}
+
+/* Show pagination dots only on mobile screens */
+@media (max-width: 767px) {
+    .swiper-pagination {
+        display: flex !important;
+        position: relative;
+        margin-top: 30px;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: #E4AA63;
+        opacity: 0.3;
+        transition: all 0.3s;
+    }
+    
+    .swiper-pagination-bullet-active {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
