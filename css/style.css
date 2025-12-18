@@ -458,6 +458,7 @@ body {
 
 /* Doctor Card */
 .doctor-card {
+    min-height: 100%;
     background: white;
     border-radius: 12px;
     transition: transform 0.3s ease;
@@ -982,7 +983,7 @@ body {
 .dortors-title h5 {
     letter-spacing: 1px;
     font-size: 24px;
-    color: #0000008f;
+    color: var(--secondary-color);
 }
 
 .dortors-title h2 {
@@ -1006,7 +1007,7 @@ body {
    Hero Section Styles
 ======================================== */
 .hero-section {
-    padding: 100px 0 80px 0;
+    padding: 100px 0 0px 0;
     background-color: var(--white);
     position: relative;
     z-index: 1;
@@ -1423,7 +1424,7 @@ body {
 
 .testimonial-content {
     max-width: 80%;
-    margin: 30px auto 0;
+    margin: 0 auto 0;
     opacity: 0;
     transition: all 0.5s ease;
     transform: translateY(20px);

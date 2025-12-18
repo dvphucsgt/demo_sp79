@@ -50,7 +50,7 @@ $(document).ready(function () {
     if ($('.testimonial-swiper').length) {
         new Swiper(".testimonial-swiper", {
             slidesPerView: 1,
-            spaceBetween: 10,
+            spaceBetween: 30,
             centeredSlides: true,
             loop: true,
             autoplay: {
@@ -62,11 +62,15 @@ $(document).ready(function () {
                 prevEl: ".testimonial-nav-prev",
             },
             breakpoints: {
-                768: {
-                    slidesPerView: 3,
-                    spaceBetween: 20, // Tighter spacing for centered overlap effect
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
                 },
-            },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            }
         });
     }
 
@@ -97,7 +101,7 @@ $(document).ready(function () {
     // Facilities Swiper
     const facilitiesSwiper = new Swiper('.facilitiesSwiper', {
         slidesPerView: 1,
-        spaceBetween: 20,
+        spaceBetween: 30,
         centeredSlides: true,
         loop: true,
         speed: 800,
@@ -112,11 +116,11 @@ $(document).ready(function () {
         breakpoints: {
             576: {
                 slidesPerView: 2,
-                centeredSlides: true, // Keep centered
+                spaceBetween: 30,
             },
             992: {
                 slidesPerView: 3,
-                centeredSlides: true, // Keep centered
+                spaceBetween: 30,
             }
         }
     });
@@ -124,7 +128,7 @@ $(document).ready(function () {
     // Initialize Specialty Swiper
     const specialtySwiper = new Swiper('.specialtySwiper', {
         slidesPerView: 1,
-        spaceBetween: 15,
+        spaceBetween: 30,
         loop: true,
         speed: 800,
         pagination: {
