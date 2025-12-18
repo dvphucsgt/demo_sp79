@@ -1,5 +1,36 @@
 $(document).ready(function () {
 
+    // Mobile Menu Modal Toggle
+    const mobileMenuToggle = $('#mobileMenuToggle');
+    const mobileMenuOverlay = $('#mobileMenuOverlay');
+    const mobileMenuClose = $('#mobileMenuClose');
+
+    // Open mobile menu
+    mobileMenuToggle.on('click', function () {
+        mobileMenuOverlay.addClass('active');
+        $('body').css('overflow', 'hidden'); // Prevent scrolling when menu is open
+    });
+
+    // Close mobile menu
+    function closeMobileMenu() {
+        mobileMenuOverlay.removeClass('active');
+        $('body').css('overflow', ''); // Restore scrolling
+    }
+
+    mobileMenuClose.on('click', closeMobileMenu);
+
+    // Close when clicking on overlay (outside sidebar)
+    mobileMenuOverlay.on('click', function (e) {
+        if ($(e.target).is('.mobile-menu-overlay')) {
+            closeMobileMenu();
+        }
+    });
+
+    // Close when clicking on menu item
+    $('.mobile-menu-nav a').on('click', function () {
+        closeMobileMenu();
+    });
+
     // Smooth scrolling for anchor links
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
@@ -10,11 +41,6 @@ $(document).ready(function () {
             $('html, body').stop().animate({
                 scrollTop: target.offset().top - 100
             }, 800);
-        }
-
-        // Close mobile menu after clicking
-        if (window.innerWidth < 992) {
-            $('.navbar-collapse').collapse('hide');
         }
     });
 
@@ -52,7 +78,7 @@ $(document).ready(function () {
             slidesPerView: 1,
             spaceBetween: 10,
             centeredSlides: true,
-            loop: true,
+            loop: false,
             autoplay: {
                 delay: 5000,
                 disableOnInteraction: false,
@@ -93,7 +119,7 @@ $(document).ready(function () {
             }
         });
     });
-    
+
     // Facilities Swiper
     const facilitiesSwiper = new Swiper('.facilitiesSwiper', {
         slidesPerView: 1,
