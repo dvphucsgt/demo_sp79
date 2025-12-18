@@ -932,10 +932,10 @@ body {
 }
 
 .specialty-img {
-    transform: scale(1.3); 
-    transform-origin: bottom center; 
-    max-height: 100%; 
-    max-width: 100%; 
+    transform: scale(1.3);
+    transform-origin: bottom center;
+    max-height: 100%;
+    max-width: 100%;
     width: auto;
 }
 
@@ -948,7 +948,7 @@ body {
     max-height: 450px;
 }
 
-.cta-title, 
+.cta-title,
 .specialty-title {
     font-size: 3rem;
     font-weight: 700;
@@ -1398,7 +1398,7 @@ body {
     border-radius: 20px;
     margin: 0 auto;
     transition: all 0.5s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    /* box-shadow removed */
 }
 
 .testimonial-swiper {
@@ -2015,6 +2015,7 @@ body {
         font-size: 12px;
     }
 }
+
 /* ========================================
    Hero Slider Styles
 ======================================== */
@@ -2030,7 +2031,8 @@ body {
 .swiper-container {
     width: 100%;
     padding-bottom: 60px;
-    overflow: visible; /* Allow overlapping elements to be seen */
+    overflow: visible;
+    /* Allow overlapping elements to be seen */
     padding-top: 50px;
 }
 
@@ -2039,9 +2041,11 @@ body {
     display: grid;
     grid-template-columns: 45% 55%;
     gap: 0;
-    align-items: flex-end; /* Align bottom to handle overlap */
+    align-items: flex-end;
+    /* Align bottom to handle overlap */
     position: relative;
-    padding-bottom: 100px; /* Space for cards */
+    padding-bottom: 100px;
+    /* Space for cards */
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -2049,7 +2053,8 @@ body {
 /* Left Column: Doctor */
 .col-left-doctor {
     position: relative;
-    z-index: 2; /* Doctor stands in front */
+    z-index: 2;
+    /* Doctor stands in front */
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -2066,13 +2071,16 @@ body {
 
 /* Top Section: Text & Doctor (Legacy class removal/update) */
 .slide-top-section {
-    display: none; /* Deprecated */
+    display: none;
+    /* Deprecated */
 }
 
 /* Text Content */
 .text-content {
-    padding-bottom: 30px; /* Space between text and box */
-    padding-left: 50px; /* Align with box content */
+    padding-bottom: 30px;
+    /* Space between text and box */
+    padding-left: 50px;
+    /* Align with box content */
 }
 
 .section-label {
@@ -2158,7 +2166,8 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    margin-right: -50px; /* Overlap right */
+    margin-right: -50px;
+    /* Overlap right */
 }
 
 .doctor-image {
@@ -2179,8 +2188,10 @@ body {
 .golden-box {
     background: linear-gradient(90deg, #E8C085 0%, #D9A362 100%);
     border-radius: 30px;
-    padding: 40px 40px 150px 250px; /* Increased left padding to push content right */
-    margin-left: -82%; /* Pull box left behind doctor */
+    padding: 40px 40px 150px 250px;
+    /* Increased left padding to push content right */
+    margin-left: -82%;
+    /* Pull box left behind doctor */
     position: relative;
     min-height: 250px;
     display: flex;
@@ -2208,7 +2219,7 @@ body {
     justify-content: center;
     color: var(--primary-color);
     font-size: 24px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .stat-value {
@@ -2228,19 +2239,21 @@ body {
 
 /* Specialty Cards (Floating) */
 .specialty-cards-container {
-    margin-top: -160px; /* Overlap golden box bottom */
+    margin-top: -160px;
+    /* Overlap golden box bottom */
     position: relative;
     z-index: 20;
 }
 
 /* Specialty Cards Slider */
 .specialtySwiper {
-    padding: 20px 30px 40px; /* Add padding for shadow/hover effects */
+    padding: 20px 30px 40px;
+    /* Add padding for shadow/hover effects */
 }
 
 .specialty-cards {
     /* Legacy grid class removed/unused */
-    display: none; 
+    display: none;
 }
 
 .specialty-card {
@@ -2248,7 +2261,7 @@ body {
     border-radius: 15px;
     padding: 30px 20px;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
     cursor: pointer;
     height: 100%;
@@ -2268,7 +2281,8 @@ body {
 
 .specialty-icon {
     font-size: 40px;
-    color: #E8C085; /* Light gold outline style */
+    color: #E8C085;
+    /* Light gold outline style */
     margin-bottom: 20px;
     font-weight: 100;
     transition: all 0.3s;
@@ -2340,31 +2354,39 @@ body {
 
 /* Swiper Nav */
 .custom-nav-btn {
-    color: #333; /* Darker grey for arrow */
+    color: #333;
+    /* Darker grey for arrow */
     width: 40px;
     height: 40px;
-    background: transparent; /* Remove background */
+    background: transparent;
+    /* Remove background */
     border-radius: 50%;
-    box-shadow: none; /* Remove shadow */
+    box-shadow: none;
+    /* Remove shadow */
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s;
-    color: #4C4C4D; /* Dark grey base */
+    color: #4C4C4D;
+    /* Dark grey base */
 }
 
 .custom-nav-btn:after {
-    font-size: 18px; /* Smaller arrow */
+    font-size: 18px;
+    /* Smaller arrow */
     font-weight: bold;
-    color: #4C4C4D; /* Dark grey */
+    color: #4C4C4D;
+    /* Dark grey */
 }
 
 .swiper-button-prev.custom-nav-btn {
-    left: -60px; /* Push further outside */
+    left: -60px;
+    /* Push further outside */
 }
 
 .swiper-button-next.custom-nav-btn {
-    right: -60px; /* Push further outside */
+    right: -60px;
+    /* Push further outside */
 }
 
 /* Responsive */
@@ -2372,15 +2394,19 @@ body {
     .doctors-section {
         padding: 20px 0 40px !important;
     }
+
     .testimonials-section {
         padding: 20px 0 40px !important;
     }
+
     .swiper-button-next.custom-nav-btn {
         right: 0px;
     }
+
     .swiper-button-prev.custom-nav-btn {
         left: 0px;
     }
+
     .slide-content-grid {
         grid-template-columns: 1fr;
         gap: 30px;
@@ -2388,12 +2414,14 @@ body {
     }
 
     .col-left-doctor {
-        order: 2; /* Doctor below text on mobile */
+        order: 2;
+        /* Doctor below text on mobile */
         justify-content: center;
     }
 
     .col-right-info {
-        order: 1; /* Text above doctor */
+        order: 1;
+        /* Text above doctor */
     }
 
     .doctor-image-wrapper {
@@ -2413,12 +2441,14 @@ body {
 
     .golden-box-container {
         padding-left: 0;
-        margin-top: -50px; /* Pull up behind doctor */
+        margin-top: -50px;
+        /* Pull up behind doctor */
     }
 
     .golden-box {
         padding: 50px 30px;
-        margin-left: 0; /* Reset margin on mobile */
+        margin-left: 0;
+        /* Reset margin on mobile */
         flex-direction: column;
         text-align: center;
     }
@@ -2442,7 +2472,7 @@ body {
     }
 
     /* .specialty-cards grid media query removed as it's now handled by Swiper breakpoints */
-    
+
     .specialty-card.active {
         transform: scale(1.05);
     }
@@ -2452,9 +2482,10 @@ body {
     .section-title {
         font-size: 32px;
     }
-    
+
     /* Footer Responsive */
-    .footer-links, .footer-newsletter {
+    .footer-links,
+    .footer-newsletter {
         margin-top: 30px;
     }
 
@@ -2476,6 +2507,7 @@ body {
         justify-content: center;
     }
 }
+
 /* ========================================
    Facilities Slider Styles
 ======================================== */
@@ -2507,12 +2539,14 @@ body {
 }
 
 .facility-card {
-    background: #F9EAD6; /* Light beige for inactive */
+    background: #F9EAD6;
+    /* Light beige for inactive */
     border-radius: 20px;
     overflow: hidden;
     transition: all 0.5s ease;
     height: 100%;
-    transform: scale(0.9); /* Smaller by default */
+    transform: scale(0.9);
+    /* Smaller by default */
     opacity: 0.8;
 }
 
@@ -2537,8 +2571,10 @@ body {
 .facility-headline {
     font-size: 18px;
     font-weight: 700;
-    color: white; /* White text on inactive? No, let's check design */
-    color: #999; /* Grey on inactive */
+    color: white;
+    /* White text on inactive? No, let's check design */
+    color: #999;
+    /* Grey on inactive */
     text-transform: uppercase;
     margin-bottom: 15px;
 }
@@ -2550,7 +2586,8 @@ body {
     margin-bottom: 20px;
     display: -webkit-box;
     -webkit-line-clamp: 4;
-    line-clamp: 4; /* Standard property */
+    line-clamp: 4;
+    /* Standard property */
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -2569,8 +2606,10 @@ body {
 
 /* Active Slide Styling */
 .swiper-slide-active .facility-card {
-    transform: scale(1.1); /* Larger active card */
-    background: #E8A864; /* Gold background */
+    transform: scale(1.1);
+    /* Larger active card */
+    background: #E8A864;
+    /* Gold background */
     opacity: 1;
     box-shadow: 0 20px 50px rgba(232, 168, 100, 0.3);
     z-index: 2;
@@ -2587,7 +2626,8 @@ body {
 
 /* Navigation Buttons for Facilities */
 /* Navigation Buttons for Facilities */
-.facilities-next, .facilities-prev {
+.facilities-next,
+.facilities-prev {
     position: absolute;
     top: 10%;
     transform: translateY(-50%);
@@ -2606,7 +2646,8 @@ body {
     right: 10px !important;
 }
 
-.facilities-next:after, .facilities-prev:after {
+.facilities-next:after,
+.facilities-prev:after {
     font-size: 20px;
     color: #4C4C4D;
     font-weight: bold;
@@ -2619,17 +2660,22 @@ body {
     }
 
     .facility-card {
-        transform: scale(0.95); /* Less scaling on mobile */
+        transform: scale(0.95);
+        /* Less scaling on mobile */
     }
 
     .swiper-slide-active .facility-card {
-        transform: scale(1); /* Full size on mobile */
+        transform: scale(1);
+        /* Full size on mobile */
     }
 
-    .facilities-next, .facilities-prev {
-        display: none; /* Hide nav arrows on mobile, use swipe */
+    .facilities-next,
+    .facilities-prev {
+        display: none;
+        /* Hide nav arrows on mobile, use swipe */
     }
 }
+
 /* ========================================
    Testimonials Slider Styles
 ======================================== */
@@ -2650,7 +2696,8 @@ body {
     overflow: hidden;
     transition: all 0.5s ease;
     height: 100%;
-    transform: scale(0.9); /* Smaller by default */
+    transform: scale(0.9);
+    /* Smaller by default */
     opacity: 0.8;
     display: flex;
     flex-direction: column;
@@ -2661,7 +2708,7 @@ body {
     width: 100%;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial-image img {
@@ -2673,7 +2720,8 @@ body {
 .testimonial-content {
     padding: 20px 10px;
     text-align: center;
-    opacity: 0; /* Hidden by default on inactive */
+    opacity: 0;
+    /* Hidden by default on inactive */
     transition: all 0.5s ease;
     transform: translateY(20px);
 }
@@ -2687,7 +2735,8 @@ body {
 
 /* Active Slide Styling */
 .swiper-slide-active .testimonial-card {
-    transform: scale(1.1); /* Larger active card */
+    transform: scale(1.1);
+    /* Larger active card */
     opacity: 1;
     z-index: 2;
 }
@@ -2698,9 +2747,11 @@ body {
 }
 
 /* Navigation Buttons for Testimonials */
-.testimonials-next, .testimonials-prev {
+.testimonials-next,
+.testimonials-prev {
     position: absolute;
-    top: 40%; /* Adjusted to align with image center approx */
+    top: 40%;
+    /* Adjusted to align with image center approx */
     transform: translateY(-50%);
     z-index: 20;
     display: flex;
@@ -2720,18 +2771,21 @@ body {
     right: -20px !important;
 }
 
-.testimonials-next:after, .testimonials-prev:after {
+.testimonials-next:after,
+.testimonials-prev:after {
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     font-size: 24px;
 }
 
 .testimonials-prev:after {
-    content: "\f053"; /* fa-chevron-left */
+    content: "\f053";
+    /* fa-chevron-left */
 }
 
 .testimonials-next:after {
-    content: "\f054"; /* fa-chevron-right */
+    content: "\f054";
+    /* fa-chevron-right */
 }
 
 /* Responsive */
@@ -2740,26 +2794,32 @@ body {
         padding: 15px 0 30px;
     }
 
-    .testimonials-next, .testimonials-prev {
-        display: none; /* Hide nav arrows on mobile */
+    .testimonials-next,
+    .testimonials-prev {
+        display: none;
+        /* Hide nav arrows on mobile */
     }
-    
+
     .testimonial-desc {
         font-size: 13px;
     }
 }
+
 /* ========================================
    Doctors Slider Styles
 ======================================== */
 .doctors-section {
-    padding: 40px 0 0px; /* Extra bottom padding */
+    padding: 40px 0 0px;
+    /* Extra bottom padding */
     background: #f8f9fa;
     overflow: hidden;
 }
 
 .doctors-section .doctorsSwiper {
-    padding: 120px 0 40px; /* Top padding for pop-out head */
-    overflow: hidden; /* Allow pop-out */
+    padding: 120px 0 40px;
+    /* Top padding for pop-out head */
+    overflow: hidden;
+    /* Allow pop-out */
 }
 
 .doctors-section .doctor-card {
@@ -2767,10 +2827,12 @@ body {
     border-radius: 20px;
     /* Large curve on the right side */
     border-top-right-radius: 150px;
-    border-bottom-right-radius: 20px; /* Keep bottom right less curved or match top? Image shows semi-circleish */
-    border-bottom-right-radius: 150px; 
-    
-    overflow: visible; /* Crucial for image pop-out */
+    border-bottom-right-radius: 20px;
+    /* Keep bottom right less curved or match top? Image shows semi-circleish */
+    border-bottom-right-radius: 150px;
+
+    overflow: visible;
+    /* Crucial for image pop-out */
     display: flex;
     align-items: center;
     position: relative;
@@ -2783,10 +2845,13 @@ body {
 
 .doctors-section .doctor-favorite-icon {
     position: absolute;
-    top: -30px; /* Move above the card */
-    left: 20px; /* Align with text padding */
+    top: -30px;
+    /* Move above the card */
+    left: 20px;
+    /* Align with text padding */
     z-index: 10;
-    color: #D68C45; /* Gold color to match theme */
+    color: #D68C45;
+    /* Gold color to match theme */
     font-size: 22px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -2798,10 +2863,12 @@ body {
 
 .doctors-section .doctor-info {
     flex: 1;
-    padding: 30px 20px 30px 20px; /* Left padding larger */
+    padding: 30px 20px 30px 20px;
+    /* Left padding larger */
     color: white;
     z-index: 2;
-    max-width: 60%; /* Limit text width */
+    max-width: 60%;
+    /* Limit text width */
 }
 
 .doctors-section .doctor-specialty {
@@ -2812,7 +2879,7 @@ body {
     font-weight: 600;
 }
 
-.doctors-section .doctor-name {  
+.doctors-section .doctor-name {
     font-size: 26px;
     font-weight: 800;
     margin-bottom: 15px;
@@ -2827,7 +2894,8 @@ body {
     opacity: 0.9;
     display: -webkit-box;
     -webkit-line-clamp: 3;
-    line-clamp: 3; /* Standard property */
+    line-clamp: 3;
+    /* Standard property */
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -2855,12 +2923,14 @@ body {
     right: 0px;
     bottom: 0;
     width: 40%;
-    height: 150%; /* Taller than card to pop out */
+    height: 150%;
+    /* Taller than card to pop out */
     display: flex;
     align-items: flex-end;
     justify-content: center;
     z-index: 3;
-    pointer-events: none; /* Let clicks pass through to card if needed */
+    pointer-events: none;
+    /* Let clicks pass through to card if needed */
 }
 
 .doctors-section .doctors-card-image-wrapper img {
@@ -2872,14 +2942,16 @@ body {
 
 /* Inactive State */
 .swiper-slide:not(.swiper-slide-active) .doctor-card {
-    background: #F2D7B6; /* Lighter/Faded bg */
+    background: #F2D7B6;
+    /* Lighter/Faded bg */
     transform: scale(0.8);
     opacity: 0.8;
     box-shadow: none;
 }
 
 .swiper-slide:not(.swiper-slide-active) .doctor-info {
-    color: #8c6b4a; /* Darker text for contrast on light bg */
+    color: #8c6b4a;
+    /* Darker text for contrast on light bg */
 }
 
 .swiper-slide:not(.swiper-slide-active) .btn-doctor-book {
@@ -2888,7 +2960,8 @@ body {
 }
 
 /* Navigation Buttons for Doctors */
-.doctors-section .doctors-next, .doctors-section .doctors-prev {
+.doctors-section .doctors-next,
+.doctors-section .doctors-prev {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -2910,7 +2983,8 @@ body {
     right: -40px !important;
 }
 
-.doctors-section .doctors-next:after, .doctors-section .doctors-prev:after {
+.doctors-section .doctors-next:after,
+.doctors-section .doctors-prev:after {
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     font-size: 24px;
@@ -2929,15 +3003,17 @@ body {
     .doctors-section .doctorsSwiper {
         padding: 20px 0 20px;
     }
+
     .doctors-section .doctor-card {
         flex-direction: column;
         height: auto;
         border-radius: 20px;
         text-align: center;
-        padding-top: 100px; /* Space for image */
+        padding-top: 100px;
+        /* Space for image */
         margin-top: 50px;
     }
-    
+
     .doctors-section .doctors-card-image-wrapper {
         top: -50px;
         right: 50%;
@@ -2946,29 +3022,33 @@ body {
         height: 150px;
         bottom: auto;
     }
-    
+
     .doctors-section .doctors-card-image-wrapper img {
         object-fit: cover;
         border-radius: 50%;
         border: 5px solid white;
     }
-    
+
     .doctors-section .doctor-info {
         padding: 20px;
         max-width: 100%;
     }
 
-    .doctors-section .doctors-next, .doctors-section .doctors-prev {
-        display: none; /* Hide nav arrows on mobile */
+    .doctors-section .doctors-next,
+    .doctors-section .doctors-prev {
+        display: none;
+        /* Hide nav arrows on mobile */
     }
 }
+
 /* ========================================
    News Section Styles
 ======================================== */
 
 .news-section {
     padding: 40px 0;
-    background-color: #f9f9f9; /* Light grey background */
+    background-color: #f9f9f9;
+    /* Light grey background */
     overflow: hidden;
 }
 
@@ -2981,7 +3061,8 @@ body {
 
 .news-section .section-title-large {
     text-align: center;
-    color: #E8A864; /* Gold color */
+    color: #E8A864;
+    /* Gold color */
     margin-bottom: 60px;
 }
 
@@ -3027,14 +3108,16 @@ body {
 /* --- Right Side: Vertical Slider --- */
 .news-right-col {
     flex: 1;
-    height: 750px; /* Increased height to fit content (2 slides ~400px each) */
+    height: 750px;
+    /* Increased height to fit content (2 slides ~400px each) */
     position: relative;
-    padding-left: 0; 
+    padding-left: 0;
 }
 
 .newsSwiper {
     height: 100%;
-    padding: 20px 40px 20px 20px; /* Adjust padding */
+    padding: 20px 40px 20px 20px;
+    /* Adjust padding */
 }
 
 .news-card {
@@ -3042,21 +3125,26 @@ body {
     border-radius: 20px;
     overflow: hidden;
     display: flex;
-    flex-direction: column; /* Image top, text bottom */
-    align-items: flex-start; /* Align text left */
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-    height: 95%; 
+    flex-direction: column;
+    /* Image top, text bottom */
+    align-items: flex-start;
+    /* Align text left */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    height: 95%;
     transition: all 0.4s ease;
-    opacity: 0.5; 
-    transform: scale(0.8); /* Smaller inactive */
-    transform-origin: center center; /* Center alignment */
+    opacity: 0.5;
+    transform: scale(0.8);
+    /* Smaller inactive */
+    transform-origin: center center;
+    /* Center alignment */
     border: 1px solid transparent;
 }
 
 /* Active Slide Styling */
 .swiper-slide-active .news-card {
     opacity: 1;
-    transform: scale(1); /* Full size active */
+    transform: scale(1);
+    /* Full size active */
     box-shadow: 0 10px 30px rgba(232, 168, 100, 0.2);
     z-index: 10;
 }
@@ -3066,7 +3154,8 @@ body {
     height: 200px;
     overflow: hidden;
     flex-shrink: 0;
-    margin-bottom: 15px; /* Space below image */
+    margin-bottom: 15px;
+    /* Space below image */
     margin-right: 0;
 }
 
@@ -3151,21 +3240,165 @@ body {
     .news-section .section-title-large {
         margin-bottom: 0px;
     }
+
     .newsSwiper {
         margin-top: 40px;
         height: 750px;
     }
+
     .news-content-wrapper {
         flex-direction: column;
     }
-    
+
     .news-right-col {
         width: 100%;
         height: 400px;
     }
-    
+
     .doctor-highlight-bg {
         width: 100%;
         left: 0;
     }
+}
+
+/* ========================================
+   Mobile Menu Modal Styles
+======================================== */
+/* Overlay */
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.mobile-menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Sidebar */
+.mobile-menu-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+    z-index: 10000;
+    padding: 30px 20px;
+}
+
+.mobile-menu-overlay.active .mobile-menu-sidebar {
+    transform: translateX(0);
+}
+
+/* Close Button */
+.mobile-menu-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #666;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-close:hover {
+    background-color: #f5f5f5;
+    color: var(--primary-color);
+}
+
+/* Logo */
+.mobile-menu-logo {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.mobile-menu-logo img {
+    max-width: 120px;
+    height: auto;
+}
+
+/* Menu Nav */
+.mobile-menu-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu-nav li {
+    margin-bottom: 0;
+}
+
+.mobile-menu-nav li a {
+    display: block;
+    padding: 15px 20px;
+    color: #555;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.mobile-menu-nav li a:hover {
+    background-color: rgba(228, 171, 99, 0.1);
+    color: var(--primary-color);
+    padding-left: 25px;
+}
+
+.mobile-menu-nav li a.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* ========================================
+   Fix Hamburger Icon in Top Bar
+======================================== */
+/* When navbar-toggler is moved to top-bar, it needs explicit styles */
+.top-bar .navbar-toggler {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.25rem 0.5rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border-radius: 0.25rem;
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+.top-bar .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(228, 171, 99, 0.25);
+    outline: 0;
+}
+
+.top-bar .navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }

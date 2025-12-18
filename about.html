@@ -31,15 +31,15 @@
         <div class="top-bar">
             <div class="container">
                 <div class="row align-items-center gx-2">
-                    <!-- Logo (Center on Mobile, Left on Desktop) -->
-                    <div class="col-12 col-lg-auto text-center text-lg-start">
+                    <!-- Logo (Left on all devices) -->
+                    <div class="col-auto">
                         <a href="#" class="d-inline-block">
-                            <img src="images/logo.jpg" alt="SP79 Logo" class="logo-img mx-auto mx-lg-0">
+                            <img src="images/logo.png" alt="SP79 Logo" class="logo-img">
                         </a>
                     </div>
 
-                    <!-- Contact Info and CTA Button (Hidden on Mobile) -->
-                    <div class="col-12 col-lg d-none d-lg-block">
+                    <!-- Contact Info and CTA Button (Desktop only) -->
+                    <div class="col d-none d-lg-block">
                         <div class="top-bar-right d-flex justify-content-end align-items-center gap-4">
                             <!-- Hotline Box -->
                             <div class="contact-box d-flex align-items-center gap-3">
@@ -67,23 +67,23 @@
                             <a href="#appointment" class="btn-appointment">ĐẶT LỊCH NGAY</a>
                         </div>
                     </div>
+
+                    <!-- Mobile Controls (Right side) -->
+                    <div class="col d-lg-none">
+                        <div class="d-flex justify-content-end align-items-center gap-2">
+                            <a href="#appointment" class="btn-appointment">ĐẶT LỊCH NGAY</a>
+                            <button class="navbar-toggler" type="button" id="mobileMenuToggle">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container flex-wrap justify-content-between align-items-center">
-                <!-- Mobile Appointment Button (Left) -->
-                <a href="#appointment" class="btn-appointment d-lg-none">ĐẶT LỊCH NGAY</a>
-
-                <!-- Toggler (Right) -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Menu Items -->
-                <div class="collapse navbar-collapse w-100 mt-2 mt-lg-0" id="mainNavbar">
+                <div class="collapse navbar-collapse w-100 mt-2 mt-lg-0 d-none d-lg-block" id="mainNavbar">
                     <ul class="navbar-nav w-100">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">TRANG CHỦ</a>
@@ -110,6 +110,32 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Mobile Menu Modal -->
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+            <div class="mobile-menu-sidebar">
+                <!-- Close Button -->
+                <button class="mobile-menu-close" id="mobileMenuClose">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <!-- Logo -->
+                <div class="mobile-menu-logo">
+                    <img src="images/logo.png" alt="SP79 Logo">
+                </div>
+
+                <!-- Menu Items -->
+                <ul class="mobile-menu-nav">
+                    <li><a href="index.html">TRANG CHỦ</a></li>
+                    <li><a href="about.html" class="active">GIỚI THIỆU</a></li>
+                    <li><a href="specialties.html">CHUYÊN KHOA</a></li>
+                    <li><a href="doctor.html">BÁC SĨ</a></li>
+                    <li><a href="price.html">DỊCH VỤ</a></li>
+                    <li><a href="news.html">TIN TỨC</a></li>
+                    <li><a href="contact.html">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <!-- Hero Section -->
@@ -414,9 +440,9 @@
                         <div class="doctor-info">
                             <h4 class="doctor-name">BS. Nguyễn Tuấn Anh</h4>
                             <p class="doctor-specialty text-uppercase">KHOA NỘI</p>
-                            <p class="doctor-desc">With expertise in managing complex heart conditions and
-                                performing
-                                advanced cardiac procedures</p>
+                            <p class="doctor-desc">Tốt nghiệp bác sĩ đa khoa - Đại học Y dược TPHCM.
+                                Chứng chỉ hành nghề chuyên khoa nội do Sở Y tế TPHCM cấp.
+                                Hơn 10 năm kinh nghiệm khám lâm sàng Nội tổng quát.</p>
                         </div>
                     </div>
                 </div>
@@ -431,9 +457,10 @@
                         <div class="doctor-info">
                             <h4 class="doctor-name">BS CKI. Hoàng Thanh Hồng Đào</h4>
                             <p class="doctor-specialty text-uppercase">KHOA DA LIỄU</p>
-                            <p class="doctor-desc">With expertise in treating acute illnesses and injuries in
-                                medicine
-                                physician</p>
+                            <p class="doctor-desc">Tốt nghiệp bác sĩ y khoa - Đại học Y khoa Phạm Ngọc Thạch.
+                                Tốt nghiệp Chuyên khoa I Da liễu - Đại học Y khoa Phạm Ngọc Thạch.
+                                Chứng chỉ hành nghề chuyên khoa da liễu do Sở Y tế TPHCM cấp.
+                                Hơn 15 năm kinh nghiệm lâm sàng Da liễu.</p>
                         </div>
                     </div>
                 </div>
@@ -446,10 +473,12 @@
                                 class="img-fluid doctor-img">
                         </div>
                         <div class="doctor-info">
-                            <h4 class="doctor-name">BS CKI. Lê Thị Xuân Nghi</h4>
-                            <p class="doctor-specialty text-uppercase">KHOA NỘI</p>
-                            <p class="doctor-desc">With experience in managing complex medical conditions in
-                                children
+                            <h4 class="doctor-name">BS Nguyễn Thị Mai</h4>
+                            <p class="doctor-specialty text-uppercase">KHOA PHỤ SẢN</p>
+                            <p class="doctor-desc">Nguyên Trưởng khoa Sản - Bệnh viện Đa khoa Bến Lức (Long An).
+                                Tốt nghiệp bác sĩ y khoa - Đại học Y dược TPHCM.
+                                Chứng chỉ hành nghề chuyên khoa nội do Sở Y tế Long An cấp.
+                                Hơn 30 năm kinh nghiệm lâm sàng Phụ sản.
                             </p>
                         </div>
                     </div>
@@ -544,50 +573,50 @@
                 </div>
             </div>
 
-            <div class="row position-relative">
-                <div class="swiper-container testimonial-swiper overflow-hidden p-3">
+            <div class="position-relative">
+                <div class="swiper testimonial-swiper p-3">
                     <div class="swiper-wrapper">
                         <!-- Slide 1 -->
                         <div class="swiper-slide text-center">
                             <div class="testimonial-item">
-                                <img src="images/bac-si-nguyen-minh-van.png" alt="Khách hàng 1"
+                                <img src="images/khachhang/ngoc-long.png" alt="Khách hàng 1"
                                     class="img-fluid testimonial-img mb-4">
                                 <div class="testimonial-content">
-                                    <p class="mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <p class="mb-0 text-muted">Da mình cải thiện rõ rệt chỉ sau 2 tuần điều trị mụn. Cảm
+                                        ơn đội ngũ bác sĩ và điều dưỡng dễ thương!</p>
                                 </div>
                             </div>
                         </div>
                         <!-- Slide 2 -->
                         <div class="swiper-slide text-center">
                             <div class="testimonial-item">
-                                <img src="images/bac-si-nguyen-minh-van.png" alt="Khách hàng 2"
+                                <img src="images/khachhang/hoang-nhung.png" alt="Khách hàng 2"
                                     class="img-fluid testimonial-img mb-4">
                                 <div class="testimonial-content">
-                                    <p class="mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <p class="mb-0 text-muted">Ca nhấn mí rất nhẹ nhàng, không đau và cực kỳ tự nhiên
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <!-- Slide 3 -->
                         <div class="swiper-slide text-center">
                             <div class="testimonial-item">
-                                <img src="images/bac-si-nguyen-minh-van.png" alt="Khách hàng 3"
+                                <img src="images/khachhang/linh-pham.png" alt="Khách hàng 3"
                                     class="img-fluid testimonial-img mb-4">
                                 <div class="testimonial-content">
-                                    <p class="mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <p class="mb-0 text-muted">Mình rất ấn tượng với sự chuyên nghiệp và chu đáo của đội
+                                        ngũ điều dưỡng và bác sĩ. Lần đầu tiên tôi cảm thấy thoải mái đến vậy</p>
                                 </div>
                             </div>
                         </div>
                         <!-- Slide 4 -->
                         <div class="swiper-slide text-center">
                             <div class="testimonial-item">
-                                <img src="images/bac-si-nguyen-minh-van.png" alt="Khách hàng 4"
+                                <img src="images/khachhang/lai-pham.jpg" alt="Khách hàng 4"
                                     class="img-fluid testimonial-img mb-4">
                                 <div class="testimonial-content">
-                                    <p class="mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <p class="mb-0 text-muted">Quy trình đăng ký khám thai trên online dễ, mình tới là
+                                        được khám luôn, khong cần đợi.</p>
                                 </div>
                             </div>
                         </div>
