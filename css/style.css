@@ -971,12 +971,6 @@ body {
     animation: float 3s ease-in-out infinite;
 }
 
-
-
-
-
-
-
 /* ========================================
    About Doctors Title & Overrides
 ======================================== */
@@ -1451,7 +1445,6 @@ body {
 
 /* Desktop Styles (min-width: 992px) */
 @media (min-width: 992px) {
-
     .facility-item .facility-img {
         position: absolute;
         top: 0;
@@ -1486,7 +1479,9 @@ body {
 
 /* Tablet/Mobile Styles (max-width: 991px) */
 @media (max-width: 991px) {
-
+    .specialty-img {
+        transform: scale(1);
+    }
     .navbar {
         position: relative;
         bottom: auto;
