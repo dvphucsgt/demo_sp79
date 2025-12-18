@@ -427,7 +427,6 @@ body {
    Doctor List Section Styles
 ======================================== */
 .doctor-section {
-    padding: 80px 0;
     background-color: var(--white);
 }
 
@@ -611,7 +610,9 @@ body {
    Price Style
 ======================================== */
 
-.price-banner.banner-section,
+.price-banner.banner-section {
+    padding: 30px 0 0 0;
+}
 .contact-banner.banner-section {
     padding: 80px 0;
 }
@@ -696,7 +697,7 @@ body {
 
 /* Pricing Grid Styles */
 .pricing-section {
-    padding-bottom: 80px;
+    padding-bottom: 40px;
 }
 
 /* Card Updates */
@@ -926,7 +927,6 @@ body {
 /* CTA Section Styles */
 .cta-section {
     background-color: transparent;
-    padding: 80px 0;
 }
 
 .cta-card {
@@ -1606,7 +1606,7 @@ body {
     }
 
     .price-banner.banner-section {
-        padding: 40px 20px;
+        padding: 0px 20px;
     }
 
     .pricing-section {
@@ -1614,15 +1614,7 @@ body {
     }
 
     .faq-section {
-        padding-bottom: 60px;
-    }
-
-    .cta-section {
-        padding: 40px 0;
-    }
-
-    .cta-section--news {
-        padding: 30px 0 0;
+        padding-bottom: 20px;
     }
 
     .banner-content {
@@ -1645,13 +1637,6 @@ body {
 /* ========================================
    Contact Page Styles
 ======================================== */
-/* ========================================
-   Contact Page Styles
-======================================== */
-.contact-banner.banner-section {
-    padding-bottom: 200px;
-    /* Extra padding for overlap */
-}
 
 .contact-form-section {
     background-color: transparent;
@@ -1796,7 +1781,6 @@ body {
 ======================================== */
 .news-header-section {
     background-color: transparent;
-    padding-top: 150px !important;
 }
 
 .news-page-title {
@@ -1968,6 +1952,10 @@ body {
 
 /* Mobile Styles */
 @media (max-width: 991px) {
+    .contact-form-section {
+        padding-bottom: 20px;
+    }
+
     .navbar {
         position: relative;
         bottom: auto;
@@ -2395,10 +2383,6 @@ body {
         padding: 10px 20px;
     }
     .doctors-section {
-        padding: 20px 0 40px !important;
-    }
-
-    .testimonials-section {
         padding: 20px 0 40px !important;
     }
 

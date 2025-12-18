@@ -78,10 +78,14 @@ $(document).ready(function () {
             slidesPerView: 1,
             spaceBetween: 30,
             centeredSlides: true,
-            loop: false,
+            loop: true,
             autoplay: {
                 delay: 5000,
                 disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.testimonial-pagination',
+                clickable: true,
             },
             navigation: {
                 nextEl: ".testimonial-nav-next",
