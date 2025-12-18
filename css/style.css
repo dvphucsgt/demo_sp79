@@ -151,11 +151,11 @@ body {
     color: #555;
     font-weight: 600;
     font-size: 13px;
-    padding: 15px 15px !important;
+    padding: 20px 15px !important;
     transition: all 0.3s ease;
     position: relative;
     text-transform: uppercase;
-    border-radius: 30px;
+    border-radius: 100px;
     white-space: nowrap;
     width: 100%;
     /* other*/
@@ -175,7 +175,7 @@ body {
 
 /* Footer */
 .footer {
-    background: linear-gradient(135deg, #D9A362, #C89557);
+    background: linear-gradient(90deg, #dda154 0%, #eec888 100%);
     color: var(--footer-text);
     padding: 40px 0 30px;
 }
@@ -458,9 +458,11 @@ body {
 
 /* Doctor Card */
 .doctor-card {
+    min-height: 100%;
     background: white;
     border-radius: 12px;
     transition: transform 0.3s ease;
+    box-shadow: 0px 4px 21px 1px rgba(48, 123, 196, 0.1);
 }
 
 .doctor-card:hover {
@@ -717,7 +719,7 @@ body {
 
 /* Header Updates */
 .pricing-header {
-    background: linear-gradient(135deg, #E4AB63 0%, #D4A056 100%);
+    background: linear-gradient(90deg, #dda154 0%, #eec888 100%);
     padding: 30px;
     color: var(--white);
     position: relative;
@@ -981,7 +983,7 @@ body {
 .dortors-title h5 {
     letter-spacing: 1px;
     font-size: 24px;
-    color: #0000008f;
+    color: var(--secondary-color);
 }
 
 .dortors-title h2 {
@@ -1005,7 +1007,7 @@ body {
    Hero Section Styles
 ======================================== */
 .hero-section {
-    padding: 100px 0 80px 0;
+    padding: 100px 0 0px 0;
     background-color: var(--white);
     position: relative;
     z-index: 1;
@@ -1227,7 +1229,7 @@ body {
    Stats Section Styles
 ======================================== */
 .stats-container {
-    background: linear-gradient(90deg, #F0C27B 0%, #d69a52 100%);
+    background: linear-gradient(90deg, #dda154 0%, #eec888 100%);
     color: var(--white);
     box-shadow: 0 10px 30px rgba(214, 154, 82, 0.3);
 }
@@ -1422,7 +1424,7 @@ body {
 
 .testimonial-content {
     max-width: 80%;
-    margin: 30px auto 0;
+    margin: 0 auto 0;
     opacity: 0;
     transition: all 0.5s ease;
     transform: translateY(20px);
@@ -1623,10 +1625,6 @@ body {
         padding: 30px 0 0;
     }
 
-    section {
-        margin-bottom: 2rem !important;
-    }
-
     .banner-content {
         padding-bottom: 0;
     }
@@ -1665,7 +1663,6 @@ body {
 
 .contact-form-wrapper {
     background-color: #f1f1f1;
-    padding: 60px;
     border-radius: 30px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
 }
@@ -1678,9 +1675,9 @@ body {
 }
 
 .form-control-custom {
-    background-color: transparent;
+    background-color: white;
     border: 1px solid #f3d6ac;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 15px 20px;
     font-size: 1rem;
     color: #333;
@@ -2186,7 +2183,7 @@ body {
 }
 
 .golden-box {
-    background: linear-gradient(90deg, #E8C085 0%, #D9A362 100%);
+    background: linear-gradient(90deg, #dda154 0%, #eec888 100%);
     border-radius: 30px;
     padding: 40px 40px 150px 250px;
     /* Increased left padding to push content right */
@@ -2238,6 +2235,9 @@ body {
 }
 
 /* Specialty Cards (Floating) */
+.specialty-cards-container .swiper-wrapper .specialtySwiper {
+    overflow: hidden;
+}
 .specialty-cards-container {
     margin-top: -160px;
     /* Overlap golden box bottom */
@@ -2251,12 +2251,12 @@ body {
     /* Add padding for shadow/hover effects */
 }
 
-.specialty-cards {
+.specialtySwiper .specialty-cards {
     /* Legacy grid class removed/unused */
     display: none;
 }
 
-.specialty-card {
+.specialtySwiper .specialty-card {
     background: white;
     border-radius: 15px;
     padding: 30px 20px;
@@ -2269,17 +2269,17 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 180px;
+    min-height: 200px;
 }
 
 .specialtySwiper .specialty-card:hover {
-    background: linear-gradient(135deg, #ffd29d, #C89557);
-    transform: scale(1.2);
+    background: linear-gradient(90deg, #dda154 0%, #eec888 100%);
+    transform: scale(1.1);
     box-shadow: 0px 5px 15px rgb(156 107 47);
     z-index: 2;
 }
 
-.specialty-icon {
+.specialtySwiper .specialty-icon {
     font-size: 40px;
     color: #E8C085;
     /* Light gold outline style */
@@ -2288,11 +2288,11 @@ body {
     transition: all 0.3s;
 }
 
-.specialty-card:hover .specialty-icon {
+.specialtySwiper .specialty-card:hover .specialty-icon {
     color: white;
 }
 
-.specialty-title {
+.specialtySwiper .specialty-title {
     font-size: 12px;
     font-weight: 700;
     color: #555;
@@ -2301,7 +2301,7 @@ body {
     transition: all 0.3s;
 }
 
-.specialty-card:hover .specialty-title {
+.specialtySwiper .specialty-card:hover .specialty-title {
     color: white;
 }
 
@@ -2391,6 +2391,9 @@ body {
 
 /* Responsive */
 @media (max-width: 991px) {
+    .btn-outline-custom {
+        padding: 10px 20px;
+    }
     .doctors-section {
         padding: 20px 0 40px !important;
     }
@@ -2491,6 +2494,7 @@ body {
 
     .footer-contact-item {
         justify-content: center;
+        text-align: center;
     }
 
     .logo-footer {
@@ -2606,10 +2610,8 @@ body {
 
 /* Active Slide Styling */
 .swiper-slide-active .facility-card {
-    transform: scale(1.1);
-    /* Larger active card */
-    background: #E8A864;
-    /* Gold background */
+    transform: scale(1.1); /* Larger active card */
+    background: linear-gradient(90deg, #dda154 0%, #eec888 100%);
     opacity: 1;
     box-shadow: 0 20px 50px rgba(232, 168, 100, 0.3);
     z-index: 2;
@@ -2646,8 +2648,8 @@ body {
     right: 10px !important;
 }
 
-.facilities-next:after,
-.facilities-prev:after {
+.swiper-button-next:after, 
+.swiper-button-prev:after {
     font-size: 20px;
     color: #4C4C4D;
     font-weight: bold;
@@ -2708,7 +2710,7 @@ body {
     width: 100%;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 21px 1px rgba(48, 123, 196, 0.1);
 }
 
 .testimonial-image img {
@@ -2823,7 +2825,7 @@ body {
 }
 
 .doctors-section .doctor-card {
-    background: linear-gradient(135deg, #E8A864 0%, #D68C45 100%);
+    background: linear-gradient(90deg, #dda154 0%, #eec888 100%);
     border-radius: 20px;
     /* Large curve on the right side */
     border-top-right-radius: 150px;
@@ -2962,6 +2964,27 @@ body {
 /* Navigation Buttons for Doctors */
 .doctors-section .doctors-next,
 .doctors-section .doctors-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #4C4C4D;
+}
+
+.specialty-cards-container .swiper-button-prev {
+    left: -20px;
+}
+.specialty-cards-container .swiper-button-next {
+    right: -20px;
+}
+    .specialty-cards-container .swiper-button-prev, 
+.specialty-cards-container .swiper-button-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -3120,7 +3143,7 @@ body {
     /* Adjust padding */
 }
 
-.news-card {
+.newsSwiper .news-card {
     background: #fff;
     border-radius: 20px;
     overflow: hidden;
@@ -3260,6 +3283,39 @@ body {
         left: 0;
     }
 }
+
+/* ========================================
+   Swiper Pagination Styles
+======================================== */
+/* Hide pagination dots on larger screens (desktop/tablet) */
+.swiper-pagination {
+    display: none !important;
+}
+
+/* Show pagination dots only on mobile screens */
+@media (max-width: 767px) {
+    .swiper-pagination {
+        display: flex !important;
+        position: relative;
+        margin-top: 30px;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: #E4AA63;
+        opacity: 0.3;
+        transition: all 0.3s;
+    }
+    
+    .swiper-pagination-bullet-active {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
 
 /* ========================================
    Mobile Menu Modal Styles

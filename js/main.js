@@ -76,7 +76,7 @@ $(document).ready(function () {
     if ($('.testimonial-swiper').length) {
         new Swiper(".testimonial-swiper", {
             slidesPerView: 1,
-            spaceBetween: 10,
+            spaceBetween: 30,
             centeredSlides: true,
             loop: false,
             autoplay: {
@@ -88,11 +88,15 @@ $(document).ready(function () {
                 prevEl: ".testimonial-nav-prev",
             },
             breakpoints: {
-                768: {
-                    slidesPerView: 3,
-                    spaceBetween: 20, // Tighter spacing for centered overlap effect
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
                 },
-            },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            }
         });
     }
 
@@ -123,10 +127,14 @@ $(document).ready(function () {
     // Facilities Swiper
     const facilitiesSwiper = new Swiper('.facilitiesSwiper', {
         slidesPerView: 1,
-        spaceBetween: 20,
+        spaceBetween: 30,
         centeredSlides: true,
         loop: true,
         speed: 800,
+        pagination: {
+            el: '.facilities-pagination',
+            clickable: true,
+        },
         navigation: {
             nextEl: '.facilities-next',
             prevEl: '.facilities-prev',
@@ -134,11 +142,11 @@ $(document).ready(function () {
         breakpoints: {
             576: {
                 slidesPerView: 2,
-                centeredSlides: true, // Keep centered
+                spaceBetween: 30,
             },
             992: {
                 slidesPerView: 3,
-                centeredSlides: true, // Keep centered
+                spaceBetween: 30,
             }
         }
     });
@@ -146,9 +154,13 @@ $(document).ready(function () {
     // Initialize Specialty Swiper
     const specialtySwiper = new Swiper('.specialtySwiper', {
         slidesPerView: 1,
-        spaceBetween: 15,
+        spaceBetween: 30,
         loop: true,
         speed: 800,
+        pagination: {
+            el: '.specialty-pagination',
+            clickable: true,
+        },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -172,6 +184,10 @@ $(document).ready(function () {
         centeredSlides: true,
         loop: true,
         speed: 800,
+        pagination: {
+            el: '.testimonials-pagination',
+            clickable: true,
+        },
         navigation: {
             nextEl: '.testimonials-next',
             prevEl: '.testimonials-prev',
@@ -192,6 +208,10 @@ $(document).ready(function () {
         spaceBetween: 20,
         loop: true,
         speed: 800,
+        pagination: {
+            el: '.doctors-pagination',
+            clickable: true,
+        },
         navigation: {
             nextEl: '.doctors-next',
             prevEl: '.doctors-prev',
@@ -237,6 +257,10 @@ $(document).ready(function () {
         autoplay: {
             delay: 6000,
             disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.news-pagination',
+            clickable: true,
         },
         navigation: {
             nextEl: '.news-next',
