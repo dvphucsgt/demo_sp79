@@ -2105,7 +2105,7 @@ body {
 /* Slide Layout */
 .slide-content-grid {
     display: grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 30% 70%;
     gap: 0;
     align-items: flex-end;
     /* Align bottom to handle overlap */
@@ -2256,13 +2256,13 @@ body {
     border-radius: 30px;
     padding: 40px 40px 150px 250px;
     /* Increased left padding to push content right */
-    margin-left: -82%;
+    margin-left: -42%;
     /* Pull box left behind doctor */
     position: relative;
     min-height: 250px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-around;
 }
 
 .stats-row {
@@ -2330,23 +2330,27 @@ body {
     background: white;
     border-radius: 15px;
     padding: 30px 20px;
-    text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
     cursor: pointer;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     min-height: 200px;
+    gap: 0px;
+}
+
+.specialtySwiper:hover .specialty-card {
+    transform: scale(0.9);
 }
 
 .specialtySwiper .specialty-card:hover {
     background: linear-gradient(90deg, #dda154 0%, #eec888 100%);
     transform: scale(1.1);
-    box-shadow: 0px 5px 15px rgb(156 107 47);
-    z-index: 2;
+    box-shadow: 0px 15px 30px rgba(156, 107, 47, 0.4);
+    z-index: 10;
+    opacity: 1;
 }
 
 .specialtySwiper .specialty-icon {
@@ -2356,6 +2360,7 @@ body {
     margin-bottom: 20px;
     font-weight: 100;
     transition: all 0.3s;
+    border-bottom: 2px solid;
 }
 
 .specialtySwiper .specialty-card:hover .specialty-icon {
