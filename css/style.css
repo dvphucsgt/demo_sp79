@@ -721,30 +721,6 @@ body {
     margin-left: 0;
 }
 
-/* Decorative Circles */
-.decorative-circles {
-    top: 0;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    background-color: rgba(74, 144, 226, 0.2);
-    border-radius: 50%;
-    z-index: 0;
-}
-
-.decorative-circles::after {
-    content: '';
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(74, 144, 226, 0.4);
-    border-radius: 50%;
-}
-
-
-
 /* Pricing Grid Styles */
 .pricing-section {
     padding-bottom: 40px;
