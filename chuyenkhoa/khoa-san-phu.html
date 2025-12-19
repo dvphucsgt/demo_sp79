@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khoa Sản Phụ Khoa - SP79 Phòng Khám Đa Khoa Quốc Tế</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="row align-items-center gx-2">
+                    <!-- Logo (Left on all devices) -->
+                    <div class="col-auto">
+                        <a href="../index.html" class="d-inline-block">
+                            <img src="../images/logo.png" alt="SP79 Logo" class="logo-img">
+                        </a>
+                    </div>
+
+                    <!-- Contact Info and CTA Button (Desktop only) -->
+                    <div class="col d-none d-lg-block">
+                        <div class="top-bar-right d-flex justify-content-end align-items-center gap-4">
+                            <!-- Hotline Box -->
+                            <div class="contact-box d-flex align-items-center gap-3">
+                                <div class="contact-icon-circle">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <div class="contact-label">HOTLINE</div>
+                                    <div class="contact-value">089 918 7979</div>
+                                </div>
+                            </div>
+
+                            <!-- Working Hours Box -->
+                            <div class="contact-box d-flex align-items-center gap-3">
+                                <div class="contact-icon-circle">
+                                    <i class="fas fa-stethoscope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <div class="contact-label">THỜI GIAN LÀM VIỆC</div>
+                                    <div class="contact-value">8:00 - 20:00</div>
+                                </div>
+                            </div>
+
+                            <!-- Appointment Button (Desktop) -->
+                            <a href="#appointment" class="btn-appointment">ĐẶT LỊCH NGAY</a>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Controls (Right side) -->
+                    <div class="col d-lg-none">
+                        <div class="d-flex justify-content-end align-items-center gap-2">
+                            <!-- Mobile Appointment Button -->
+                            <a href="#appointment" class="btn-appointment">ĐẶT LỊCH NGAY</a>
+
+                            <!-- Hamburger Menu -->
+                            <button class="navbar-toggler" type="button" id="mobileMenuToggle">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Bar (Desktop only menu) -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container flex-wrap justify-content-between align-items-center">
+                <div class="collapse navbar-collapse w-100 mt-2 mt-lg-0 d-none d-lg-block" id="mainNavbar">
+                    <ul class="navbar-nav w-100">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about.html">GIỚI THIỆU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="../specialties.html">CHUYÊN KHOA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../doctor.html">BÁC SĨ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../price.html">DỊCH VỤ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../news.html">TIN TỨC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact.html">LIÊN HỆ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Modal -->
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+            <div class="mobile-menu-sidebar">
+                <!-- Close Button -->
+                <button class="mobile-menu-close" id="mobileMenuClose">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <!-- Logo -->
+                <div class="mobile-menu-logo">
+                    <img src="../images/logo.png" alt="SP79 Logo">
+                </div>
+
+                <!-- Menu Items -->
+                <ul class="mobile-menu-nav">
+                    <li><a href="../index.html">TRANG CHỦ</a></li>
+                    <li><a href="../about.html">GIỚI THIỆU</a></li>
+                    <li><a href="../specialties.html" class="active">CHUYÊN KHOA</a></li>
+                    <li><a href="../doctor.html">BÁC SĨ</a></li>
+                    <li><a href="../price.html">DỊCH VỤ</a></li>
+                    <li><a href="../news.html">TIN TỨC</a></li>
+                    <li><a href="../contact.html">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="specialty-detail-main">
+
+        <!-- Banner Image Section -->
+        <section class="banner-section">
+            <div class="container-fluid p-0">
+                <img src="../images/banner/san-phu-khoa.jpg" alt="Chuyên Khám & Điều Trị Sản Phụ Khoa"
+                    class="w-100 h-auto d-block">
+            </div>
+        </section>
+
+        <!-- Golden Title Bar -->
+        <div class="container">
+            <section class="golden-title-bar py-3 text-center mt-4"
+                style="background-color: #E8A864; border-radius: 5px 5px 0 0;">
+                <h2 class="m-0 text-white text-uppercase" style="font-size: 1.5rem; font-weight: 700;">KHOA PHỤ SẢN –
+                    PHÒNG KHÁM ĐA KHOA SP79</h2>
+            </section>
+        </div>
+
+        <!-- Intro Section -->
+        <section class="intro-section py-5">
+            <div class="container">
+                <h2 class="section-title mb-4" style="color: #E8A864;">GIỚI THIỆU TỔNG QUAN</h2>
+                <div class="intro-content">
+                    <p class="mb-3">Sản Phụ Khoa tại SP79 được xây dựng như một trung tâm chăm sóc sức khỏe toàn diện
+                        dành cho phụ nữ, từ độ tuổi dậy thì đến giai đoạn tiền mãn kinh và mãn kinh.</p>
+                    <p>Với đội ngũ bác sĩ chuyên môn cao, trang thiết bị hiện đại và không gian thân thiện, SP79 cam kết
+                        mang đến dịch vụ khám – điều trị – tư vấn chuyên sâu, an toàn và tôn trọng phụ nữ, giúp mỗi
+                        khách hàng chủ động bảo vệ sức khỏe sinh sản và chất lượng sống.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-list-section py-5 bg-white">
+            <div class="container">
+                <h2 class="section-title mb-4" style="color: #E8A864;">DỊCH VỤ CHUYÊN MÔN NỔI BẬT</h2>
+
+                <div class="service-list-content">
+                    <!-- Service 1 -->
+                    <div class="service-item mb-4">
+                        <h4 class="service-name" style="color: #E8A864; font-weight: 600;">1. Khám và điều trị phụ khoa:
+                        </h4>
+                        <ul class="list-unstyled ms-3 mt-2">
+                            <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Khám phụ khoa định kỳ
+                            </li>
+                            <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Điều trị viêm nhiễm âm
+                                đạo, âm hộ, cổ tử cung</li>
+                            <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Điều hòa rối loạn kinh
+                                nguyệt, rong kinh, đau bụng kinh</li>
+                            <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Tư vấn và điều trị viêm
+                                lộ tuyến cổ tử cung</li>
+                            <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Theo dõi u xơ tử cung,
+                                u nang buồng trứng giai đoạn đầu</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-item mb-4">
+                        <h4 class="service-name" style="color: #E8A864; font-weight: 600;">2. Tầm soát ung thư phụ khoa:
+                        </h4>
+                        <ul class="list-unstyled ms-3 mt-2">
+                            <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Soi cổ tử cung</li>
+                            <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Xét nghiệm Pap smear,
+                                HPV genotype</li>
+                            <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Tư vấn theo dõi và điều
+                                trị viêm cổ tử cung mạn tính</li>
+                            <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Phát hiện sớm ung thư
+                                cổ tử cung, ung thư nội mạc tử cung</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-item mb-4">
+                        <h4 class="service-name" style="color: #E8A864; font-weight: 600;">3. Kế hoạch hóa gia đình – tư
+                            vấn sinh sản:</h4>
+                        <ul class="list-unstyled ms-3 mt-2">
+                            <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Tư vấn và đặt vòng
+                                tránh thai, que cấy</li>
+                            <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Tư vấn lựa chọn biện
+                                pháp tránh thai phù hợp</li>
+                            <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Tư vấn tiền hôn nhân,
+                                tiền mang thai</li>
+                            <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Hỗ trợ điều trị rối
+                                loạn nội tiết, hiếm muộn giai đoạn đầu</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-item mb-4">
+                        <h4 class="service-name" style="color: #E8A864; font-weight: 600;">4. Chăm sóc phụ nữ tiền mãn
+                            kinh – mãn kinh:</h4>
+                        <ul class="list-unstyled ms-3 mt-2">
+                            <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Tầm soát loãng xương
+                            </li>
+                            <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Kiểm soát rối loạn nội
+                                tiết nữ</li>
+                            <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Hỗ trợ điều trị triệu
+                                chứng tiền mãn kinh: bốc hỏa, mất ngủ, khô âm đạo</li>
+                            <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Tư vấn dinh dưỡng, vận
+                                động phù hợp tuổi</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Bottom Image -->
+                <div class="mt-5">
+                    <img src="../images/bg-g-5.jpg" alt="Dịch vụ Sản Phụ Khoa" class="w-100 rounded-4 shadow-sm"
+                        style="max-height: 400px; object-fit: cover;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Doctors Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title" style="color: #E8A864;">ĐỘI NGŨ CHUYÊN MÔN</h2>
+                </div>
+
+                <div class="mb-5">
+                    <ul class="list-unstyled doctor-creds" style="font-weight: 500; font-size: 1.1rem;">
+                        <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Bác sĩ chuyên khoa I, II
+                            Sản phụ khoa, giàu kinh nghiệm lâm sàng tại các bệnh viện tuyến trung ương, thành phố</li>
+                        <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Tư vấn nhẹ nhàng, tôn trọng
+                            riêng tư, am hiểu tâm lý bệnh nhân nữ</li>
+                        <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Kết hợp theo dõi dài hạn
+                            với khách hàng trong từng giai đoạn sức khỏe</li>
+                    </ul>
+                </div>
+
+                <!-- Doctor Card -->
+                <div class="doctor-card-horizontal p-4 border border-warning rounded-4 shadow-sm bg-white">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img src="../images/bac-si-hoang-thanh-hong-dao.png" alt="BS Nguyen Thi Mai"
+                                class="img-fluid rounded-circle mb-3 mb-md-0"
+                                style="width: 200px; height: 200px; object-fit: cover; border: 3px solid #E8A864;">
+                        </div>
+                        <div class="col-md-8">
+                            <h4 class="mb-1" style="color: #E8A864; font-weight: 700;">BS. Nguyễn Thị Mai</h4>
+                            <p class="mb-3 fw-bold text-muted">Khoa Phụ Sản</p>
+
+                            <ul class="list-unstyled doctor-details small text-muted">
+                                <li class="mb-2"><span class="me-2 fw-bold text-dark">+</span> Nguyên Trưởng khoa Sản –
+                                    Bệnh viện Đa khoa Bến Lức (Long An). Tốt nghiệp bác sĩ y khoa – Đại học Y dược
+                                    TPHCM.</li>
+                                <li class="mb-2"><span class="me-2 fw-bold text-dark">+</span> Chứng chỉ hành nghề
+                                    chuyên khoa nội do Sở Y tế Long An cấp.</li>
+                                <li class="mb-2"><span class="me-2 fw-bold text-dark">+</span> Hơn 30 năm kinh nghiệm
+                                    lâm sàng Phụ sản.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Equipment Section -->
+        <!-- Equipment Section -->
+        <section class="py-5 bg-white">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title" style="color: #E8A864;">TRANG THIẾT BỊ VÀ HỖ TRỢ CẬN LÂM SÀNG</h2>
+                </div>
+
+                <!-- List content restored -->
+                <div class="mb-5">
+                    <ul class="list-unstyled ms-3" style="font-weight: 500;">
+                        <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Ghế khám sản phụ khoa đa
+                            năng</li>
+                        <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Máy siêu âm tổng quát – sản
+                            khoa</li>
+                        <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Bộ dụng cụ khám phụ khoa vô
+                            trùng riêng biệt</li>
+                        <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Hệ thống soi cổ tử cung
+                        </li>
+                        <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Bộ test HPV – Pap – nội
+                            tiết tố nữ – nội tiết sinh sản</li>
+                        <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Dụng cụ đặt vòng, que cấy
+                            tránh thai, canula lấy dịch xét nghiệm</li>
+                    </ul>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4 justify-content-center">
+                    <!-- Item 1: May Sieu Am 4D -->
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="../images/trangthietbi/may-sieu-am-4d.png" alt="Máy Siêu Âm 4D" class="img-fluid"
+                                style="width: 100%; height: auto; object-fit: contain;">
+                        </div>
+                    </div>
+
+                    <!-- Item 2: May Do Dien Tim 6 Can -->
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="../images/trangthietbi/may-do-dien-tim-6-can.png" alt="Máy Đo Điện Tim 6 Cần"
+                                class="img-fluid" style="width: 100%; height: auto; object-fit: contain;">
+                        </div>
+                    </div>
+
+                    <!-- Item 3: May Soi Co Tu Cung -->
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="../images/trangthietbi/may-soi-co-tu-cung.png" alt="Máy Soi Cổ Tử Cung"
+                                class="img-fluid" style="width: 100%; height: auto; object-fit: contain;">
+                        </div>
+                    </div>
+
+                    <!-- Item 4: May Do Nhip Tim Thai -->
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="../images/trangthietbi/may-do-nhip-tim-thai.png" alt="Máy Đo Nhịp Tim Thai"
+                                class="img-fluid" style="width: 100%; height: auto; object-fit: contain;">
+                        </div>
+                    </div>
+
+                    <!-- Item 5: May Xet Nghiem Nuoc Tieu -->
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="../images/trangthietbi/may-xet-nghiem-nuoc-tieu.png"
+                                alt="Máy Xét Nghiệm Nước Tiểu" class="img-fluid"
+                                style="width: 100%; height: auto; object-fit: contain;">
+                        </div>
+                    </div>
+                    <!-- Item 6: May Phan Tich Dong Mau -->
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="../images/trangthietbi/may-phan-tich-dong-mau.png" alt="Máy Phân Tích Đông Máu"
+                                class="img-fluid" style="width: 100%; height: auto; object-fit: contain;">
+                        </div>
+                    </div>
+                    <!-- Item 7: May Xet Nghiem Mien Dich -->
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="../images/trangthietbi/may-xet-nghiem-mien-dich.png"
+                                alt="Máy Xét Nghiệm Miễn Dịch" class="img-fluid"
+                                style="width: 100%; height: auto; object-fit: contain;">
+                        </div>
+                    </div>
+                    <!-- Item 8: May Xet Nghiem Elisa -->
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="../images/trangthietbi/may-xet-nghiem-elisa.png" alt="Máy Xét Nghiệm ELISA"
+                                class="img-fluid" style="width: 100%; height: auto; object-fit: contain;">
+                        </div>
+                    </div>
+                    <!-- Item 9: May Huyet Hoc 27 Thong So -->
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="../images/trangthietbi/may-huyet-hoc-27-thong-so.png"
+                                alt="Máy Huyết Học 27 Thông Số" class="img-fluid"
+                                style="width: 100%; height: auto; object-fit: contain;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-warning text-white rounded-pill px-4 py-2 fw-bold"
+                    style="background-color: #E8A864; border: none;">XEM TRANG THIẾT BỊ</a>
+            </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="py-5">
+            <section class="py-5">
+                <div class="container">
+                    <div class="mb-4">
+                        <h2 class="section-title text-start" style="color: #E8A864;">QUY TRÌNH DỊCH VỤ THÂN THIỆN –
+                            RIÊNG TƯ</h2>
+                    </div>
+
+                    <div class="process-content" style="font-size: 1.1rem; line-height: 1.8;">
+                        <p class="mb-2">1. Tiếp đón – lấy thông tin sức khỏe ban đầu tại khu vực riêng</p>
+                        <p class="mb-2">2. Khám và tư vấn 1:1 với bác sĩ sản phụ khoa</p>
+                        <p class="mb-2">3. Thực hiện siêu âm – xét nghiệm nếu cần</p>
+                        <p class="mb-2">4. Trả kết quả – chẩn đoán – kê toa – hướng dẫn theo dõi</p>
+                        <p class="mb-2">5. Tư vấn phòng ngừa – theo dõi chu kỳ điều trị – hỗ trợ tái khám định kỳ</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Development Orientation Section (From chunk) -->
+            <section class="py-5 bg-white">
+                <div class="container">
+                    <div class="mb-4">
+                        <h2 class="section-title text-start" style="color: #E8A864;">ĐỊNH HƯỚNG PHÁT TRIỂN</h2>
+                    </div>
+
+                    <ul class="list-unstyled" style="font-size: 1.1rem; line-height: 1.8;">
+                        <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Xây dựng hình ảnh "Bác sĩ
+                            riêng cho sức khỏe phụ nữ" tại TP.HCM</li>
+                        <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Phối hợp chặt chẽ với khoa
+                            Nội tiết – Da liễu – Dinh dưỡng – Tâm lý trị liệu để chăm sóc toàn diện cho phụ nữ</li>
+                        <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Triển khai gói khám phụ
+                            khoa định kỳ trọn gói và chương trình "Theo dõi thai an toàn – tiết kiệm"</li>
+                        <li class="mb-2"><span class="me-2" style="color: #E8A864;">●</span> Tăng cường truyền thông
+                            nâng cao nhận thức về tầm soát ung thư cổ tử cung và sức khỏe sinh sản</li>
+                    </ul>
+
+                    <div class="mt-4 text-muted">
+                        <p class="mb-0"><span class="me-2">🔔</span> Bảng giá có thể không chính xác tùy thời điểm cập
+                            nhật và ưu đãi hiện hành, Khách Hàng có thể liên hệ qua các kênh bên dưới của phòng khám đa
+                            khoa SP79 bên dưới để được hỗ trợ nhanh chóng và chính xác nhất.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tin Tức Khoa Sản Phụ Section -->
+            <section class="py-5">
+                <div class="container">
+                    <!-- Golden Title Banner -->
+                    <div class="text-center mb-5">
+                        <div class="d-inline-block w-100 py-2 rounded-3" style="background-color: #E8A864;">
+                            <h3 class="section-title text-white m-0 text-uppercase fw-bold">TIN TỨC KHOA SẢN PHỤ</h3>
+                        </div>
+                    </div>
+
+                    <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-4">
+                        <!-- News 1 -->
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm hover-lift overflow-hidden">
+                                <div class="position-relative">
+                                    <img src="../images/phong-kham.jpg" class="card-img-top news-thumb" alt="Mã Số Thuế"
+                                        style="height: 250px; object-fit: cover;">
+                                    <!-- Tags -->
+                                    <div
+                                        class="position-absolute top-0 start-0 p-2 d-flex flex-column gap-1 align-items-start">
+                                        <span class="badge rounded-0 fw-normal" style="background-color: #009DA6;">Tin
+                                            tức sự kiện</span>
+                                        <span class="badge rounded-0 fw-normal" style="background-color: #4a4a4a;">Y học
+                                            thường thức</span>
+                                    </div>
+                                    <!-- Date Badge -->
+                                    <div class="position-absolute bottom-0 start-0 text-white p-2 text-center"
+                                        style="width: 50px; background-color: #000;">
+                                        <div class="fw-bold fs-5 lh-1">15</div>
+                                        <div class="small text-uppercase" style="font-size: 0.7rem;">Th12</div>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h6 class="card-title fw-bold mb-3">
+                                        <a href="#" class="text-decoration-none text-dark hover-gold">Mã Số Thuế Phòng
+                                            Khám Đa Khoa SP79 Là Gì?</a>
+                                    </h6>
+                                    <p class="card-text small text-muted">Thông tin pháp lý minh bạch giúp khách hàng và
+                                        đối tác yên tâm.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- News 2 -->
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm hover-lift overflow-hidden">
+                                <div class="position-relative">
+                                    <img src="../images/blog/dau-hieu-co-thai-1024x684.jpg"
+                                        class="card-img-top news-thumb" alt="Mang thai"
+                                        style="height: 250px; object-fit: cover;">
+                                    <!-- Tags -->
+                                    <div
+                                        class="position-absolute top-0 start-0 p-2 d-flex flex-column gap-1 align-items-start">
+                                        <span class="badge rounded-0 fw-normal" style="background-color: #009DA6;">Sản
+                                            phụ khoa</span>
+                                        <span class="badge rounded-0 fw-normal" style="background-color: #4a4a4a;">Kiến
+                                            thức</span>
+                                    </div>
+                                    <!-- Date Badge -->
+                                    <div class="position-absolute bottom-0 start-0 text-white p-2 text-center"
+                                        style="width: 50px; background-color: #000;">
+                                        <div class="fw-bold fs-5 lh-1">04</div>
+                                        <div class="small text-uppercase" style="font-size: 0.7rem;">Th12</div>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h6 class="card-title fw-bold mb-3">
+                                        <a href="#" class="text-decoration-none text-dark hover-gold">Giải Đáp 50+ Thắc
+                                            Mắc Về Dấu Hiệu Mang Thai</a>
+                                    </h6>
+                                    <p class="card-text small text-muted">Tổng hợp những câu hỏi thường gặp nhất của mẹ
+                                        bầu.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- News 3 -->
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm hover-lift overflow-hidden">
+                                <div class="position-relative">
+                                    <img src="../images/blog/chieu-cao-be-trai-truoc-5-tuoi.png"
+                                        class="card-img-top news-thumb" alt="Chiều cao bé"
+                                        style="height: 250px; object-fit: cover;">
+                                    <!-- Tags -->
+                                    <div
+                                        class="position-absolute top-0 start-0 p-2 d-flex flex-column gap-1 align-items-start">
+                                        <span class="badge rounded-0 fw-normal" style="background-color: #009DA6;">Nhi
+                                            khoa</span>
+                                        <span class="badge rounded-0 fw-normal"
+                                            style="background-color: #4a4a4a;">WHO</span>
+                                    </div>
+                                    <!-- Date Badge -->
+                                    <div class="position-absolute bottom-0 start-0 text-white p-2 text-center"
+                                        style="width: 50px; background-color: #000;">
+                                        <div class="fw-bold fs-5 lh-1">20</div>
+                                        <div class="small text-uppercase" style="font-size: 0.7rem;">Th11</div>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h6 class="card-title fw-bold mb-3">
+                                        <a href="#" class="text-decoration-none text-dark hover-gold">Bảng Chiều Cao
+                                            Chuẩn Cho Bé Trai Theo WHO</a>
+                                    </h6>
+                                    <p class="card-text small text-muted">Công cụ theo dõi sự phát triển của bé yêu
+                                        chuẩn khoa học.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- News 4 -->
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm hover-lift overflow-hidden">
+                                <div class="position-relative">
+                                    <img src="../images/banner/san-phu-khoa.jpg" class="card-img-top news-thumb"
+                                        alt="Khám thai" style="height: 250px; object-fit: cover;">
+                                    <!-- Tags -->
+                                    <div
+                                        class="position-absolute top-0 start-0 p-2 d-flex flex-column gap-1 align-items-start">
+                                        <span class="badge rounded-0 fw-normal" style="background-color: #009DA6;">Thai
+                                            kỳ</span>
+                                        <span class="badge rounded-0 fw-normal" style="background-color: #4a4a4a;">Lời
+                                            khuyên</span>
+                                    </div>
+                                    <!-- Date Badge -->
+                                    <div class="position-absolute bottom-0 start-0 text-white p-2 text-center"
+                                        style="width: 50px; background-color: #000;">
+                                        <div class="fw-bold fs-5 lh-1">21</div>
+                                        <div class="small text-uppercase" style="font-size: 0.7rem;">Th11</div>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h6 class="card-title fw-bold mb-3">
+                                        <a href="#" class="text-decoration-none text-dark hover-gold">Các mốc khám thai
+                                            quan trọng theo chia sẻ của Bác sĩ</a>
+                                    </h6>
+                                    <p class="card-text small text-muted">Lịch trình khám thai chi tiết mẹ bầu không nên
+                                        bỏ lỡ.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Liên Hệ Section -->
+            <section class="py-5 bg-white">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                        <!-- Left: Doctor Image -->
+                        <div class="col-md-5 text-center text-md-end mb-4 mb-md-0">
+                            <img src="../images/physicianpatient-privilege-confidentialite-medicale-femme-asiatique-medecin-montrant-silence-bouche-zip-gest-e1709628505800__1_-removebg-preview.png"
+                                alt="Bác sĩ SP79" class="img-fluid" style="max-height: 400px;">
+                        </div>
+
+                        <!-- Right: Contact content -->
+                        <!-- Right: Contact content -->
+                        <div class="col-md-5">
+                            <div class="ps-md-4">
+                                <!-- Title -->
+                                <div class="mb-4 ps-3" style="border-left: 4px solid #E8A864;">
+                                    <h3 class="fw-normal mb-0 text-dark lh-1">Liên hệ</h3>
+                                    <h3 class="fw-bold mb-0 lh-1" style="color: #E8A864;">Phòng khám SP79</h3>
+                                </div>
+
+                                <!-- Decorative Star Divider -->
+                                <div class="d-flex align-items-center justify-content-center gap-3 mb-4">
+                                    <div style="width: 50px; height: 2px; background-color: #E8A864;"></div>
+                                    <div class="text-warning fs-5"><i class="fas fa-star"></i></div>
+                                    <div style="width: 50px; height: 2px; background-color: #E8A864;"></div>
+                                </div>
+
+                                <!-- Contact Cards Stack -->
+                                <div class="d-flex flex-column gap-3 align-items-center">
+                                    <!-- Phone -->
+                                    <a href="tel:0899187979" class="text-decoration-none">
+                                        <div class="card border-0 shadow-sm rounded-4 text-center py-3 position-relative hover-lift"
+                                            style="width: 280px;">
+                                            <div class="position-absolute top-0 start-50 translate-middle-x rounded-bottom-3"
+                                                style="width: 80px; height: 6px; background-color: #E8A864;"></div>
+                                            <div class="text-warning fs-4 mt-1"><i class="fas fa-phone-alt"
+                                                    style="color: #E8A864;"></i></div>
+                                        </div>
+                                    </a>
+
+                                    <!-- Facebook -->
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="card border-0 shadow-sm rounded-4 text-center py-3 position-relative hover-lift"
+                                            style="width: 280px;">
+                                            <div class="position-absolute top-0 start-50 translate-middle-x rounded-bottom-3"
+                                                style="width: 80px; height: 6px; background-color: #E8A864;"></div>
+                                            <div class="text-warning fs-4 mt-1"><i class="fab fa-facebook-f"
+                                                    style="color: #E8A864;"></i></div>
+                                        </div>
+                                    </a>
+
+                                    <!-- Zalo -->
+                                    <a href="https://zalo.me/0899187979" class="text-decoration-none">
+                                        <div class="card border-0 shadow-sm rounded-4 text-center py-3 position-relative hover-lift"
+                                            style="width: 280px;">
+                                            <div class="position-absolute top-0 start-50 translate-middle-x rounded-bottom-3"
+                                                style="width: 80px; height: 6px; background-color: #E8A864;"></div>
+                                            <div class="text-warning fw-bold fs-4 mt-1 font-monospace fst-italic"
+                                                style="color: #E8A864; font-family: 'Arial', sans-serif !important; font-weight: 900 !important;">
+                                                Zalo</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Các Khoa Khác Section -->
+            <section class="py-5">
+                <div class="container">
+                    <div class="mx-auto">
+                        <!-- Golden Box Container -->
+                        <div class="border border-warning border-1 rounded-3 overflow-hidden"
+                            style="border-color: #E8A864 !important;">
+                            <!-- Header -->
+                            <div class="text-center py-3" style="background-color: #E8A864;">
+                                <h4 class="text-white fw-bold m-0 text-uppercase">Các khoa khác</h4>
+                            </div>
+
+                            <!-- Body Link List -->
+                            <div class="bg-white p-4 text-center">
+                                <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 lh-lg"
+                                    style="color: #333;">
+
+                                    <!-- Line 1 -->
+                                    <a href="#" class="text-decoration-none text-secondary hover-gold px-2">Khoa Nội</a>
+                                    <span class="text-dark fw-bold">|</span>
+
+                                    <a href="#" class="text-decoration-none text-secondary hover-gold px-2">Khoa
+                                        Ngoại</a>
+                                    <span class="text-dark fw-bold">|</span>
+
+                                    <a href="#" class="text-decoration-none text-secondary hover-gold px-2">Khoa Cơ
+                                        Xương Khớp</a>
+                                    <span class="text-dark fw-bold">|</span>
+
+                                    <a href="#" class="text-decoration-none px-2 fw-bold"
+                                        style="color: #E8A864; border-bottom: 2px solid #E8A864;">Sản Phụ Khoa</a>
+                                    <span class="text-dark fw-bold">|</span>
+
+                                    <a href="#" class="text-decoration-none text-secondary hover-gold px-2">Da Liễu</a>
+                                    <span class="text-dark fw-bold">|</span>
+
+                                    <a href="#" class="text-decoration-none text-secondary hover-gold px-2">Phẫu Thuật
+                                        Thẩm Mỹ</a>
+                                    <span class="text-dark fw-bold">|</span>
+
+                                    <a href="#" class="text-decoration-none text-secondary hover-gold px-2">Tai Mũi
+                                        Họng</a>
+
+                                    <span class="text-dark fw-bold d-none d-lg-inline">|</span>
+                                    <div class="w-100 d-block d-lg-none"></div> <!-- Force break on mobile/tablet -->
+
+                                    <a href="#" class="text-decoration-none text-secondary hover-gold px-2">Răng Hàm
+                                        Mặt</a>
+                                    <span class="text-dark fw-bold">|</span>
+
+                                    <a href="#" class="text-decoration-none text-secondary hover-gold px-2">Khoa Mắt</a>
+                                    <span class="text-dark fw-bold">|</span>
+
+                                    <a href="#" class="text-decoration-none text-secondary hover-gold px-2">Chẩn Đoán
+                                        Hình Ảnh</a>
+                                    <span class="text-dark fw-bold">|</span>
+
+                                    <a href="#" class="text-decoration-none text-secondary hover-gold px-2">Xét
+                                        Nghiệm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Logo & Contact -->
+                <div class="col-12 col-lg-4">
+                    <a href="#" class="logo-footer">
+                        <img src="../images/logo-phong-kham-sp79-trang.png" alt="" class="logo">
+                    </a>
+
+                    <div class="footer-contact">
+                        <div class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>89 Phan Đình Phùng, P. Cầu Kiểu, TP.HCM</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@sp79.vn">info@sp79.vn</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="tel:0899187979">089 918 7979</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="col-12 col-lg-4 footer-links">
+                    <div class="footer-links-column">
+                        <ul>
+                            <li><a href="#">Khoa Nội</a></li>
+                            <li><a href="#">Khoa Ngoại</a></li>
+                            <li><a href="#">Sản Phụ khoa</a></li>
+                            <li><a href="#">Da liễu</a></li>
+                            <li><a href="#">Phẫu thuật thẩm mỹ</a></li>
+                            <li><a href="#">Tai mũi họng</a></li>
+                            <li><a href="#">Răng hàm mặt</a></li>
+                            <li><a href="#">Mắt</a></li>
+                            <li><a href="#">Chuẩn đoán hình ảnh</a></li>
+                            <li><a href="#">Xét nghiệm</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links-column">
+                        <ul>
+                            <li><a href="../index.html">Trang chủ</a></li>
+                            <li><a href="../about.html">Giới thiệu</a></li>
+                            <li><a href="../news.html">Tin tức</a></li>
+                            <li><a href="../doctor.html">Đội ngũ bác sĩ</a></li>
+                            <li><a href="../specialties.html">Chuyên khoa</a></li>
+                            <li><a href="../contact.html">Liên hệ</a></li>
+                            <li><a href="#">Đặt lịch hẹn</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-12 col-lg-4 footer-newsletter mt-5">
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link" title="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+
+                    <div class="newsletter-text text-end">
+                        Đăng ký ngay để nhận thông tin và ưu đãi
+                    </div>
+
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" class="newsletter-input fst-italic"
+                            placeholder="Nhập email của bạn vào đây..." required>
+                        <button type="submit" class="newsletter-btn">Gửi</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
