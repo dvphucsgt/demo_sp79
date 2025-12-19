@@ -90,20 +90,19 @@
                 <div class="collapse navbar-collapse w-100 mt-2 mt-lg-0 d-none d-lg-block" id="mainNavbar">
                     <ul class="navbar-nav w-100">
                         <li class="nav-item"><a class="nav-link" href="index.html">TRANG CHỦ</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="about.html">GIỚI THIỆU</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">GIỚI THIỆU</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#">HƯỚNG DẪN</a>
                             <div class="dropdown-menu-custom">
                                 <a class="dropdown-item" href="#">Sơ đồ các tầng</a>
                                 <a class="dropdown-item" href="#">Trang thiết bị</a>
-                                <a class="dropdown-item" href="#">Tìm bác sĩ</a>
+                                <a class="dropdown-item" href="./about.html#doctor">Tìm bác sĩ</a>
                                 <a class="dropdown-item" href="#">Báo lãnh viện phí</a>
-                                <a class="dropdown-item" href="#">Liên hệ</a>
                                 <a class="dropdown-item" href="#">Góp ý phòng khám</a>
                             </div>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="specialties.html">CHUYÊN KHOA</a></li>
-                        <li class="nav-item"><a class="nav-link" href="price.html">DỊCH VỤ</a></li>
+                        <li class="nav-item"><a class="nav-link child-active" href="services.html">DỊCH VỤ</a></li>
                         <li class="nav-item"><a class="nav-link" href="news.html">TIN TỨC</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">LIÊN HỆ</a></li>
                         <li class="nav-item"><a class="nav-link" href="https://nhathuoc.sp79.vn/">NHÀ THUỐC ONLINE</a>
@@ -129,7 +128,7 @@
                 <!-- Menu Items -->
                 <ul class="mobile-menu-nav">
                     <li><a href="index.html">TRANG CHỦ</a></li>
-                    <li><a href="about.html" class="active">GIỚI THIỆU</a></li>
+                    <li><a href="about.html">GIỚI THIỆU</a></li>
                     <li class="mobile-dropdown">
                         <div class="mobile-dropdown-header">
                             <a href="#">HƯỚNG DẪN</a>
@@ -140,12 +139,11 @@
                             <a href="#">Trang thiết bị</a>
                             <a href="./about.html#doctor">Tìm bác sĩ</a>
                             <a href="#">Báo lãnh viện phí</a>
-                            <a href="#">Liên hệ</a>
                             <a href="#">Góp ý phòng khám</a>
                         </div>
                     </li>
                     <li><a href="specialties.html">CHUYÊN KHOA</a></li>
-                    <li><a href="price.html">DỊCH VỤ</a></li>
+                    <li><a href="services.html" class="child-active">DỊCH VỤ</a></li>
                     <li><a href="news.html">TIN TỨC</a></li>
                     <li><a href="contact.html">LIÊN HỆ</a></li>
                     <li><a href="https://nhathuoc.sp79.vn/">NHÀ THUỐC ONLINE</a></li>
@@ -207,14 +205,18 @@
                             <div class="pricing-body">
                                 <ul class="pricing-features list-unstyled">
                                     <ul class="pricing-features list-unstyled">
-                                    <li><i class="far fa-check-square me-2"></i> Phân tích >20 chỉ số nội tiết – chuyển hóa – vi chất.</li>
-                                    <li><i class="far fa-check-square me-2"></i> Xác định nguyên nhân gây tăng/giảm cân khó kiểm soát.</li>
-                                    <li><i class="far fa-check-square me-2"></i> Hội thảo sức khỏe hàng năm</li>
-                                    <li><i class="far fa-check-square me-2"></i> Đánh giá mỡ máu, men gan, nguy cơ rối loạn chuyển hóa.</li>
-                                    <li><i class="far fa-check-square me-2"></i> Tư vấn cá nhân hóa với bác sĩ nội tiết.</li>
-                                </ul>
-                                <a href="#" class="btn btn-pricing w-100 rounded-pill mt-4">Tư Vấn Ngay <i
-                                        class="fas fa-arrow-right ms-2"></i></a>
+                                        <li><i class="far fa-check-square me-2"></i> Phân tích >20 chỉ số nội tiết –
+                                            chuyển hóa – vi chất.</li>
+                                        <li><i class="far fa-check-square me-2"></i> Xác định nguyên nhân gây tăng/giảm
+                                            cân khó kiểm soát.</li>
+                                        <li><i class="far fa-check-square me-2"></i> Hội thảo sức khỏe hàng năm</li>
+                                        <li><i class="far fa-check-square me-2"></i> Đánh giá mỡ máu, men gan, nguy cơ
+                                            rối loạn chuyển hóa.</li>
+                                        <li><i class="far fa-check-square me-2"></i> Tư vấn cá nhân hóa với bác sĩ nội
+                                            tiết.</li>
+                                    </ul>
+                                    <a href="#" class="btn btn-pricing w-100 rounded-pill mt-4">Tư Vấn Ngay <i
+                                            class="fas fa-arrow-right ms-2"></i></a>
                             </div>
                         </div>
                     </div>
@@ -229,10 +231,14 @@
                             </div>
                             <div class="pricing-body">
                                 <ul class="pricing-features list-unstyled">
-                                    <li><i class="far fa-check-square me-2"></i> Tầm soát 12–13 loại ký sinh trùng phổ biến & hiếm gặp.</li>
-                                    <li><i class="far fa-check-square me-2"></i> Phân tích máu & kháng thể để xác định giai đoạn nhiễm.</li>
-                                    <li><i class="far fa-check-square me-2"></i> Kết quả nhanh, thiết bị hiện đại, độ chính xác cao.</li>
-                                    <li><i class="far fa-check-square me-2"></i> Ngăn ngừa biến chứng nguy hiểm ngay từ sớm.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Tầm soát 12–13 loại ký sinh trùng phổ
+                                        biến & hiếm gặp.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Phân tích máu & kháng thể để xác định
+                                        giai đoạn nhiễm.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Kết quả nhanh, thiết bị hiện đại, độ
+                                        chính xác cao.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Ngăn ngừa biến chứng nguy hiểm ngay từ
+                                        sớm.</li>
                                 </ul>
                                 <a href="#" class="btn btn-pricing w-100 rounded-pill mt-4">Tư Vấn Ngay <i
                                         class="fas fa-arrow-right ms-2"></i></a>
@@ -251,10 +257,14 @@
                             </div>
                             <div class="pricing-body">
                                 <ul class="pricing-features list-unstyled">
-                                    <li><i class="far fa-check-square me-2"></i> Chẩn đoán đa chiều: thần kinh – nội tiết – tâm lý.</li>
-                                    <li><i class="far fa-check-square me-2"></i> Xét nghiệm chuyên sâu >20 hạng mục.</li>
-                                    <li><i class="far fa-check-square me-2"></i> Kiểm tra vi chất (Vitamin D, B12) ảnh hưởng đến giấc ngủ.</li>
-                                    <li><i class="far fa-check-square me-2"></i> Đo ECG, siêu âm tim, đánh giá nguy cơ trầm cảm.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Chẩn đoán đa chiều: thần kinh – nội
+                                        tiết – tâm lý.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Xét nghiệm chuyên sâu >20 hạng mục.
+                                    </li>
+                                    <li><i class="far fa-check-square me-2"></i> Kiểm tra vi chất (Vitamin D, B12) ảnh
+                                        hưởng đến giấc ngủ.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Đo ECG, siêu âm tim, đánh giá nguy cơ
+                                        trầm cảm.</li>
                                 </ul>
                                 <a href="#" class="btn btn-pricing w-100 rounded-pill mt-4">Tư Vấn Ngay <i
                                         class="fas fa-arrow-right ms-2"></i></a>
@@ -275,10 +285,14 @@
                             </div>
                             <div class="pricing-body">
                                 <ul class="pricing-features list-unstyled">
-                                    <li><i class="far fa-check-square me-2"></i> Đau khớp kéo dài, đặc biệt khi vận động hoặc đứng lâu.</li>
-                                    <li><i class="far fa-check-square me-2"></i> Cứng khớp buổi sáng, khớp kêu lạo xạo.</li>
-                                    <li><i class="far fa-check-square me-2"></i> Sưng nhẹ quanh khớp, giảm khả năng gập/duỗi.</li>
-                                    <li><i class="far fa-check-square me-2"></i> Đã điều trị bằng thuốc hoặc vật lý trị liệu nhưng chưa cải thiện.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Đau khớp kéo dài, đặc biệt khi vận động
+                                        hoặc đứng lâu.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Cứng khớp buổi sáng, khớp kêu lạo xạo.
+                                    </li>
+                                    <li><i class="far fa-check-square me-2"></i> Sưng nhẹ quanh khớp, giảm khả năng
+                                        gập/duỗi.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Đã điều trị bằng thuốc hoặc vật lý trị
+                                        liệu nhưng chưa cải thiện.</li>
                                 </ul>
                                 <a href="#" class="btn btn-pricing w-100 rounded-pill mt-4">Tư Vấn Ngay <i
                                         class="fas fa-arrow-right ms-2"></i></a>
@@ -297,10 +311,14 @@
                             </div>
                             <div class="pricing-body">
                                 <ul class="pricing-features list-unstyled">
-                                    <li><i class="far fa-check-square me-2"></i> Kiểm tra gan, thận, đường huyết, mỡ máu, nội tiết định kỳ.</li>
-                                    <li><i class="far fa-check-square me-2"></i> Đánh giá sức khỏe sinh sản toàn diện.</li>
-                                    <li><i class="far fa-check-square me-2"></i> Siêu âm vú, phụ khoa; Pap smear, HPV, AMH.</li>
-                                    <li><i class="far fa-check-square me-2"></i> Phòng ngừa ung thư vú, cổ tử cung và bệnh lây truyền.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Kiểm tra gan, thận, đường huyết, mỡ
+                                        máu, nội tiết định kỳ.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Đánh giá sức khỏe sinh sản toàn diện.
+                                    </li>
+                                    <li><i class="far fa-check-square me-2"></i> Siêu âm vú, phụ khoa; Pap smear, HPV,
+                                        AMH.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Phòng ngừa ung thư vú, cổ tử cung và
+                                        bệnh lây truyền.</li>
                                 </ul>
                                 <a href="#" class="btn btn-pricing w-100 rounded-pill mt-4">Tư Vấn Ngay <i
                                         class="fas fa-arrow-right ms-2"></i></a>
@@ -319,10 +337,14 @@
                             </div>
                             <div class="pricing-body">
                                 <ul class="pricing-features list-unstyled">
-                                    <li><i class="far fa-check-square me-2"></i> Kiểm tra gan, thận, đường huyết, mỡ máu định kỳ.</li>
-                                    <li><i class="far fa-check-square me-2"></i> Đánh giá hormone, vi chất, phát hiện sớm rối loạn sinh lý.</li>
-                                    <li><i class="far fa-check-square me-2"></i> Tầm soát viêm gan, HIV, ung thư gan – tuyến tiền liệt.</li>
-                                    <li><i class="far fa-check-square me-2"></i> Gói tiền hôn nhân: tinh dịch đồ, sức khỏe sinh sản toàn diện.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Kiểm tra gan, thận, đường huyết, mỡ máu
+                                        định kỳ.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Đánh giá hormone, vi chất, phát hiện
+                                        sớm rối loạn sinh lý.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Tầm soát viêm gan, HIV, ung thư gan –
+                                        tuyến tiền liệt.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Gói tiền hôn nhân: tinh dịch đồ, sức
+                                        khỏe sinh sản toàn diện.</li>
                                 </ul>
                                 <a href="#" class="btn btn-pricing w-100 rounded-pill mt-4">Tư Vấn Ngay <i
                                         class="fas fa-arrow-right ms-2"></i></a>
@@ -357,9 +379,15 @@
                                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                     data-bs-parent="#faqAccordion">
                                     <div class="accordion-body text-secondary small">
-                                        <p>- Gói cơ bản: Phù hợp cho khám định kỳ, kiểm tra chức năng cơ bản (gan, thận, đường huyết, mỡ máu) và hơn 15 chỉ số nội tiết – vi chất, phát hiện sớm mệt mỏi, rối loạn sinh lý.</p>
-                                        <p>- Gói nâng cao: Bao gồm các mục của gói cơ bản và thêm các xét nghiệm chuyên sâu hơn như tinh dịch đồ, hormone sinh sản, siêu âm để đánh giá toàn diện sức khỏe sinh sản.</p>
-                                        <p>- Gói tiền hôn nhân: Tập trung sâu vào sức khỏe sinh sản và tầm soát các bệnh lây truyền để chuẩn bị tốt nhất cho cuộc sống hôn nhân và kế hoạch gia đình.</p>
+                                        <p>- Gói cơ bản: Phù hợp cho khám định kỳ, kiểm tra chức năng cơ bản (gan, thận,
+                                            đường huyết, mỡ máu) và hơn 15 chỉ số nội tiết – vi chất, phát hiện sớm mệt
+                                            mỏi, rối loạn sinh lý.</p>
+                                        <p>- Gói nâng cao: Bao gồm các mục của gói cơ bản và thêm các xét nghiệm chuyên
+                                            sâu hơn như tinh dịch đồ, hormone sinh sản, siêu âm để đánh giá toàn diện
+                                            sức khỏe sinh sản.</p>
+                                        <p>- Gói tiền hôn nhân: Tập trung sâu vào sức khỏe sinh sản và tầm soát các bệnh
+                                            lây truyền để chuẩn bị tốt nhất cho cuộc sống hôn nhân và kế hoạch gia đình.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -376,7 +404,9 @@
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                     data-bs-parent="#faqAccordion">
                                     <div class="accordion-body text-secondary small">
-                                        Có. Các gói khám đều đánh giá hormone và các chỉ số liên quan để phát hiện sớm các dấu hiệu rối loạn sinh lý, mệt mỏi. Gói nâng cao và tiền hôn nhân còn bao gồm tinh dịch đồ và hormone sinh sản để đánh giá toàn diện hơn.
+                                        Có. Các gói khám đều đánh giá hormone và các chỉ số liên quan để phát hiện sớm
+                                        các dấu hiệu rối loạn sinh lý, mệt mỏi. Gói nâng cao và tiền hôn nhân còn bao
+                                        gồm tinh dịch đồ và hormone sinh sản để đánh giá toàn diện hơn.
                                     </div>
                                 </div>
                             </div>
@@ -393,7 +423,9 @@
                                 <div id="collapseThree" class="accordion-collapse collapse show"
                                     aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body text-secondary small">
-                                        Gói khám tiền hôn nhân giúp bạn chủ động kiểm tra sức khỏe sinh sản, phát hiện sớm các nguy cơ viêm nhiễm hoặc vấn đề ảnh hưởng đến khả năng thụ thai, đảm bảo nền tảng sức khỏe tốt nhất cho hôn nhân và kế hoạch có con.
+                                        Gói khám tiền hôn nhân giúp bạn chủ động kiểm tra sức khỏe sinh sản, phát hiện
+                                        sớm các nguy cơ viêm nhiễm hoặc vấn đề ảnh hưởng đến khả năng thụ thai, đảm bảo
+                                        nền tảng sức khỏe tốt nhất cho hôn nhân và kế hoạch có con.
                                     </div>
                                 </div>
                             </div>
@@ -404,13 +436,16 @@
                                     <button class="accordion-button collapsed fw-medium" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
                                         aria-controls="collapseFour">
-                                        Gói khám có bao gồm tầm soát các bệnh nguy hiểm như viêm gan, HIV, ung thư không?
+                                        Gói khám có bao gồm tầm soát các bệnh nguy hiểm như viêm gan, HIV, ung thư
+                                        không?
                                     </button>
                                 </h2>
                                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                     data-bs-parent="#faqAccordion">
                                     <div class="accordion-body text-secondary small">
-                                        Có. Tất cả các gói đều bao gồm tầm soát viêm gan B, C, HIV. Ngoài ra, chúng tôi còn tầm soát ung thư gan, ung thư tuyến tiền liệt và một số ung thư tiêu hóa, giúp phát hiện sớm và phòng ngừa các bệnh lý nguy hiểm.
+                                        Có. Tất cả các gói đều bao gồm tầm soát viêm gan B, C, HIV. Ngoài ra, chúng tôi
+                                        còn tầm soát ung thư gan, ung thư tuyến tiền liệt và một số ung thư tiêu hóa,
+                                        giúp phát hiện sớm và phòng ngừa các bệnh lý nguy hiểm.
                                     </div>
                                 </div>
                             </div>
@@ -421,13 +456,16 @@
                                     <button class="accordion-button collapsed fw-medium" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
                                         aria-controls="collapseFive">
-                                        Tôi có cần chuẩn bị gì đặc biệt trước khi thực hiện các xét nghiệm sinh sản như tinh dịch đồ?
+                                        Tôi có cần chuẩn bị gì đặc biệt trước khi thực hiện các xét nghiệm sinh sản như
+                                        tinh dịch đồ?
                                     </button>
                                 </h2>
                                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                                     data-bs-parent="#faqAccordion">
                                     <div class="accordion-body text-secondary small">
-                                        Đối với tinh dịch đồ, bạn cần kiêng xuất tinh từ 3-5 ngày trước khi thực hiện xét nghiệm để đảm bảo kết quả chính xác nhất. Vui lòng tham khảo hướng dẫn chi tiết khi đặt lịch hẹn.
+                                        Đối với tinh dịch đồ, bạn cần kiêng xuất tinh từ 3-5 ngày trước khi thực hiện
+                                        xét nghiệm để đảm bảo kết quả chính xác nhất. Vui lòng tham khảo hướng dẫn chi
+                                        tiết khi đặt lịch hẹn.
                                     </div>
                                 </div>
                             </div>
@@ -437,13 +475,16 @@
                                     <button class="accordion-button collapsed fw-medium" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
                                         aria-controls="collapseSix">
-                                        Làm thế nào để biết gói khám nào là phù hợp nhất với độ tuổi và tình trạng sức khỏe của tôi?
+                                        Làm thế nào để biết gói khám nào là phù hợp nhất với độ tuổi và tình trạng sức
+                                        khỏe của tôi?
                                     </button>
                                 </h2>
                                 <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                     data-bs-parent="#faqAccordion">
                                     <div class="accordion-body text-secondary small">
-                                        Bạn có thể liên hệ trực tiếp với đội ngũ tư vấn của Phòng khám Đa khoa SP79 qua hotline hoặc website. Chúng tôi sẽ lắng nghe nhu cầu và tiền sử sức khỏe của bạn để gợi ý gói khám phù hợp nhất.
+                                        Bạn có thể liên hệ trực tiếp với đội ngũ tư vấn của Phòng khám Đa khoa SP79 qua
+                                        hotline hoặc website. Chúng tôi sẽ lắng nghe nhu cầu và tiền sử sức khỏe của bạn
+                                        để gợi ý gói khám phù hợp nhất.
                                     </div>
                                 </div>
                             </div>
