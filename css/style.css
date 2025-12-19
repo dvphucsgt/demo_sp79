@@ -167,10 +167,59 @@ body {
     background-color: rgba(228, 171, 99, 0.1);
 }
 
-.nav-link.active {
-    color: var(--white);
+.nav-link.child-active {
+    color: var(--white) !important;
     background-color: var(--primary-color);
     box-shadow: 0 4px 10px rgba(228, 171, 99, 0.3);
+}
+
+/* Dropdown Menu Styles */
+.nav-item.dropdown {
+    position: relative;
+}
+
+.dropdown-menu-custom {
+    display: none;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    min-width: 220px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 10px 0;
+    margin-top: 10px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.nav-item.dropdown:hover .dropdown-menu-custom {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    margin-top: 5px;
+}
+
+.dropdown-menu-custom .dropdown-item {
+    display: block;
+    padding: 12px 25px;
+    color: #555;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: none;
+    transition: all 0.3s ease;
+    border-radius: 0;
+    text-align: start;
+}
+
+.dropdown-menu-custom .dropdown-item:hover {
+    background-color: rgba(228, 171, 99, 0.1);
+    color: var(--primary-color);
+    padding-left: 30px;
 }
 
 /* Footer */
@@ -742,7 +791,7 @@ body {
 .pricing-desc {
     font-size: 0.9rem;
     line-height: 1.6;
-    margin-bottom: 25px;
+    margin-bottom: 0;
     opacity: 0.9;
     min-height: 48px;
     font-weight: 400;
@@ -995,6 +1044,48 @@ body {
     width: 100%;
     height: auto;
     margin-bottom: 0;
+}
+
+/* Doctor Slider Refinement */
+.about-doctors-slider-wrapper {
+    position: relative;
+    padding: 0 60px;
+    /* Space for buttons */
+}
+
+.about-doctors-slider-wrapper .custom-nav-btn {
+    position: absolute !important;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+}
+
+.about-doctors-slider-wrapper .about-doctors-prev {
+    left: 0;
+}
+
+.about-doctors-slider-wrapper .about-doctors-next {
+    right: 0;
+}
+
+@media (max-width: 991px) {
+    .about-doctors-slider-wrapper {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-doctors-slider-wrapper {
+        padding: 0;
+    }
+
+    .about-doctors-slider-wrapper .custom-nav-btn {
+        display: none;
+        /* Hide on mobile if they overlap too much or aren't needed */
+    }
 }
 
 /* ========================================
@@ -2216,6 +2307,7 @@ body {
 .specialty-cards-container .swiper-wrapper .specialtySwiper {
     overflow: hidden;
 }
+
 .specialty-cards-container {
     margin-top: -160px;
     /* Overlap golden box bottom */
@@ -2372,6 +2464,7 @@ body {
     .btn-outline-custom {
         padding: 10px 20px;
     }
+
     .doctors-section {
         padding: 20px 0 40px !important;
     }
@@ -2584,7 +2677,8 @@ body {
 
 /* Active Slide Styling */
 .swiper-slide-active .facility-card {
-    transform: scale(1.1); /* Larger active card */
+    transform: scale(1.1);
+    /* Larger active card */
     background: linear-gradient(90deg, #dda154 0%, #eec888 100%);
     opacity: 1;
     box-shadow: 0 20px 50px rgba(232, 168, 100, 0.3);
@@ -2622,7 +2716,7 @@ body {
     right: 10px !important;
 }
 
-.swiper-button-next:after, 
+.swiper-button-next:after,
 .swiper-button-prev:after {
     font-size: 20px;
     color: #4C4C4D;
@@ -2954,10 +3048,12 @@ body {
 .specialty-cards-container .swiper-button-prev {
     left: -20px;
 }
+
 .specialty-cards-container .swiper-button-next {
     right: -20px;
 }
-    .specialty-cards-container .swiper-button-prev, 
+
+.specialty-cards-container .swiper-button-prev,
 .specialty-cards-container .swiper-button-next {
     position: absolute;
     top: 50%;
@@ -2997,6 +3093,10 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .specialty-img {
+        transform: scale(1);
+    }
+
     .doctors-section .doctorsSwiper {
         padding: 20px 0 20px;
     }
@@ -3275,7 +3375,7 @@ body {
         justify-content: center;
         gap: 10px;
     }
-    
+
     .swiper-pagination-bullet {
         width: 10px;
         height: 10px;
@@ -3283,7 +3383,7 @@ body {
         opacity: 0.3;
         transition: all 0.3s;
     }
-    
+
     .swiper-pagination-bullet-active {
         opacity: 1;
         transform: scale(1.2);
@@ -3398,9 +3498,62 @@ body {
     padding-left: 25px;
 }
 
-.mobile-menu-nav li a.active {
+.mobile-menu-nav li a.child-active {
     background-color: var(--primary-color);
     color: white;
+}
+
+/* Mobile Dropdown Submenu */
+.mobile-dropdown {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.mobile-dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mobile-dropdown-header a {
+    flex: 1;
+    padding: 15px 10px 15px 15px !important;
+}
+
+.mobile-dropdown-header i {
+    color: #555;
+    transition: transform 0.3s ease;
+}
+
+.mobile-dropdown.open .mobile-dropdown-header i {
+    transform: rotate(180deg);
+    color: var(--primary-color);
+}
+
+.mobile-dropdown.open .mobile-dropdown-header {
+    border-bottom: 1px solid #eee;
+}
+
+.mobile-submenu {
+    display: none;
+    padding: 5px 0;
+    background-color: #fcfcfc;
+}
+
+.mobile-submenu a {
+    padding: 12px 20px 12px 35px !important;
+    font-size: 13px !important;
+    text-transform: none !important;
+    font-weight: 500 !important;
+    border-radius: 0 !important;
+    color: #666 !important;
+}
+
+.mobile-submenu a:hover {
+    padding-left: 40px !important;
+    background-color: transparent !important;
+    color: var(--primary-color) !important;
 }
 
 /* ========================================

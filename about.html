@@ -4,21 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phòng Khám Đa Khoa SP79</title>
+    <title>SP79 - Phòng Khám Đa Khoa Quốc Tế</title>
 
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <!-- Flaticon UIcons -->
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- Google Fonts: Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <!-- Flaticon -->
     <link rel="stylesheet" href="css/flaticon.min.css">
     <!-- Custom CSS -->
@@ -87,26 +88,23 @@
             <div class="container flex-wrap justify-content-between align-items-center">
                 <div class="collapse navbar-collapse w-100 mt-2 mt-lg-0 d-none d-lg-block" id="mainNavbar">
                     <ul class="navbar-nav w-100">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">TRANG CHỦ</a>
+                        <li class="nav-item"><a class="nav-link" href="index.html">TRANG CHỦ</a></li>
+                        <li class="nav-item"><a class="nav-link child-active" href="about.html">GIỚI THIỆU</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">HƯỚNG DẪN</a>
+                            <div class="dropdown-menu-custom">
+                                <a class="dropdown-item" href="#">Sơ đồ các tầng</a>
+                                <a class="dropdown-item" href="#">Trang thiết bị</a>
+                                <a class="dropdown-item" href="#doctor">Tìm bác sĩ</a>
+                                <a class="dropdown-item" href="#">Báo lãnh viện phí</a>
+                                <a class="dropdown-item" href="#">Góp ý phòng khám</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" href="about.html">GIỚI THIỆU</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="specialties.html">CHUYÊN KHOA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="doctor.html">BÁC SĨ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="price.html">DỊCH VỤ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="news.html">TIN TỨC</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">LIÊN HỆ</a>
+                        <li class="nav-item"><a class="nav-link" href="specialties.html">CHUYÊN KHOA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="price.html">DỊCH VỤ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="news.html">TIN TỨC</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">LIÊN HỆ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://nhathuoc.sp79.vn/">NHÀ THUỐC ONLINE</a>
                         </li>
                     </ul>
                 </div>
@@ -129,12 +127,26 @@
                 <!-- Menu Items -->
                 <ul class="mobile-menu-nav">
                     <li><a href="index.html">TRANG CHỦ</a></li>
-                    <li><a href="about.html" class="active">GIỚI THIỆU</a></li>
+                    <li><a href="about.html" class="child-active">GIỚI THIỆU</a></li>
+                    <li class="mobile-dropdown">
+                        <div class="mobile-dropdown-header">
+                            <a href="#">HƯỚNG DẪN</a>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="mobile-submenu">
+                            <a href="#">Sơ đồ các tầng</a>
+                            <a href="#">Trang thiết bị</a>
+                            <a href="#doctor">Tìm bác sĩ</a>
+                            <a href="#">Báo lãnh viện phí</a>
+                            <a href="#">Liên hệ</a>
+                            <a href="#">Góp ý phòng khám</a>
+                        </div>
+                    </li>
                     <li><a href="specialties.html">CHUYÊN KHOA</a></li>
-                    <li><a href="doctor.html">BÁC SĨ</a></li>
                     <li><a href="price.html">DỊCH VỤ</a></li>
                     <li><a href="news.html">TIN TỨC</a></li>
                     <li><a href="contact.html">LIÊN HỆ</a></li>
+                    <li><a href="https://nhathuoc.sp79.vn/">NHÀ THUỐC ONLINE</a></li>
                 </ul>
             </div>
         </div>
@@ -421,98 +433,98 @@
         </div>
     </section>
 
-    <!-- Doctors Section -->
-    <section class="doctor-section about-doctors py-5">
+    <!-- Doctor Slider Wrapper -->
+    <section class="doctor-section" id="doctor">
         <div class="container">
-            <!-- Section Header -->
             <div class="dortors-title text-center mb-5">
                 <h5 class="text-uppercase fw-bold mb-2">SP79 ĐƯỢC TẠO NÊN TỪ</h5>
                 <h2 class="display-4 fw-bold">ĐỘI NGŨ BÁC SĨ CHUYÊN MÔN CAO</h2>
             </div>
-
-            <!-- Doctor Grid -->
-            <div class="row g-4 justify-content-center">
-                <!-- Doctor 1 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="doctor-card text-center">
-                        <div class="doctor-img-wrapper mb-4">
-                            <img src="images/bac-si-nguyen-tuan-anh.png" alt="BS. Nguyễn Tuấn Anh"
-                                class="img-fluid doctor-img">
+            <div class="facilities-slider-wrapper" style="position: relative;">
+                <div class="swiper aboutDoctorsSwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="doctor-card text-center">
+                                <div class="doctor-img-wrapper mb-4">
+                                    <img src="images/bac-si-hoang-thanh-hong-dao-removebg-preview.png"
+                                        alt="BS CKI. Lê Thị Xuân Nghi" class="img-fluid doctor-img">
+                                </div>
+                                <div class="doctor-info px-3 pb-3">
+                                    <h4 class="doctor-name">BS Nguyễn Thị Mai</h4>
+                                    <p class="doctor-specialty text-uppercase">KHOA PHỤ SẢN</p>
+                                    <p class="doctor-desc">Nguyên Trưởng khoa Sản - Bệnh viện Đa khoa Bến Lức (Long An).
+                                        Tốt nghiệp bác sĩ y khoa - Đại học Y dược TPHCM.
+                                        Chứng chỉ hành nghề chuyên khoa nội do Sở Y tế Long An cấp.
+                                        Hơn 30 năm kinh nghiệm lâm sàng Phụ sản.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="doctor-info px-3 pb-3">
-                            <h4 class="doctor-name">BS. Nguyễn Tuấn Anh</h4>
-                            <p class="doctor-specialty text-uppercase">KHOA NỘI</p>
-                            <p class="doctor-desc">Tốt nghiệp bác sĩ đa khoa - Đại học Y dược TPHCM.
-                                Chứng chỉ hành nghề chuyên khoa nội do Sở Y tế TPHCM cấp.
-                                Hơn 10 năm kinh nghiệm khám lâm sàng Nội tổng quát.</p>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="doctor-card text-center">
+                                <div class="doctor-img-wrapper mb-4">
+                                    <img src="images/bac-si-hoang-thanh-hong-dao-removebg-preview.png"
+                                        alt="BS CKI. Lê Thị Xuân Nghi" class="img-fluid doctor-img">
+                                </div>
+                                <div class="doctor-info px-3 pb-3">
+                                    <h4 class="doctor-name">BS Nguyễn Thị Mai</h4>
+                                    <p class="doctor-specialty text-uppercase">KHOA PHỤ SẢN</p>
+                                    <p class="doctor-desc">Nguyên Trưởng khoa Sản - Bệnh viện Đa khoa Bến Lức (Long An).
+                                        Tốt nghiệp bác sĩ y khoa - Đại học Y dược TPHCM.
+                                        Chứng chỉ hành nghề chuyên khoa nội do Sở Y tế Long An cấp.
+                                        Hơn 30 năm kinh nghiệm lâm sàng Phụ sản.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <div class="doctor-card text-center">
+                                <div class="doctor-img-wrapper mb-4">
+                                    <img src="images/bac-si-hoang-thanh-hong-dao-removebg-preview.png"
+                                        alt="BS CKI. Lê Thị Xuân Nghi" class="img-fluid doctor-img">
+                                </div>
+                                <div class="doctor-info px-3 pb-3">
+                                    <h4 class="doctor-name">BS Nguyễn Thị Mai</h4>
+                                    <p class="doctor-specialty text-uppercase">KHOA PHỤ SẢN</p>
+                                    <p class="doctor-desc">Nguyên Trưởng khoa Sản - Bệnh viện Đa khoa Bến Lức (Long An).
+                                        Tốt nghiệp bác sĩ y khoa - Đại học Y dược TPHCM.
+                                        Chứng chỉ hành nghề chuyên khoa nội do Sở Y tế Long An cấp.
+                                        Hơn 30 năm kinh nghiệm lâm sàng Phụ sản.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide">
+                            <div class="doctor-card text-center">
+                                <div class="doctor-img-wrapper mb-4">
+                                    <img src="images/bac-si-hoang-thanh-hong-dao-removebg-preview.png"
+                                        alt="BS CKI. Lê Thị Xuân Nghi" class="img-fluid doctor-img">
+                                </div>
+                                <div class="doctor-info px-3 pb-3">
+                                    <h4 class="doctor-name">BS Nguyễn Thị Mai</h4>
+                                    <p class="doctor-specialty text-uppercase">KHOA PHỤ SẢN</p>
+                                    <p class="doctor-desc">Nguyên Trưởng khoa Sản - Bệnh viện Đa khoa Bến Lức (Long An).
+                                        Tốt nghiệp bác sĩ y khoa - Đại học Y dược TPHCM.
+                                        Chứng chỉ hành nghề chuyên khoa nội do Sở Y tế Long An cấp.
+                                        Hơn 30 năm kinh nghiệm lâm sàng Phụ sản.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!-- Pagination -->
+                    <div class="swiper-pagination about-doctors-pagination"></div>
                 </div>
-
-                <!-- Doctor 2 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="doctor-card text-center">
-                        <div class="doctor-img-wrapper mb-4">
-                            <img src="images/bac-si-hoang-thanh-hong-dao.png" alt="BS CKI. Hoàng Thanh Hồng Đào"
-                                class="img-fluid doctor-img">
-                        </div>
-                        <div class="doctor-info px-3 pb-3">
-                            <h4 class="doctor-name">BS CKI. Hoàng Thanh Hồng Đào</h4>
-                            <p class="doctor-specialty text-uppercase">KHOA DA LIỄU</p>
-                            <p class="doctor-desc">Tốt nghiệp bác sĩ y khoa - Đại học Y khoa Phạm Ngọc Thạch.
-                                Tốt nghiệp Chuyên khoa I Da liễu - Đại học Y khoa Phạm Ngọc Thạch.
-                                Chứng chỉ hành nghề chuyên khoa da liễu do Sở Y tế TPHCM cấp.
-                                Hơn 15 năm kinh nghiệm lâm sàng Da liễu.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Doctor 3 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="doctor-card text-center">
-                        <div class="doctor-img-wrapper mb-4">
-                            <img src="images/bac-si-nguyen-thi-mai.png" alt="BS CKI. Lê Thị Xuân Nghi"
-                                class="img-fluid doctor-img">
-                        </div>
-                        <div class="doctor-info px-3 pb-3">
-                            <h4 class="doctor-name">BS Nguyễn Thị Mai</h4>
-                            <p class="doctor-specialty text-uppercase">KHOA PHỤ SẢN</p>
-                            <p class="doctor-desc">Nguyên Trưởng khoa Sản - Bệnh viện Đa khoa Bến Lức (Long An).
-                                Tốt nghiệp bác sĩ y khoa - Đại học Y dược TPHCM.
-                                Chứng chỉ hành nghề chuyên khoa nội do Sở Y tế Long An cấp.
-                                Hơn 30 năm kinh nghiệm lâm sàng Phụ sản.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <!-- Navigation -->
+                <div class="swiper-button-next about-doctors-next"></div>
+                <div class="swiper-button-prev about-doctors-prev"></div>
             </div>
-
-            <!-- Pagination -->
-            <div class="pagination-wrapper mt-5 text-center">
-                <nav aria-label="Page navigation">
-                    <ul class="pagination justify-content-center align-items-center gap-2">
-                        <li class="page-item">
-                            <a class="page-link prev-next" href="#" aria-label="Previous">
-                                <i class="fas fa-arrow-left"></i>
-                            </a>
-                        </li>
-                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><span class="page-link dots">...</span></li>
-                        <li class="page-item"><a class="page-link" href="#">8</a></li>
-                        <li class="page-item">
-                            <a class="page-link prev-next" href="#" aria-label="Next">
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
         </div>
     </section>
-
     <!-- Facilities Section -->
     <section class="facilities-section py-5">
         <div class="container">
@@ -730,11 +742,11 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <!-- Custom JS -->
     <script src="js/main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
 
 </body>
 
