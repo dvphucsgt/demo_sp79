@@ -89,26 +89,24 @@
             <div class="container flex-wrap justify-content-between align-items-center">
                 <div class="collapse navbar-collapse w-100 mt-2 mt-lg-0 d-none d-lg-block" id="mainNavbar">
                     <ul class="navbar-nav w-100">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">TRANG CHỦ</a>
+                        <li class="nav-item"><a class="nav-link" href="index.html">TRANG CHỦ</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="about.html">GIỚI THIỆU</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">HƯỚNG DẪN</a>
+                            <div class="dropdown-menu-custom">
+                                <a class="dropdown-item" href="#">Sơ đồ các tầng</a>
+                                <a class="dropdown-item" href="#">Trang thiết bị</a>
+                                <a class="dropdown-item" href="#">Tìm bác sĩ</a>
+                                <a class="dropdown-item" href="#">Báo lãnh viện phí</a>
+                                <a class="dropdown-item" href="#">Liên hệ</a>
+                                <a class="dropdown-item" href="#">Góp ý phòng khám</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">GIỚI THIỆU</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="specialties.html">CHUYÊN KHOA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="doctor.html">BÁC SĨ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" href="price.html">DỊCH VỤ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="news.html">TIN TỨC</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">LIÊN HỆ</a>
+                        <li class="nav-item"><a class="nav-link" href="specialties.html">CHUYÊN KHOA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="price.html">DỊCH VỤ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="news.html">TIN TỨC</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">LIÊN HỆ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://nhathuoc.sp79.vn/">NHÀ THUỐC ONLINE</a>
                         </li>
                     </ul>
                 </div>
@@ -131,12 +129,26 @@
                 <!-- Menu Items -->
                 <ul class="mobile-menu-nav">
                     <li><a href="index.html">TRANG CHỦ</a></li>
-                    <li><a href="about.html">GIỚI THIỆU</a></li>
+                    <li><a href="about.html" class="active">GIỚI THIỆU</a></li>
+                    <li class="mobile-dropdown">
+                        <div class="mobile-dropdown-header">
+                            <a href="#">HƯỚNG DẪN</a>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="mobile-submenu">
+                            <a href="#">Sơ đồ các tầng</a>
+                            <a href="#">Trang thiết bị</a>
+                            <a href="./about.html#doctor">Tìm bác sĩ</a>
+                            <a href="#">Báo lãnh viện phí</a>
+                            <a href="#">Liên hệ</a>
+                            <a href="#">Góp ý phòng khám</a>
+                        </div>
+                    </li>
                     <li><a href="specialties.html">CHUYÊN KHOA</a></li>
-                    <li><a href="doctor.html">BÁC SĨ</a></li>
-                    <li><a href="price.html" class="active">DỊCH VỤ</a></li>
+                    <li><a href="price.html">DỊCH VỤ</a></li>
                     <li><a href="news.html">TIN TỨC</a></li>
                     <li><a href="contact.html">LIÊN HỆ</a></li>
+                    <li><a href="https://nhathuoc.sp79.vn/">NHÀ THUỐC ONLINE</a></li>
                 </ul>
             </div>
         </div>
@@ -187,17 +199,19 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="pricing-card h-100">
                             <div class="pricing-header">
-                                <h3 class="pricing-title">Gói Cá Nhân</h3>
+                                <h3 class="pricing-title">Gói khám cân nặng</h3>
                                 <p class="pricing-desc small">Dành cho cá nhân với các dịch vụ chăm sóc sức khỏe cơ
                                     bản
                                     và chuyên sâu.</p>
-                                <div class="price">5.500.000 VNĐ<span class="fs-6 fw-normal">/lần</span></div>
                             </div>
                             <div class="pricing-body">
                                 <ul class="pricing-features list-unstyled">
-                                    <li><i class="far fa-check-square me-2"></i> Khám tổng quát toàn diện</li>
-                                    <li><i class="far fa-check-square me-2"></i> Giảm giá tiêm chủng</li>
-                                    <li><i class="far fa-check-square me-2"></i> Tư vấn y tế 24/7</li>
+                                    <ul class="pricing-features list-unstyled">
+                                    <li><i class="far fa-check-square me-2"></i> Phân tích >20 chỉ số nội tiết – chuyển hóa – vi chất.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Xác định nguyên nhân gây tăng/giảm cân khó kiểm soát.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Hội thảo sức khỏe hàng năm</li>
+                                    <li><i class="far fa-check-square me-2"></i> Đánh giá mỡ máu, men gan, nguy cơ rối loạn chuyển hóa.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Tư vấn cá nhân hóa với bác sĩ nội tiết.</li>
                                 </ul>
                                 <a href="#" class="btn btn-pricing w-100 rounded-pill mt-4">Tư Vấn Ngay <i
                                         class="fas fa-arrow-right ms-2"></i></a>
@@ -205,24 +219,20 @@
                         </div>
                     </div>
 
-                    <!-- Gói Doanh Nghiệp (Popular) -->
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="pricing-card h-100 position-relative">
-                            <div class="popular-tag">Phổ biến</div>
                             <div class="pricing-header">
-                                <h3 class="pricing-title">Gói Doanh Nghiệp</h3>
+                                <h3 class="pricing-title">Gói xét nghiệm ký sinh trùng</h3>
                                 <p class="pricing-desc small">Giải pháp chăm sóc sức khỏe toàn diện cho nhân viên
                                     của
                                     bạn.</p>
-                                <div class="price">2.200.000 VNĐ<span class="fs-6 fw-normal">/người</span></div>
                             </div>
                             <div class="pricing-body">
                                 <ul class="pricing-features list-unstyled">
-                                    <li><i class="far fa-check-square me-2"></i> Khám sức khỏe định kỳ</li>
-                                    <li><i class="far fa-check-square me-2"></i> Ưu đãi dịch vụ điều trị</li>
-                                    <li><i class="far fa-check-square me-2"></i> Hội thảo sức khỏe hàng năm</li>
-                                    <li><i class="far fa-check-square me-2"></i> Ưu tiên đặt lịch</li>
-                                    <li><i class="far fa-check-square me-2"></i> Workshop sức khỏe</li>
+                                    <li><i class="far fa-check-square me-2"></i> Tầm soát 12–13 loại ký sinh trùng phổ biến & hiếm gặp.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Phân tích máu & kháng thể để xác định giai đoạn nhiễm.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Kết quả nhanh, thiết bị hiện đại, độ chính xác cao.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Ngăn ngừa biến chứng nguy hiểm ngay từ sớm.</li>
                                 </ul>
                                 <a href="#" class="btn btn-pricing w-100 rounded-pill mt-4">Tư Vấn Ngay <i
                                         class="fas fa-arrow-right ms-2"></i></a>
@@ -230,23 +240,21 @@
                         </div>
                     </div>
 
-                    <!-- Gói Gia Đình -->
+                    <!-- Gói khám mất ngủ -->
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="pricing-card h-100">
                             <div class="pricing-header">
-                                <h3 class="pricing-title">Gói Gia Đình</h3>
+                                <h3 class="pricing-title">Gói khám mất ngủ</h3>
                                 <p class="pricing-desc small">Chăm sóc sức khỏe cho cả gia đình, từ trẻ nhỏ đến
                                     người
                                     cao tuổi.</p>
-                                <div class="price">3.300.000 VNĐ<span class="fs-6 fw-normal">/năm</span></div>
                             </div>
                             <div class="pricing-body">
                                 <ul class="pricing-features list-unstyled">
-                                    <li><i class="far fa-check-square me-2"></i> Chăm sóc người cao tuổi</li>
-                                    <li><i class="far fa-check-square me-2"></i> Đánh giá sức khỏe định kỳ</li>
-                                    <li><i class="far fa-check-square me-2"></i> Chương trình phòng chống té ngã
-                                    </li>
-                                    <li><i class="far fa-check-square me-2"></i> Giảm giá thuốc</li>
+                                    <li><i class="far fa-check-square me-2"></i> Chẩn đoán đa chiều: thần kinh – nội tiết – tâm lý.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Xét nghiệm chuyên sâu >20 hạng mục.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Kiểm tra vi chất (Vitamin D, B12) ảnh hưởng đến giấc ngủ.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Đo ECG, siêu âm tim, đánh giá nguy cơ trầm cảm.</li>
                                 </ul>
                                 <a href="#" class="btn btn-pricing w-100 rounded-pill mt-4">Tư Vấn Ngay <i
                                         class="fas fa-arrow-right ms-2"></i></a>
@@ -259,18 +267,18 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="pricing-card h-100">
                             <div class="pricing-header">
-                                <h3 class="pricing-title">Gói Khám Cho Nam</h3>
+                                <div class="popular-tag">Phổ biến</div>
+                                <h3 class="pricing-title">Tiêm khớp</h3>
                                 <p class="pricing-desc small">Tự tin với nụ cười rạng rỡ. Bao gồm kiểm tra và ưu đãi
                                     nha
                                     khoa.</p>
-                                <div class="price">1.800.000 VNĐ<span class="fs-6 fw-normal">/lần</span></div>
                             </div>
                             <div class="pricing-body">
                                 <ul class="pricing-features list-unstyled">
-                                    <li><i class="far fa-check-square me-2"></i> Kiểm tra sức khỏe nam giới</li>
-                                    <li><i class="far fa-check-square me-2"></i> Ưu đãi các thủ thuật</li>
-                                    <li><i class="far fa-check-square me-2"></i> Bảo hiểm cấp cứu</li>
-                                    <li><i class="far fa-check-square me-2"></i> Tư vấn sức khỏe răng miệng</li>
+                                    <li><i class="far fa-check-square me-2"></i> Đau khớp kéo dài, đặc biệt khi vận động hoặc đứng lâu.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Cứng khớp buổi sáng, khớp kêu lạo xạo.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Sưng nhẹ quanh khớp, giảm khả năng gập/duỗi.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Đã điều trị bằng thuốc hoặc vật lý trị liệu nhưng chưa cải thiện.</li>
                                 </ul>
                                 <a href="#" class="btn btn-pricing w-100 rounded-pill mt-4">Tư Vấn Ngay <i
                                         class="fas fa-arrow-right ms-2"></i></a>
@@ -282,18 +290,17 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="pricing-card h-100">
                             <div class="pricing-header">
-                                <h3 class="pricing-title">Gói Khám Cho Nữ</h3>
+                                <h3 class="pricing-title">Gói Khám Nữ tổng quát</h3>
                                 <p class="pricing-desc small">Dịch vụ sức khỏe toàn diện cho phụ nữ. Chăm sóc thai
                                     kỳ và
                                     hơn thế nữa.</p>
-                                <div class="price">3.800.000 VNĐ<span class="fs-6 fw-normal">/lần</span></div>
                             </div>
                             <div class="pricing-body">
                                 <ul class="pricing-features list-unstyled">
-                                    <li><i class="far fa-check-square me-2"></i> Dịch vụ sức khỏe phụ nữ</li>
-                                    <li><i class="far fa-check-square me-2"></i> Chăm sóc phụ khoa</li>
-                                    <li><i class="far fa-check-square me-2"></i> Kế hoạch hóa gia đình</li>
-                                    <li><i class="far fa-check-square me-2"></i> Hỗ trợ trước & sau sinh</li>
+                                    <li><i class="far fa-check-square me-2"></i> Kiểm tra gan, thận, đường huyết, mỡ máu, nội tiết định kỳ.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Đánh giá sức khỏe sinh sản toàn diện.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Siêu âm vú, phụ khoa; Pap smear, HPV, AMH.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Phòng ngừa ung thư vú, cổ tử cung và bệnh lây truyền.</li>
                                 </ul>
                                 <a href="#" class="btn btn-pricing w-100 rounded-pill mt-4">Tư Vấn Ngay <i
                                         class="fas fa-arrow-right ms-2"></i></a>
@@ -305,18 +312,17 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="pricing-card h-100">
                             <div class="pricing-header">
-                                <h3 class="pricing-title">Dịch Vụ Chuyên Môn</h3>
+                                <h3 class="pricing-title">Gói khám Nam tổng quát</h3>
                                 <p class="pricing-desc small">Tối ưu cho vận động viên. Đánh giá chấn thương và vật
                                     lý
                                     trị liệu.</p>
-                                <div class="price">2.600.000 VNĐ<span class="fs-6 fw-normal">/lần</span></div>
                             </div>
                             <div class="pricing-body">
                                 <ul class="pricing-features list-unstyled">
-                                    <li><i class="far fa-check-square me-2"></i> Đánh giá chấn thương thể thao</li>
-                                    <li><i class="far fa-check-square me-2"></i> Các buổi vật lý trị liệu</li>
-                                    <li><i class="far fa-check-square me-2"></i> Chuyên gia y học thể thao</li>
-                                    <li><i class="far fa-check-square me-2"></i> Hỗ trợ tập luyện</li>
+                                    <li><i class="far fa-check-square me-2"></i> Kiểm tra gan, thận, đường huyết, mỡ máu định kỳ.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Đánh giá hormone, vi chất, phát hiện sớm rối loạn sinh lý.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Tầm soát viêm gan, HIV, ung thư gan – tuyến tiền liệt.</li>
+                                    <li><i class="far fa-check-square me-2"></i> Gói tiền hôn nhân: tinh dịch đồ, sức khỏe sinh sản toàn diện.</li>
                                 </ul>
                                 <a href="#" class="btn btn-pricing w-100 rounded-pill mt-4">Tư Vấn Ngay <i
                                         class="fas fa-arrow-right ms-2"></i></a>
@@ -345,17 +351,15 @@
                                     <button class="accordion-button collapsed fw-medium" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
                                         aria-controls="collapseOne">
-                                        Phòng khám cung cấp những dịch vụ gì?
+                                        Tôi nên chọn gói khám cơ bản, nâng cao hay tiền hôn nhân dành cho nam giới?
                                     </button>
                                 </h2>
                                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                     data-bs-parent="#faqAccordion">
                                     <div class="accordion-body text-secondary small">
-                                        Chúng tôi cung cấp đa dạng các dịch vụ y tế bao gồm khám tổng quát, chuyên
-                                        khoa
-                                        (Nội, Ngoại, Sản, Nhi...), xét nghiệm, chuẩn đoán hình ảnh và các gói khám
-                                        sức
-                                        khỏe định kỳ cho cá nhân và doanh nghiệp.
+                                        <p>- Gói cơ bản: Phù hợp cho khám định kỳ, kiểm tra chức năng cơ bản (gan, thận, đường huyết, mỡ máu) và hơn 15 chỉ số nội tiết – vi chất, phát hiện sớm mệt mỏi, rối loạn sinh lý.</p>
+                                        <p>- Gói nâng cao: Bao gồm các mục của gói cơ bản và thêm các xét nghiệm chuyên sâu hơn như tinh dịch đồ, hormone sinh sản, siêu âm để đánh giá toàn diện sức khỏe sinh sản.</p>
+                                        <p>- Gói tiền hôn nhân: Tập trung sâu vào sức khỏe sinh sản và tầm soát các bệnh lây truyền để chuẩn bị tốt nhất cho cuộc sống hôn nhân và kế hoạch gia đình.</p>
                                     </div>
                                 </div>
                             </div>
@@ -366,15 +370,13 @@
                                     <button class="accordion-button collapsed fw-medium" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                                         aria-controls="collapseTwo">
-                                        Làm thế nào để đặt lịch hẹn với bác sĩ?
+                                        Khám sức khỏe nam giới có giúp phát hiện các vấn đề về sinh lý không?
                                     </button>
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                     data-bs-parent="#faqAccordion">
                                     <div class="accordion-body text-secondary small">
-                                        Bạn có thể đặt lịch hẹn dễ dàng thông qua website của chúng tôi, gọi điện
-                                        đến
-                                        hotline 089 918 7979 hoặc đến trực tiếp phòng khám để được hỗ trợ.
+                                        Có. Các gói khám đều đánh giá hormone và các chỉ số liên quan để phát hiện sớm các dấu hiệu rối loạn sinh lý, mệt mỏi. Gói nâng cao và tiền hôn nhân còn bao gồm tinh dịch đồ và hormone sinh sản để đánh giá toàn diện hơn.
                                     </div>
                                 </div>
                             </div>
@@ -385,17 +387,13 @@
                                     <button class="accordion-button fw-medium" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseThree" aria-expanded="true"
                                         aria-controls="collapseThree">
-                                        Phòng khám có chấp nhận bảo hiểm y tế không?
+                                        Tại sao tôi nên thực hiện gói khám tiền hôn nhân dành cho nam giới?
                                     </button>
                                 </h2>
                                 <div id="collapseThree" class="accordion-collapse collapse show"
                                     aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body text-secondary small">
-                                        Có, chúng tôi chấp nhận bảo hiểm y tế nhà nước và nhiều loại bảo hiểm tư
-                                        nhân
-                                        khác. Vui lòng liên hệ quầy lễ tân hoặc hotline để biết thêm chi tiết về
-                                        danh
-                                        sách bảo hiểm được bảo lãnh.
+                                        Gói khám tiền hôn nhân giúp bạn chủ động kiểm tra sức khỏe sinh sản, phát hiện sớm các nguy cơ viêm nhiễm hoặc vấn đề ảnh hưởng đến khả năng thụ thai, đảm bảo nền tảng sức khỏe tốt nhất cho hôn nhân và kế hoạch có con.
                                     </div>
                                 </div>
                             </div>
@@ -406,15 +404,13 @@
                                     <button class="accordion-button collapsed fw-medium" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
                                         aria-controls="collapseFour">
-                                        Tôi cần mang theo giấy tờ gì khi đi khám?
+                                        Gói khám có bao gồm tầm soát các bệnh nguy hiểm như viêm gan, HIV, ung thư không?
                                     </button>
                                 </h2>
                                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                     data-bs-parent="#faqAccordion">
                                     <div class="accordion-body text-secondary small">
-                                        Khi đi khám, vui lòng mang theo CMND/CCCD, thẻ bảo hiểm y tế (nếu có) và các
-                                        hồ
-                                        sơ y tế cũ (kết quả xét nghiệm, đơn thuốc...) để bác sĩ tiện theo dõi.
+                                        Có. Tất cả các gói đều bao gồm tầm soát viêm gan B, C, HIV. Ngoài ra, chúng tôi còn tầm soát ung thư gan, ung thư tuyến tiền liệt và một số ung thư tiêu hóa, giúp phát hiện sớm và phòng ngừa các bệnh lý nguy hiểm.
                                     </div>
                                 </div>
                             </div>
@@ -425,15 +421,29 @@
                                     <button class="accordion-button collapsed fw-medium" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
                                         aria-controls="collapseFive">
-                                        Tôi có thể đặt lịch hẹn online không?
+                                        Tôi có cần chuẩn bị gì đặc biệt trước khi thực hiện các xét nghiệm sinh sản như tinh dịch đồ?
                                     </button>
                                 </h2>
                                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                                     data-bs-parent="#faqAccordion">
                                     <div class="accordion-body text-secondary small">
-                                        Vâng, chúng tôi có hệ thống đặt lịch hẹn online thông qua website của chúng tôi,
-                                        gọi điện
-                                        đến hotline 089 918 7979 hoặc đến trực tiếp phòng khám để được hỗ trợ.
+                                        Đối với tinh dịch đồ, bạn cần kiêng xuất tinh từ 3-5 ngày trước khi thực hiện xét nghiệm để đảm bảo kết quả chính xác nhất. Vui lòng tham khảo hướng dẫn chi tiết khi đặt lịch hẹn.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 6 -->
+                            <div class="accordion-item mb-3 border-0 rounded-3 overflow-hidden shadow-sm">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed fw-medium" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                                        aria-controls="collapseSix">
+                                        Làm thế nào để biết gói khám nào là phù hợp nhất với độ tuổi và tình trạng sức khỏe của tôi?
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-secondary small">
+                                        Bạn có thể liên hệ trực tiếp với đội ngũ tư vấn của Phòng khám Đa khoa SP79 qua hotline hoặc website. Chúng tôi sẽ lắng nghe nhu cầu và tiền sử sức khỏe của bạn để gợi ý gói khám phù hợp nhất.
                                     </div>
                                 </div>
                             </div>

@@ -26,8 +26,25 @@ $(document).ready(function () {
         }
     });
 
+
+    // Toggle Mobile Submenus
+    $('.mobile-dropdown-header').on('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var $this = $(this);
+        var $parent = $this.parent('.mobile-dropdown');
+        var $submenu = $this.next('.mobile-submenu');
+
+        $parent.toggleClass('open');
+        $submenu.slideToggle(300);
+    });
+
     // Close when clicking on menu item
-    $('.mobile-menu-nav a').on('click', function () {
+    $('.mobile-menu-nav a').on('click', function (e) {
+        // If it's a dropdown toggle, don't close the menu
+        if ($(this).closest('.mobile-dropdown-header').length) {
+            return;
+        }
         closeMobileMenu();
     });
 
@@ -219,6 +236,33 @@ $(document).ready(function () {
         breakpoints: {
             768: {
                 slidesPerView: 2,
+                spaceBetween: 30,
+            }
+        }
+    });
+
+    // Initialize About Doctors Swiper
+    const aboutDoctorsSwiper = new Swiper('.aboutDoctorsSwiper', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        speed: 800,
+        pagination: {
+            el: '.about-doctors-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.about-doctors-next',
+            prevEl: '.about-doctors-prev',
+        },
+        breakpoints: {
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            992: {
+                slidesPerView: 3,
                 spaceBetween: 30,
             }
         }
