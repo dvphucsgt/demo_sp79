@@ -175,7 +175,7 @@ $(document).ready(function () {
     // Initialize Specialty Swiper
     const specialtySwiper = new Swiper('.specialtySwiper', {
         slidesPerView: 1,
-        spaceBetween: 30,
+        spaceBetween: 10,
         loop: true,
         speed: 800,
         pagination: {
@@ -193,7 +193,7 @@ $(document).ready(function () {
             },
             992: {
                 slidesPerView: 4,
-                spaceBetween: 30,
+                spaceBetween: 10,
             },
         }
     });
