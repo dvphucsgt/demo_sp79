@@ -65,17 +65,17 @@ $(document).ready(function () {
     $(window).on('scroll', function () {
         const scrollPos = $(window).scrollTop() + 150;
 
-        $('.nav-link').each(function () {
-            const currLink = $(this);
-            const refElement = $(currLink.attr('href'));
+        // $('.nav-link').each(function () {
+        //     const currLink = $(this);
+        //     const refElement = $(currLink.attr('href'));
 
-            if (refElement.length &&
-                refElement.position().top <= scrollPos &&
-                refElement.position().top + refElement.height() > scrollPos) {
-                $('.nav-link').removeClass('active');
-                currLink.addClass('active');
-            }
-        });
+        //     if (refElement.length &&
+        //         refElement.position().top <= scrollPos &&
+        //         refElement.position().top + refElement.height() > scrollPos) {
+        //         $('.nav-link').removeClass('child-active');
+        //         currLink.addClass('child-active');
+        //     }
+        // });
     });
 
     // Header shadow on scroll
